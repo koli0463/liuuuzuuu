@@ -674,11 +674,11 @@ function library:window(properties)
 		while true do
 			if __holder.Visible then
 				for i = 1, #animated_text do
-					task.wait(0.2)
+					task.wait(0.12)
 					name.Text = animated_text[i]
 				end
 			end
-			task.wait(0.2)
+			task.wait(0.12)
 		end
 	end)
 	--
@@ -875,13 +875,12 @@ function library:window(properties)
 		Text = "esp preview",
 		TextStrokeTransparency = 0.5,
 		BorderSizePixel = 0,
-		BackgroundTransparency = 0,
-		BackgroundColor3 = Color3.fromRGB(56, 56, 56),
-		AnchorPoint = Vector2.new(0.5, 0.5),
-		Position = UDim2.new(0.5, 0, 0, 0),
-		Size = UDim2.new(0, 75, 0, 12),
-		ZIndex = 3,
+		BackgroundTransparency = 1,
+		Position = UDim2.new(0, 0, 0, -1),
+		Size = UDim2.new(1, 0, 0, 1),
+		ZIndex = 2,
 		TextSize = 12,
+		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
 
 	local UIPadding = library:create("UIPadding", {
@@ -1595,13 +1594,12 @@ function library:window(properties)
 		Text = "playerlist",
 		TextStrokeTransparency = 0.5,
 		BorderSizePixel = 0,
-		BackgroundTransparency = 0,
-		BackgroundColor3 = Color3.fromRGB(56, 56, 56),
-		AnchorPoint = Vector2.new(0.5, 0.5),
-		Position = UDim2.new(0.5, 0, 0, 0),
-		Size = UDim2.new(0, 65, 0, 12),
-		ZIndex = 3,
+		BackgroundTransparency = 1,
+		Position = UDim2.new(0, 0, 0, -1),
+		Size = UDim2.new(1, 0, 0, 1),
+		ZIndex = 2,
 		TextSize = 12,
+		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
 
 	local UIPadding = library:create("UIPadding", {
@@ -2216,7 +2214,7 @@ function library:window(properties)
 		Name = "",
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
 		AutomaticSize = Enum.AutomaticSize.Y,
-		Size = UDim2.new(1, 0, 0, 0),
+		Size = UDim2.new(1, 0, 0, 32),
 		BackgroundColor3 = Color3.fromRGB(40, 40, 40),
 	})
 
@@ -2240,13 +2238,12 @@ function library:window(properties)
 		Text = "keybinds",
 		TextStrokeTransparency = 0.5,
 		BorderSizePixel = 0,
-		BackgroundTransparency = 0,
-		BackgroundColor3 = Color3.fromRGB(40, 40, 40),
-		AnchorPoint = Vector2.new(0.5, 0.5),
-		Position = UDim2.new(0.5, 0, 0, 0),
-		Size = UDim2.new(0, 60, 0, 12),
-		ZIndex = 3,
+		BackgroundTransparency = 1,
+		Position = UDim2.new(0, 0, 0, -1),
+		Size = UDim2.new(1, 0, 0, 1),
+		ZIndex = 2,
 		TextSize = 12,
+		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
 
 	local inline2 = library:create("Frame", {
@@ -2255,7 +2252,7 @@ function library:window(properties)
 		Position = UDim2.new(0, 2, 0, 2),
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
 		AutomaticSize = Enum.AutomaticSize.Y,
-		Size = UDim2.new(1, -4, 0, 0),
+		Size = UDim2.new(1, -4, 0, 28),
 		BorderSizePixel = 0,
 		BackgroundColor3 = Color3.fromRGB(26, 26, 26),
 	})
@@ -2266,7 +2263,7 @@ function library:window(properties)
 		Position = UDim2.new(0, 2, 0, 2),
 		BorderColor3 = Color3.fromRGB(57, 57, 57),
 		AutomaticSize = Enum.AutomaticSize.Y,
-		Size = UDim2.new(1, -4, 0, 0),
+		Size = UDim2.new(1, -4, 0, 24),
 		BackgroundColor3 = Color3.fromRGB(26, 26, 26),
 	})
 
@@ -2276,7 +2273,7 @@ function library:window(properties)
 		Position = UDim2.new(0, 6, 0, 6),
 		BorderColor3 = Color3.fromRGB(19, 19, 19),
 		AutomaticSize = Enum.AutomaticSize.Y,
-		Size = UDim2.new(1, -12, 0, 0),
+		Size = UDim2.new(1, -12, 0, 12),
 		BorderSizePixel = 0,
 		BackgroundColor3 = Color3.fromRGB(19, 19, 19),
 	})
@@ -2287,7 +2284,7 @@ function library:window(properties)
 		Position = UDim2.new(0, 2, 0, 2),
 		BorderColor3 = Color3.fromRGB(56, 56, 56),
 		AutomaticSize = Enum.AutomaticSize.Y,
-		Size = UDim2.new(1, -4, 0, 0),
+		Size = UDim2.new(1, -4, 0, 8),
 		BackgroundColor3 = Color3.fromRGB(22, 22, 22),
 	})
 
