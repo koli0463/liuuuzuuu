@@ -3551,6 +3551,7 @@ function library:toggle(properties)
 	cfg.previous_holder = left_components
 	cfg.bottom_holder = bottom_components
 	cfg.right_holder = right_components
+	cfg.element_frame = object
 
 	config_flags[cfg.flag] = cfg.set
 
@@ -3786,6 +3787,7 @@ function library:slider(properties)
 	end)
 
 	cfg.set(cfg.default)
+	cfg.element_frame = object or slider_holder
 
 	config_flags[cfg.flag] = cfg.set
 
@@ -4096,6 +4098,7 @@ function library:dropdown(properties)
 	cfg:refresh_options(cfg.items)
 
 	cfg.set(cfg.default)
+	cfg.element_frame = object or dropdown_inline
 
 	library.config_flags[cfg.flag] = cfg.set
 
@@ -5354,6 +5357,8 @@ function library:button(properties)
 		cfg.callback()
 	end)
 
+	cfg.element_frame = button_inline
+
 	return setmetatable(cfg, library)
 end
 
@@ -5412,6 +5417,8 @@ function library:textbox(properties)
 	if cfg.default then
 		cfg.set(cfg.default)
 	end
+
+	cfg.element_frame = textbox_inline
 
 	library.config_flags[cfg.flag] = cfg.set
 
