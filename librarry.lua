@@ -293,6 +293,59 @@ function library:make_smooth_draggable(frame, handle)
 	local dragStart
 	local startPos
 
+	local original_transparencies = {}
+
+	local function set_transparency(trans)
+		original_transparencies = {}
+		local function apply(descendant)
+			if descendant:IsA("Frame") or descendant:IsA("TextLabel") or descendant:IsA("TextBox") or descendant:IsA("TextButton") then
+				original_transparencies[descendant] = {
+					bg = descendant.BackgroundTransparency,
+					text = (descendant:IsA("TextLabel") or descendant:IsA("TextBox") or descendant:IsA("TextButton")) and descendant.TextTransparency or nil,
+					stroke = descendant:FindFirstChildOfClass("UIStroke") and descendant:FindFirstChildOfClass("UIStroke").Transparency or nil
+				}
+				descendant.BackgroundTransparency = math.max(descendant.BackgroundTransparency, trans)
+				if descendant:IsA("TextLabel") or descendant:IsA("TextBox") or descendant:IsA("TextButton") then
+					descendant.TextTransparency = math.max(descendant.TextTransparency, trans)
+				end
+				local stroke = descendant:FindFirstChildOfClass("UIStroke")
+				if stroke then
+					stroke.Transparency = math.max(stroke.Transparency, trans)
+				end
+			elseif descendant:IsA("ImageLabel") or descendant:IsA("ImageButton") then
+				original_transparencies[descendant] = {
+					bg = descendant.BackgroundTransparency,
+					img = descendant.ImageTransparency
+				}
+				descendant.BackgroundTransparency = math.max(descendant.BackgroundTransparency, trans)
+				descendant.ImageTransparency = math.max(descendant.ImageTransparency, trans)
+			end
+		end
+
+		apply(frame)
+		for _, descendant in ipairs(frame:GetDescendants()) do
+			apply(descendant)
+		end
+	end
+
+	local function restore_transparency()
+		for descendant, orig in pairs(original_transparencies) do
+			if descendant.Parent then
+				descendant.BackgroundTransparency = orig.bg
+				if orig.text and (descendant:IsA("TextLabel") or descendant:IsA("TextBox") or descendant:IsA("TextButton")) then
+					descendant.TextTransparency = orig.text
+				end
+				if orig.img and (descendant:IsA("ImageLabel") or descendant:IsA("ImageButton")) then
+					descendant.ImageTransparency = orig.img
+				end
+				local stroke = descendant:FindFirstChildOfClass("UIStroke")
+				if stroke and orig.stroke then
+					stroke.Transparency = orig.stroke
+				end
+			end
+		end
+	end
+
 	local function update(input)
 		local delta = input.Position - dragStart
 		local targetPos = dim2(
@@ -311,10 +364,12 @@ function library:make_smooth_draggable(frame, handle)
 			dragging = true
 			dragStart = input.Position
 			startPos = frame.Position
+			set_transparency(0.4)
 
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
 					dragging = false
+					restore_transparency()
 				end
 			end)
 		end
@@ -642,14 +697,7 @@ function library:window(properties)
 	table.insert(library.main_frame, inline1)
 	local WINDOW_PATH = inline1
 	library:make_resizable(inline1)
-	local drag_handle = library:create("Frame", {
-		Parent = inline1,
-		Name = "drag_handle",
-		BackgroundTransparency = 1,
-		Size = UDim2.new(1, 0, 0, 25),
-		ZIndex = 10,
-	})
-	library:make_smooth_draggable(inline1, drag_handle)
+	library:make_smooth_draggable(inline1, inline1)
 
 	local inline2 = library:create("Frame", {
 		Parent = inline1,
@@ -816,14 +864,7 @@ function library:window(properties)
 		BackgroundColor3 = Color3.fromRGB(56, 56, 56),
 	})
 	library:make_resizable(esp_preview)
-	local esp_drag_handle = library:create("Frame", {
-		Parent = esp_preview,
-		Name = "esp_drag_handle",
-		BackgroundTransparency = 1,
-		Size = UDim2.new(1, 0, 0, 25),
-		ZIndex = 10,
-	})
-	library:make_smooth_draggable(esp_preview, esp_drag_handle)
+	library:make_smooth_draggable(esp_preview, esp_preview)
 
 	local name = library:create("TextLabel", {
 		Parent = esp_preview,
@@ -834,12 +875,13 @@ function library:window(properties)
 		Text = "esp preview",
 		TextStrokeTransparency = 0.5,
 		BorderSizePixel = 0,
-		BackgroundTransparency = 1,
-		Position = UDim2.new(0, 0, 0, -1),
-		Size = UDim2.new(1, 0, 0, 1),
-		ZIndex = 2,
+		BackgroundTransparency = 0,
+		BackgroundColor3 = Color3.fromRGB(56, 56, 56),
+		AnchorPoint = Vector2.new(0.5, 0.5),
+		Position = UDim2.new(0.5, 0, 0, 0),
+		Size = UDim2.new(0, 75, 0, 12),
+		ZIndex = 3,
 		TextSize = 12,
-		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
 
 	local UIPadding = library:create("UIPadding", {
@@ -1540,14 +1582,7 @@ function library:window(properties)
 		BackgroundColor3 = Color3.fromRGB(56, 56, 56),
 	})
 	library:make_resizable(playerlist)
-	local playerlist_drag_handle = library:create("Frame", {
-		Parent = playerlist,
-		Name = "playerlist_drag_handle",
-		BackgroundTransparency = 1,
-		Size = UDim2.new(1, 0, 0, 25),
-		ZIndex = 10,
-	})
-	library:make_smooth_draggable(playerlist, playerlist_drag_handle)
+	library:make_smooth_draggable(playerlist, playerlist)
 
 	table.insert(library.main_frame, playerlist)
 
@@ -1560,12 +1595,13 @@ function library:window(properties)
 		Text = "playerlist",
 		TextStrokeTransparency = 0.5,
 		BorderSizePixel = 0,
-		BackgroundTransparency = 1,
-		Position = UDim2.new(0, 0, 0, -1),
-		Size = UDim2.new(1, 0, 0, 1),
-		ZIndex = 2,
+		BackgroundTransparency = 0,
+		BackgroundColor3 = Color3.fromRGB(56, 56, 56),
+		AnchorPoint = Vector2.new(0.5, 0.5),
+		Position = UDim2.new(0.5, 0, 0, 0),
+		Size = UDim2.new(0, 65, 0, 12),
+		ZIndex = 3,
 		TextSize = 12,
-		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
 
 	local UIPadding = library:create("UIPadding", {
@@ -2150,17 +2186,11 @@ function library:window(properties)
 		Position = UDim2.new(0, 20, 0.5, 0),
 		ZIndex = 2,
 		Active = true,
-		AutomaticSize = Enum.AutomaticSize.XY,
+		AutomaticSize = Enum.AutomaticSize.Y,
+		Size = UDim2.new(0, 150, 0, 0),
 		BackgroundColor3 = Color3.fromRGB(40, 40, 40),
 	})
-	local kblist_drag_handle = library:create("Frame", {
-		Parent = old_kblist,
-		Name = "kblist_drag_handle",
-		BackgroundTransparency = 1,
-		Size = UDim2.new(1, 0, 0, 25),
-		ZIndex = 10,
-	})
-	library:make_smooth_draggable(old_kblist, kblist_drag_handle)
+	library:make_smooth_draggable(old_kblist, old_kblist)
 
 	local glow = library:create("ImageLabel", {
 		Parent = old_kblist,
@@ -2173,7 +2203,7 @@ function library:window(properties)
 		Image = "http://www.roblox.com/asset/?id=18245826428",
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, -20, 0, -20),
-		Size = UDim2.new(1, 40, 0, 42),
+		Size = UDim2.new(1, 40, 1, 40),
 		ZIndex = 2,
 		BorderSizePixel = 0,
 		SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79)),
@@ -2185,7 +2215,8 @@ function library:window(properties)
 		Parent = old_kblist,
 		Name = "",
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
-		AutomaticSize = Enum.AutomaticSize.XY,
+		AutomaticSize = Enum.AutomaticSize.Y,
+		Size = UDim2.new(1, 0, 0, 0),
 		BackgroundColor3 = Color3.fromRGB(40, 40, 40),
 	})
 
@@ -2209,12 +2240,13 @@ function library:window(properties)
 		Text = "keybinds",
 		TextStrokeTransparency = 0.5,
 		BorderSizePixel = 0,
-		BackgroundTransparency = 1,
-		Position = UDim2.new(0, 0, 0, -1),
-		Size = UDim2.new(1, 0, 0, 1),
-		ZIndex = 2,
+		BackgroundTransparency = 0,
+		BackgroundColor3 = Color3.fromRGB(40, 40, 40),
+		AnchorPoint = Vector2.new(0.5, 0.5),
+		Position = UDim2.new(0.5, 0, 0, 0),
+		Size = UDim2.new(0, 60, 0, 12),
+		ZIndex = 3,
 		TextSize = 12,
-		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
 
 	local inline2 = library:create("Frame", {
@@ -2222,7 +2254,8 @@ function library:window(properties)
 		Name = "",
 		Position = UDim2.new(0, 2, 0, 2),
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
-		Size = UDim2.new(1, -4, 1, -4),
+		AutomaticSize = Enum.AutomaticSize.Y,
+		Size = UDim2.new(1, -4, 0, 0),
 		BorderSizePixel = 0,
 		BackgroundColor3 = Color3.fromRGB(26, 26, 26),
 	})
@@ -2232,7 +2265,8 @@ function library:window(properties)
 		Name = "",
 		Position = UDim2.new(0, 2, 0, 2),
 		BorderColor3 = Color3.fromRGB(57, 57, 57),
-		Size = UDim2.new(1, -4, 1, -4),
+		AutomaticSize = Enum.AutomaticSize.Y,
+		Size = UDim2.new(1, -4, 0, 0),
 		BackgroundColor3 = Color3.fromRGB(26, 26, 26),
 	})
 
@@ -2241,7 +2275,8 @@ function library:window(properties)
 		Name = "",
 		Position = UDim2.new(0, 6, 0, 6),
 		BorderColor3 = Color3.fromRGB(19, 19, 19),
-		Size = UDim2.new(1, -12, 1, -12),
+		AutomaticSize = Enum.AutomaticSize.Y,
+		Size = UDim2.new(1, -12, 0, 0),
 		BorderSizePixel = 0,
 		BackgroundColor3 = Color3.fromRGB(19, 19, 19),
 	})
@@ -2251,14 +2286,15 @@ function library:window(properties)
 		Name = "",
 		Position = UDim2.new(0, 2, 0, 2),
 		BorderColor3 = Color3.fromRGB(56, 56, 56),
-		Size = UDim2.new(1, -4, 1, -4),
+		AutomaticSize = Enum.AutomaticSize.Y,
+		Size = UDim2.new(1, -4, 0, 0),
 		BackgroundColor3 = Color3.fromRGB(22, 22, 22),
 	})
 
 	local UIPadding = library:create("UIPadding", {
 		Parent = tabs,
 		Name = "",
-		PaddingBottom = UDim.new(0, 22),
+		PaddingBottom = UDim.new(0, 8),
 		PaddingRight = UDim.new(0, 20),
 		PaddingLeft = UDim.new(0, 20),
 	})
@@ -2336,7 +2372,7 @@ function library:new_keybind(properties)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0.5, 0, 0, 8),
 		BorderSizePixel = 0,
-		Visible = true,
+		Visible = false,
 		TextYAlignment = Enum.TextYAlignment.Top,
 		AutomaticSize = Enum.AutomaticSize.X,
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
@@ -2348,8 +2384,34 @@ function library:new_keybind(properties)
 		PaddingTop = UDim.new(0, 6),
 	})
 
+	cfg.active_state = false
+
 	function cfg.set_visible(bool)
-		keybind_text.Visible = bool
+		if bool then
+			keybind_text.Visible = true
+			keybind_text.TextTransparency = 1
+			keybind_text.TextStrokeTransparency = 1
+			keybind_text.Position = UDim2.new(0.5, -10, 0, 8)
+			tween_service:Create(keybind_text, TweenInfo.new(0.18, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+				TextTransparency = 0,
+				TextStrokeTransparency = 0.5,
+				Position = UDim2.new(0.5, 0, 0, 8)
+			}):Play()
+		else
+			if keybind_text.Visible then
+				tween_service:Create(keybind_text, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+					TextTransparency = 1,
+					TextStrokeTransparency = 1,
+					Position = UDim2.new(0.5, 10, 0, 8)
+				}):Play()
+				task.delay(0.15, function()
+					if not cfg.active_state then
+						keybind_text.Visible = false
+					end
+				end)
+			end
+		end
+		cfg.active_state = bool
 	end
 
 	function cfg.change_text(text)
@@ -4785,23 +4847,36 @@ function library:colorpicker(properties)
 		end
 	end)
 
+	cfg.previous_holder = self.previous_holder
+	cfg.bottom_holder = self.bottom_holder
+	cfg.right_holder = self.right_holder
+
 	return setmetatable(cfg, library)
 end
 
 function library:keybind(properties)
+	local toggled = false
+	local parent_name = self.name or nil
 	local cfg = {
 		flag = properties.flag or tostring(2 ^ math.random(1, 30) * 3),
-		keybind_name = properties.keybind_name or nil,
-		callback = properties.callback or function() end,
+		keybind_name = properties.keybind_name or parent_name or nil,
 		open = false,
 		binding = nil,
 		name = properties.name or nil,
 		key = properties.default or properties.key or nil,
 		mode = properties.mode or "toggle",
 		active = properties.default or false,
-		display = properties.displayName or properties.display or properties.name or nil,
+		display = properties.displayName or properties.display or properties.name or parent_name or nil,
 		hold_instances = {},
 	}
+
+	local original_callback = properties.callback or function() end
+	cfg.callback = function(val)
+		if self.set then
+			self.set(val)
+		end
+		original_callback(val)
+	end
 
 	flags[cfg.flag] = {}
 
@@ -5240,6 +5315,10 @@ function library:keybind(properties)
 	})
 
 	library.config_flags[cfg.flag] = cfg.set
+
+	cfg.previous_holder = self.previous_holder
+	cfg.bottom_holder = self.bottom_holder
+	cfg.right_holder = self.right_holder
 
 	return setmetatable(cfg, library)
 end
