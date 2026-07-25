@@ -2341,7 +2341,7 @@ function library:window(properties)
 	function cfg.set_menu_visibility(bool, pl)
 		WINDOW_PATH.Visible = bool
 
-		playerlist.Visible = flags["player_list"] and bool or false
+		playerlist.Visible = bool
 	end
 
 	return setmetatable(cfg, library)
@@ -3567,8 +3567,9 @@ function library:slider(properties)
 
 		min = properties.min or properties.minimum or 0,
 		max = properties.max or properties.maximum or 100,
-		intervals = properties.interval or properties.decimal or 1,
+		intervals = properties.interval or properties.decimal or properties.decimals or properties.changers or 1,
 		default = properties.default or 10,
+		min_text = properties.min_text or properties.min_string or nil,
 
 		dragging = false,
 		value = properties.default or 10,
@@ -3662,21 +3663,33 @@ function library:slider(properties)
 	library:apply_theme(fill, "accent", "BackgroundColor3")
 	library:apply_theme(fill, "accent", "BorderColor3")
 
-	local VALUE_TEXT = library:create("TextLabel", {
+	local VALUE_TEXT = library:create("TextBox", {
 		Parent = fill_inline,
 		Name = "",
 		RichText = true,
 		TextColor3 = Color3.fromRGB(170, 170, 170),
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
 		TextStrokeTransparency = 0.5,
-		Size = UDim2.new(0, 1, 0, 11),
+		Size = UDim2.new(0, 80, 0, 11),
 		BackgroundTransparency = 1,
 		Position = UDim2.new(1, 0, 0, 1),
 		BorderSizePixel = 0,
 		FontFace = library.font,
 		TextSize = 12,
+		ClearTextOnFocus = false,
+		TextXAlignment = Enum.TextXAlignment.Left,
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
+
+	VALUE_TEXT.FocusLost:Connect(function(enterPressed)
+		local raw = VALUE_TEXT.Text
+		local num = tonumber(raw:match("[%d%.%-]+"))
+		if num then
+			cfg.set(num)
+		else
+			cfg.set(cfg.value)
+		end
+	end)
 
 	local glow = library:create("ImageLabel", {
 		Parent = fill_inline,
@@ -3751,8 +3764,12 @@ function library:slider(properties)
 
 		cfg.value = math.clamp(library:round(value, cfg.intervals), cfg.min, cfg.max)
 
-		fill_inline.Size = dim2((cfg.value - cfg.min) / (cfg.max - cfg.min), 0, 1, 0)
-		VALUE_TEXT.Text = tostring(cfg.value) .. cfg.suffix
+		fill_inline.Size = dim2(math.clamp((cfg.value - cfg.min) / (cfg.max - cfg.min), 0, 1), 0, 1, 0)
+		if cfg.min_text and cfg.value == cfg.min then
+			VALUE_TEXT.Text = cfg.min_text
+		else
+			VALUE_TEXT.Text = tostring(cfg.value) .. cfg.suffix
+		end
 		flags[cfg.flag] = cfg.value
 
 		cfg.callback(flags[cfg.flag])
