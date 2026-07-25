@@ -3670,16 +3670,20 @@ function library:slider(properties)
 		TextColor3 = Color3.fromRGB(170, 170, 170),
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
 		TextStrokeTransparency = 0.5,
-		Size = UDim2.new(0, 80, 0, 11),
+		Size = UDim2.new(0, 40, 0, 11),
 		BackgroundTransparency = 1,
-		Position = UDim2.new(1, 0, 0, 1),
+		Position = UDim2.new(1, -40, 0, 1),
 		BorderSizePixel = 0,
 		FontFace = library.font,
 		TextSize = 12,
 		ClearTextOnFocus = false,
-		TextXAlignment = Enum.TextXAlignment.Left,
+		TextXAlignment = Enum.TextXAlignment.Right,
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
+
+	VALUE_TEXT.Focused:Connect(function()
+		VALUE_TEXT.Text = ""
+	end)
 
 	VALUE_TEXT.FocusLost:Connect(function(enterPressed)
 		local raw = VALUE_TEXT.Text
