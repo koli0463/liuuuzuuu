@@ -2920,15 +2920,10 @@ function library:tab(properties)
 		glow.Visible = true
 		TAB_BUTTON.TextColor3 = themes.preset.text
 		
-		-- smooth slide left / slide right tab switching animation
-		local start_x = 0
-		if old_index > 0 and old_index ~= new_index then
-			start_x = (new_index > old_index) and 0.25 or -0.25
-		end
-
-		TAB.Position = UDim2.new(start_x, 0, 0, 0)
+		-- Smooth micro-slide tab switching animation
+		TAB.Position = UDim2.new(0, 0, 0, 6)
 		TAB.Visible = true
-		tween_service:Create(TAB, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+		tween_service:Create(TAB, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 			Position = UDim2.new(0, 0, 0, 0)
 		}):Play()
 
@@ -3590,23 +3585,23 @@ function library:toggle(properties)
 			glow.Visible = true
 			glow.ImageTransparency = 1
 
-			tween_service:Create(icon_2, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			tween_service:Create(icon_2, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 				BackgroundTransparency = 0
 			}):Play()
 
-			tween_service:Create(glow, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			tween_service:Create(glow, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 				ImageTransparency = 0.8
 			}):Play()
 		else
-			tween_service:Create(icon_2, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+			tween_service:Create(icon_2, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
 				BackgroundTransparency = 1
 			}):Play()
 
-			tween_service:Create(glow, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+			tween_service:Create(glow, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
 				ImageTransparency = 1
 			}):Play()
 
-			task.delay(0.25, function()
+			task.delay(0.1, function()
 				if not flags[cfg.flag] then
 					icon_2.Visible = false
 					glow.Visible = false
@@ -4882,6 +4877,27 @@ function library:colorpicker(properties)
 	local selected = normal
 	flags[cfg.flag]["animation"] = "normal"
 
+	local anim_loop_running = false
+	local function check_anim_loop()
+		if selected ~= "normal" and not anim_loop_running then
+			anim_loop_running = true
+			task.spawn(function()
+				while selected ~= "normal" do
+					cfg.set(
+						hsv(
+							selected == "rainbow" and library.sin or h,
+							selected == "rainbow" and 1 or s,
+							selected == "fade" and library.sin or v
+						),
+						selected == "fade_alpha" and library.sin
+					)
+					task.wait()
+				end
+				anim_loop_running = false
+			end)
+		end
+	end
+
 	rainbow.MouseButton1Down:Connect(function()
 		selected.BackgroundTransparency = 1
 		selected = "rainbow"
@@ -4889,6 +4905,7 @@ function library:colorpicker(properties)
 
 		flags[cfg.flag]["animation"] = "rainbow"
 		cfg.saved_color = hsv(s, s, v)
+		check_anim_loop()
 	end)
 
 	fade_alpha.MouseButton1Down:Connect(function()
@@ -4898,6 +4915,7 @@ function library:colorpicker(properties)
 
 		flags[cfg.flag]["animation"] = "fade_alpha"
 		cfg.saved_color = hsv(s, s, v)
+		check_anim_loop()
 	end)
 
 	fade.MouseButton1Down:Connect(function()
@@ -4907,6 +4925,7 @@ function library:colorpicker(properties)
 
 		flags[cfg.flag]["animation"] = "fade"
 		cfg.saved_color = hsv(s, s, v)
+		check_anim_loop()
 	end)
 
 	normal.MouseButton1Down:Connect(function()
@@ -4940,22 +4959,6 @@ function library:colorpicker(properties)
 	self.previous_holder = parent
 
 	library.config_flags[cfg.flag] = cfg.set
-
-	task.spawn(function()
-		while true do
-			if selected ~= "normal" then
-				cfg.set(
-					hsv(
-						selected == "rainbow" and library.sin or h,
-						selected == "rainbow" and 1 or s,
-						selected == "fade" and library.sin or v
-					),
-					selected == "fade_alpha" and library.sin
-				)
-			end
-			task.wait()
-		end
-	end)
 
 	cfg.previous_holder = self.previous_holder
 	cfg.bottom_holder = self.bottom_holder
