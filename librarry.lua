@@ -2462,19 +2462,19 @@ function library:new_keybind(properties)
 			keybind_text.TextTransparency = 1
 			keybind_text.TextStrokeTransparency = 1
 			keybind_text.Position = UDim2.new(0.5, -10, 0, 8)
-			tween_service:Create(keybind_text, TweenInfo.new(0.18, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			tween_service:Create(keybind_text, TweenInfo.new(0.05, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 				TextTransparency = 0,
 				TextStrokeTransparency = 0.5,
 				Position = UDim2.new(0.5, 0, 0, 8)
 			}):Play()
 		else
 			if keybind_text.Visible then
-				tween_service:Create(keybind_text, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+				tween_service:Create(keybind_text, TweenInfo.new(0.05, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
 					TextTransparency = 1,
 					TextStrokeTransparency = 1,
 					Position = UDim2.new(0.5, 10, 0, 8)
 				}):Play()
-				task.delay(0.15, function()
+				task.delay(0.05, function()
 					if not cfg.active_state then
 						keybind_text.Visible = false
 					end
@@ -2914,9 +2914,9 @@ function library:tab(properties)
 		TAB_BUTTON.TextColor3 = themes.preset.text
 		
 		-- smooth slide-in tab switching animation
-		TAB.Position = UDim2.new(0, 0, 0, 10)
+		TAB.Position = UDim2.new(0, 0, 0, 6)
 		TAB.Visible = true
-		tween_service:Create(TAB, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+		tween_service:Create(TAB, TweenInfo.new(0.08, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 			Position = UDim2.new(0, 0, 0, 0)
 		}):Play()
 
@@ -3574,25 +3574,25 @@ function library:toggle(properties)
 		if bool then
 			icon_2.Visible = true
 			icon_2.Size = UDim2.fromScale(0, 0)
-			tween_service:Create(icon_2, TweenInfo.new(0.2, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
+			tween_service:Create(icon_2, TweenInfo.new(0.06, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
 				Size = UDim2.fromScale(1, 1)
 			}):Play()
 
 			glow.Visible = true
 			glow.ImageTransparency = 1
-			tween_service:Create(glow, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			tween_service:Create(glow, TweenInfo.new(0.06, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 				ImageTransparency = 0.8
 			}):Play()
 		else
-			tween_service:Create(icon_2, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+			tween_service:Create(icon_2, TweenInfo.new(0.05, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
 				Size = UDim2.fromScale(0, 0)
 			}):Play()
 
-			tween_service:Create(glow, TweenInfo.new(0.15, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+			tween_service:Create(glow, TweenInfo.new(0.05, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
 				ImageTransparency = 1
 			}):Play()
 
-			task.delay(0.15, function()
+			task.delay(0.05, function()
 				if not flags[cfg.flag] then
 					icon_2.Visible = false
 					glow.Visible = false
