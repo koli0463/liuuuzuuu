@@ -2066,11 +2066,10 @@ function library:window(properties)
 		BackgroundColor3 = Color3.fromRGB(38, 38, 38),
 	})
 
-	local viewing_player = nil
 	view_button.MouseButton1Click:Connect(function()
 		if not selected_player then return end
-		if viewing_player == selected_player then
-			viewing_player = nil
+		if library.viewing_player == selected_player then
+			library.viewing_player = nil
 			if lp.Character and lp.Character:FindFirstChildOfClass("Humanoid") then
 				camera.CameraSubject = lp.Character:FindFirstChildOfClass("Humanoid")
 			end
@@ -2078,7 +2077,7 @@ function library:window(properties)
 			view_button.TextColor3 = Color3.fromRGB(170, 170, 170)
 		else
 			if selected_player.Character and selected_player.Character:FindFirstChildOfClass("Humanoid") then
-				viewing_player = selected_player
+				library.viewing_player = selected_player
 				camera.CameraSubject = selected_player.Character:FindFirstChildOfClass("Humanoid")
 				view_button.Text = "Unview"
 				view_button.TextColor3 = Color3.fromRGB(0, 255, 150)
@@ -3736,12 +3735,6 @@ function library:toggle(properties)
 
 		cfg.set(cfg.enabled)
 	end)
-
-	cfg.set(cfg.default)
-
-	self.previous_holder = left_components
-	self.bottom_holder = bottom_components
-	self.right_holder = right_components
 
 	cfg.previous_holder = left_components
 	cfg.bottom_holder = bottom_components
