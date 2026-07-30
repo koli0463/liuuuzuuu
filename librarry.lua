@@ -2716,6 +2716,9 @@ function library:tab(properties)
 		enabled = false,
 	}
 
+	self.tab_count = (self.tab_count or 0) + 1
+	cfg.tab_index = self.tab_count
+
 	-- Button
 	local TAB_BUTTON = library:create("TextButton", {
 		Parent = self.tab_holder,
@@ -2893,6 +2896,9 @@ function library:tab(properties)
 	--
 
 	function cfg.open_tab()
+		local old_index = library.current_tab_index or 0
+		local new_index = cfg.tab_index or 1
+
 		if library.current_tab and library.current_tab[1] ~= TAB_BUTTON then
 			local button = library.current_tab[1]
 			button.TextColor3 = themes.preset.unselected_text
@@ -2908,15 +2914,21 @@ function library:tab(properties)
 			TAB_BUTTON,
 			TAB,
 		}
+		library.current_tab_index = new_index
 
 		line.BackgroundColor3 = themes.preset.accent
 		glow.Visible = true
 		TAB_BUTTON.TextColor3 = themes.preset.text
 		
-		-- smooth slide-in tab switching animation
-		TAB.Position = UDim2.new(0, 0, 0, 6)
+		-- smooth slide left / slide right tab switching animation
+		local start_x = 0
+		if old_index > 0 and old_index ~= new_index then
+			start_x = (new_index > old_index) and 0.25 or -0.25
+		end
+
+		TAB.Position = UDim2.new(start_x, 0, 0, 0)
 		TAB.Visible = true
-		tween_service:Create(TAB, TweenInfo.new(0.08, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+		tween_service:Create(TAB, TweenInfo.new(0.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 			Position = UDim2.new(0, 0, 0, 0)
 		}):Play()
 
@@ -3573,26 +3585,28 @@ function library:toggle(properties)
 
 		if bool then
 			icon_2.Visible = true
-			icon_2.Size = UDim2.fromScale(0, 0)
-			tween_service:Create(icon_2, TweenInfo.new(0.06, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {
-				Size = UDim2.fromScale(1, 1)
-			}):Play()
-
+			icon_2.Size = UDim2.fromScale(1, 1)
+			icon_2.BackgroundTransparency = 1
 			glow.Visible = true
 			glow.ImageTransparency = 1
-			tween_service:Create(glow, TweenInfo.new(0.06, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+
+			tween_service:Create(icon_2, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+				BackgroundTransparency = 0
+			}):Play()
+
+			tween_service:Create(glow, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
 				ImageTransparency = 0.8
 			}):Play()
 		else
-			tween_service:Create(icon_2, TweenInfo.new(0.05, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
-				Size = UDim2.fromScale(0, 0)
+			tween_service:Create(icon_2, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+				BackgroundTransparency = 1
 			}):Play()
 
-			tween_service:Create(glow, TweenInfo.new(0.05, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+			tween_service:Create(glow, TweenInfo.new(0.25, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
 				ImageTransparency = 1
 			}):Play()
 
-			task.delay(0.05, function()
+			task.delay(0.25, function()
 				if not flags[cfg.flag] then
 					icon_2.Visible = false
 					glow.Visible = false
@@ -3837,7 +3851,13 @@ function library:slider(properties)
 
 		cfg.value = math.clamp(library:round(value, cfg.intervals), cfg.min, cfg.max)
 
-		fill_inline.Size = dim2(math.clamp((cfg.value - cfg.min) / (cfg.max - cfg.min), 0, 1), 0, 1, 0)
+		local target_ratio = math.clamp((cfg.value - cfg.min) / (cfg.max - cfg.min), 0, 1)
+		local target_size = dim2(target_ratio, 0, 1, 0)
+
+		tween_service:Create(fill_inline, TweenInfo.new(0.12, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Size = target_size
+		}):Play()
+
 		if cfg.min_text and cfg.value == cfg.min then
 			VALUE_TEXT.Text = cfg.min_text
 		else
