@@ -287,107 +287,6 @@ function library:make_resizable(frame)
 	end)
 end
 
-function library:make_smooth_draggable(frame, handle)
-	local dragging = false
-	local dragInput
-	local dragStart
-	local startPos
-
-	local original_transparencies = {}
-
-	local function set_transparency(trans)
-		original_transparencies = {}
-		local function apply(descendant)
-			if descendant:IsA("Frame") or descendant:IsA("TextLabel") or descendant:IsA("TextBox") or descendant:IsA("TextButton") then
-				original_transparencies[descendant] = {
-					bg = descendant.BackgroundTransparency,
-					text = (descendant:IsA("TextLabel") or descendant:IsA("TextBox") or descendant:IsA("TextButton")) and descendant.TextTransparency or nil,
-					stroke = descendant:FindFirstChildOfClass("UIStroke") and descendant:FindFirstChildOfClass("UIStroke").Transparency or nil
-				}
-				descendant.BackgroundTransparency = math.max(descendant.BackgroundTransparency, trans)
-				if descendant:IsA("TextLabel") or descendant:IsA("TextBox") or descendant:IsA("TextButton") then
-					descendant.TextTransparency = math.max(descendant.TextTransparency, trans)
-				end
-				local stroke = descendant:FindFirstChildOfClass("UIStroke")
-				if stroke then
-					stroke.Transparency = math.max(stroke.Transparency, trans)
-				end
-			elseif descendant:IsA("ImageLabel") or descendant:IsA("ImageButton") then
-				original_transparencies[descendant] = {
-					bg = descendant.BackgroundTransparency,
-					img = descendant.ImageTransparency
-				}
-				descendant.BackgroundTransparency = math.max(descendant.BackgroundTransparency, trans)
-				descendant.ImageTransparency = math.max(descendant.ImageTransparency, trans)
-			end
-		end
-
-		apply(frame)
-		for _, descendant in ipairs(frame:GetDescendants()) do
-			apply(descendant)
-		end
-	end
-
-	local function restore_transparency()
-		for descendant, orig in pairs(original_transparencies) do
-			if descendant.Parent then
-				descendant.BackgroundTransparency = orig.bg
-				if orig.text and (descendant:IsA("TextLabel") or descendant:IsA("TextBox") or descendant:IsA("TextButton")) then
-					descendant.TextTransparency = orig.text
-				end
-				if orig.img and (descendant:IsA("ImageLabel") or descendant:IsA("ImageButton")) then
-					descendant.ImageTransparency = orig.img
-				end
-				local stroke = descendant:FindFirstChildOfClass("UIStroke")
-				if stroke and orig.stroke then
-					stroke.Transparency = orig.stroke
-				end
-			end
-		end
-	end
-
-	local function update(input)
-		local delta = input.Position - dragStart
-		local targetPos = dim2(
-			startPos.X.Scale,
-			startPos.X.Offset + delta.X,
-			startPos.Y.Scale,
-			startPos.Y.Offset + delta.Y
-		)
-		tween_service:Create(frame, TweenInfo.new(0.08, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-			Position = targetPos
-		}):Play()
-	end
-
-	handle.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = frame.Position
-			set_transparency(0.4)
-
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-					restore_transparency()
-				end
-			end)
-		end
-	end)
-
-	handle.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-
-	library:connection(uis.InputChanged, function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-
 function library:new_item(class, properties)
 	local ins = Instance.new(class)
 
@@ -434,120 +333,47 @@ function library:config_list_update()
 	end
 
 	local list = {}
-	local dir = library.directory .. "/configs"
 
-	if isfolder and isfolder(dir) and listfiles then
-		pcall(function()
-			for _, file in next, listfiles(dir) do
-				local name = string.match(file, "([^/\\]+)%.cfg$")
-				if name then
-					list[#list + 1] = name
-				end
-			end
-		end)
+	for idx, file in next, listfiles(library.directory .. "/configs") do
+		local name = file.split(file, "/configs/")[2]
+		name = name.split(name, ".cfg")[1]
+		list[#list + 1] = name
 	end
 
-	if library.config_holder.refresh_options then
-		library.config_holder:refresh_options(list)
-	end
+	library.config_holder:refresh_options(list)
 end
 
 function library:get_config()
 	local Config = {}
 
-	for flag_name, v in pairs(flags) do
-		if typeof(v) == "Color3" then
-			Config[flag_name] = { math.floor(v.R * 255 + 0.5), math.floor(v.G * 255 + 0.5), math.floor(v.B * 255 + 0.5) }
-		elseif type(v) == "table" and v.key then
-			Config[flag_name] = { active = v.active, mode = v.mode, key = tostring(v.key) }
-		elseif type(v) == "table" and v["Color"] and typeof(v["Color"]) == "Color3" then
-			local c = v["Color"]
-			Config[flag_name] = {
-				Color = { math.floor(c.R * 255 + 0.5), math.floor(c.G * 255 + 0.5), math.floor(c.B * 255 + 0.5) },
-				Transparency = v["Transparency"] or 0
-			}
+	for _, v in flags do
+		if type(v) == "table" and v.key then
+			Config[_] = { active = v.active, mode = v.mode, key = tostring(v.key) }
+		elseif type(v) == "table" and v["Transparency"] and v["Color"] then
+			Config[_] = { Transparency = v["Transparency"], Color = v["Color"]:ToHex() }
 		else
-			Config[flag_name] = v
+			Config[_] = v
 		end
 	end
 
 	return http_service:JSONEncode(Config)
 end
 
-function library:save_config(name)
-	if not name or name == "" then return end
-	local dir = library.directory .. "/configs/"
-	if isfolder and not isfolder(library.directory) then
-		pcall(makefolder, library.directory)
-	end
-	if isfolder and not isfolder(dir) then
-		pcall(makefolder, dir)
-	end
-	if writefile then
-		pcall(writefile, dir .. name .. ".cfg", library:get_config())
-		library:config_list_update()
-		library:notification({ text = "Config '" .. name .. "' saved!" })
-	end
-end
+function library:load_config(config_json)
+	local config = http_service:JSONDecode(config_json)
 
-function library:update_config(name)
-	if not name or name == "" then return end
-	library:save_config(name)
-end
+	for _, v in next, config do
+		local function_set = library.config_flags[_]
 
-function library:load_config(name)
-	if not name or name == "" then return end
-
-	local dir = library.directory .. "/configs/"
-	local path = dir .. name .. ".cfg"
-
-	if not isfile or not isfile(path) or not readfile then
-		library:notification({ text = "Config '" .. name .. "' not found!" })
-		return
-	end
-
-	local ok_read, content = pcall(readfile, path)
-	if not ok_read or not content then return end
-
-	local ok_decode, config = pcall(function()
-		return http_service:JSONDecode(content)
-	end)
-
-	if not ok_decode or type(config) ~= "table" then
-		library:notification({ text = "Failed to parse config!" })
-		return
-	end
-
-	for flag_name, info in pairs(config) do
-		flags[flag_name] = info
-
-		local function_set = library.config_flags[flag_name]
 		if function_set then
-			pcall(function()
-				if type(info) == "table" and info.Color and type(info.Color) == "table" then
-					local c_tab = info.Color
-					function_set(Color3.fromRGB(c_tab[1], c_tab[2], c_tab[3]), info.Transparency or 0)
-				elseif type(info) == "table" and #info == 3 and type(info[1]) == "number" then
-					function_set(Color3.fromRGB(info[1], info[2], info[3]), 0)
-				elseif type(info) == "table" and info.active ~= nil then
-					function_set(info)
-				else
-					function_set(info)
-				end
-			end)
+			if type(v) == "table" and v["Transparency"] and v["Color"] then
+				function_set(hex(v["Color"]), v["Transparency"])
+			elseif type(v) == "table" and v["active"] then
+				function_set(v)
+			else
+				function_set(v)
+			end
 		end
-	end
-
-	library:notification({ text = "Config '" .. name .. "' loaded!" })
-end
-
-function library:delete_config(name)
-	if not name or name == "" then return end
-	local path = library.directory .. "/configs/" .. name .. ".cfg"
-	if isfile and isfile(path) and delfile then
-		pcall(delfile, path)
-		library:config_list_update()
-		library:notification({ text = "Config '" .. name .. "' deleted!" })
 	end
 end
 
@@ -624,11 +450,11 @@ function library:window(properties)
 		Parent = __holder,
 		Name = "",
 		Active = true,
+		Draggable = true,
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
 		Size = UDim2.new(0, ((#animated_text / 2) * 5) + 13, 0, 40),
 		BackgroundColor3 = Color3.fromRGB(40, 40, 40),
 	})
-	library:make_smooth_draggable(__holder, inline1)
 
 	local accent_line = library:create("Frame", {
 		Parent = inline1,
@@ -747,11 +573,11 @@ function library:window(properties)
 		while true do
 			if __holder.Visible then
 				for i = 1, #animated_text do
-					task.wait(0.12)
+					task.wait(0.2)
 					name.Text = animated_text[i]
 				end
 			end
-			task.wait(0.12)
+			task.wait(0.2)
 		end
 	end)
 	--
@@ -761,6 +587,7 @@ function library:window(properties)
 		Parent = library.gui,
 		Name = "",
 		Active = true,
+		Draggable = true,
 		Position = UDim2.new(0.5, -cfg.size.X.Offset / 2, 0.5, -cfg.size.Y.Offset / 2),
 		BorderColor3 = Color3.fromRGB(8, 8, 8),
 		ZIndex = 2,
@@ -770,7 +597,6 @@ function library:window(properties)
 	table.insert(library.main_frame, inline1)
 	local WINDOW_PATH = inline1
 	library:make_resizable(inline1)
-	library:make_smooth_draggable(inline1, inline1)
 
 	local inline2 = library:create("Frame", {
 		Parent = inline1,
@@ -926,6 +752,7 @@ function library:window(properties)
 		Name = "",
 		Visible = false,
 		Active = true,
+		Draggable = true,
 		Position = UDim2.new(
 			0,
 			inline1.AbsolutePosition.X + inline1.AbsoluteSize.X + 8,
@@ -937,7 +764,6 @@ function library:window(properties)
 		BackgroundColor3 = Color3.fromRGB(56, 56, 56),
 	})
 	library:make_resizable(esp_preview)
-	library:make_smooth_draggable(esp_preview, esp_preview)
 
 	local name = library:create("TextLabel", {
 		Parent = esp_preview,
@@ -1647,6 +1473,7 @@ function library:window(properties)
 		Parent = library.gui,
 		Name = "",
 		Active = true,
+		Draggable = true,
 		AnchorPoint = Vector2.new(0, 0),
 		Position = UDim2.new(0, inline1.AbsolutePosition.X - 358 - 8, 0, inline1.AbsolutePosition.Y + 1),
 		BorderColor3 = Color3.fromRGB(8, 8, 8),
@@ -1654,7 +1481,6 @@ function library:window(properties)
 		BackgroundColor3 = Color3.fromRGB(56, 56, 56),
 	})
 	library:make_resizable(playerlist)
-	library:make_smooth_draggable(playerlist, playerlist)
 
 	table.insert(library.main_frame, playerlist)
 
@@ -2369,11 +2195,10 @@ function library:window(properties)
 		Position = UDim2.new(0, 20, 0.5, 0),
 		ZIndex = 2,
 		Active = true,
-		AutomaticSize = Enum.AutomaticSize.Y,
-		Size = UDim2.new(0, 150, 0, 0),
+		Draggable = true,
+		AutomaticSize = Enum.AutomaticSize.XY,
 		BackgroundColor3 = Color3.fromRGB(40, 40, 40),
 	})
-	library:make_smooth_draggable(old_kblist, old_kblist)
 
 	local glow = library:create("ImageLabel", {
 		Parent = old_kblist,
@@ -2386,7 +2211,7 @@ function library:window(properties)
 		Image = "http://www.roblox.com/asset/?id=18245826428",
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0, -20, 0, -20),
-		Size = UDim2.new(1, 40, 1, 40),
+		Size = UDim2.new(1, 40, 0, 42),
 		ZIndex = 2,
 		BorderSizePixel = 0,
 		SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79)),
@@ -2398,8 +2223,7 @@ function library:window(properties)
 		Parent = old_kblist,
 		Name = "",
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
-		AutomaticSize = Enum.AutomaticSize.Y,
-		Size = UDim2.new(1, 0, 0, 32),
+		AutomaticSize = Enum.AutomaticSize.XY,
 		BackgroundColor3 = Color3.fromRGB(40, 40, 40),
 	})
 
@@ -2436,8 +2260,7 @@ function library:window(properties)
 		Name = "",
 		Position = UDim2.new(0, 2, 0, 2),
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
-		AutomaticSize = Enum.AutomaticSize.Y,
-		Size = UDim2.new(1, -4, 0, 28),
+		Size = UDim2.new(1, -4, 1, -4),
 		BorderSizePixel = 0,
 		BackgroundColor3 = Color3.fromRGB(26, 26, 26),
 	})
@@ -2447,8 +2270,7 @@ function library:window(properties)
 		Name = "",
 		Position = UDim2.new(0, 2, 0, 2),
 		BorderColor3 = Color3.fromRGB(57, 57, 57),
-		AutomaticSize = Enum.AutomaticSize.Y,
-		Size = UDim2.new(1, -4, 0, 24),
+		Size = UDim2.new(1, -4, 1, -4),
 		BackgroundColor3 = Color3.fromRGB(26, 26, 26),
 	})
 
@@ -2457,8 +2279,7 @@ function library:window(properties)
 		Name = "",
 		Position = UDim2.new(0, 6, 0, 6),
 		BorderColor3 = Color3.fromRGB(19, 19, 19),
-		AutomaticSize = Enum.AutomaticSize.Y,
-		Size = UDim2.new(1, -12, 0, 12),
+		Size = UDim2.new(1, -12, 1, -12),
 		BorderSizePixel = 0,
 		BackgroundColor3 = Color3.fromRGB(19, 19, 19),
 	})
@@ -2468,15 +2289,14 @@ function library:window(properties)
 		Name = "",
 		Position = UDim2.new(0, 2, 0, 2),
 		BorderColor3 = Color3.fromRGB(56, 56, 56),
-		AutomaticSize = Enum.AutomaticSize.Y,
-		Size = UDim2.new(1, -4, 0, 8),
+		Size = UDim2.new(1, -4, 1, -4),
 		BackgroundColor3 = Color3.fromRGB(22, 22, 22),
 	})
 
 	local UIPadding = library:create("UIPadding", {
 		Parent = tabs,
 		Name = "",
-		PaddingBottom = UDim.new(0, 8),
+		PaddingBottom = UDim.new(0, 22),
 		PaddingRight = UDim.new(0, 20),
 		PaddingLeft = UDim.new(0, 20),
 	})
@@ -2526,7 +2346,7 @@ function library:window(properties)
 	function cfg.set_menu_visibility(bool, pl)
 		WINDOW_PATH.Visible = bool
 
-		playerlist.Visible = bool
+		playerlist.Visible = flags["player_list"] and bool or false
 	end
 
 	return setmetatable(cfg, library)
@@ -2554,7 +2374,7 @@ function library:new_keybind(properties)
 		BackgroundTransparency = 1,
 		Position = UDim2.new(0.5, 0, 0, 8),
 		BorderSizePixel = 0,
-		Visible = false,
+		Visible = true,
 		TextYAlignment = Enum.TextYAlignment.Top,
 		AutomaticSize = Enum.AutomaticSize.X,
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
@@ -2566,34 +2386,8 @@ function library:new_keybind(properties)
 		PaddingTop = UDim.new(0, 6),
 	})
 
-	cfg.active_state = false
-
 	function cfg.set_visible(bool)
-		if bool then
-			keybind_text.Visible = true
-			keybind_text.TextTransparency = 1
-			keybind_text.TextStrokeTransparency = 1
-			keybind_text.Position = UDim2.new(0.5, -10, 0, 8)
-			tween_service:Create(keybind_text, TweenInfo.new(0.05, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-				TextTransparency = 0,
-				TextStrokeTransparency = 0.5,
-				Position = UDim2.new(0.5, 0, 0, 8)
-			}):Play()
-		else
-			if keybind_text.Visible then
-				tween_service:Create(keybind_text, TweenInfo.new(0.05, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
-					TextTransparency = 1,
-					TextStrokeTransparency = 1,
-					Position = UDim2.new(0.5, 10, 0, 8)
-				}):Play()
-				task.delay(0.05, function()
-					if not cfg.active_state then
-						keybind_text.Visible = false
-					end
-				end)
-			end
-		end
-		cfg.active_state = bool
+		keybind_text.Visible = bool
 	end
 
 	function cfg.change_text(text)
@@ -2828,9 +2622,6 @@ function library:tab(properties)
 		enabled = false,
 	}
 
-	self.tab_count = (self.tab_count or 0) + 1
-	cfg.tab_index = self.tab_count
-
 	-- Button
 	local TAB_BUTTON = library:create("TextButton", {
 		Parent = self.tab_holder,
@@ -3008,9 +2799,6 @@ function library:tab(properties)
 	--
 
 	function cfg.open_tab()
-		local old_index = library.current_tab_index or 0
-		local new_index = cfg.tab_index or 1
-
 		if library.current_tab and library.current_tab[1] ~= TAB_BUTTON then
 			local button = library.current_tab[1]
 			button.TextColor3 = themes.preset.unselected_text
@@ -3026,18 +2814,11 @@ function library:tab(properties)
 			TAB_BUTTON,
 			TAB,
 		}
-		library.current_tab_index = new_index
 
 		line.BackgroundColor3 = themes.preset.accent
 		glow.Visible = true
 		TAB_BUTTON.TextColor3 = themes.preset.text
-		
-		-- V2Universal style tab switching animation (Sine Out 0.12s)
-		TAB.Position = UDim2.new(0, 0, 0, 5)
 		TAB.Visible = true
-		tween_service:Create(TAB, TweenInfo.new(0.12, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {
-			Position = UDim2.new(0, 0, 0, 0)
-		}):Play()
 
 		if library.current_element_open and library.current_element_open ~= cfg then
 			library.current_element_open.set_visible(false)
@@ -3571,7 +3352,7 @@ function library:toggle(properties)
 
 	-- Instances
 	local object = library:create("TextButton", {
-		Parent = self.holder,
+		Parent = self.holder or self.bottom_holder or self.previous_holder,
 		Name = "",
 		FontFace = library.font,
 		TextColor3 = Color3.fromRGB(170, 170, 170),
@@ -3636,26 +3417,13 @@ function library:toggle(properties)
 	})
 	library:apply_theme(icon_2, "accent", "BackgroundColor3")
 
-	-- white glossy gradient highlight shading
-	library:create("UIGradient", {
-		Parent = icon_2,
-		Name = "",
-		Rotation = -45,
-		Color = ColorSequence.new(Color3.fromRGB(255, 255, 255)),
-		Transparency = NumberSequence.new({
-			NumberSequenceKeypoint.new(0, 0.1),
-			NumberSequenceKeypoint.new(0.5, 0.45),
-			NumberSequenceKeypoint.new(1, 1),
-		}),
-	})
-
 	local glow = library:create("ImageLabel", {
 		Parent = icon_inline,
 		Name = "",
 		Visible = false,
-		ImageColor3 = Color3.fromRGB(255, 255, 255), -- White shadow glow
+		ImageColor3 = themes.preset.accent,
 		ScaleType = Enum.ScaleType.Slice,
-		ImageTransparency = 0.8,
+		ImageTransparency = 0.75,
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 		Image = "http://www.roblox.com/asset/?id=18245826428",
@@ -3666,6 +3434,8 @@ function library:toggle(properties)
 		BorderSizePixel = 0,
 		SliceCenter = Rect.new(Vector2.new(21, 21), Vector2.new(79, 79)),
 	})
+
+	library:apply_theme(glow, "accent", "ImageColor3")
 
 	local bottom_components = library:create("Frame", {
 		Parent = object,
@@ -3685,7 +3455,6 @@ function library:toggle(properties)
 		Padding = UDim.new(0, 4),
 		SortOrder = Enum.SortOrder.LayoutOrder,
 	})
-	--
 
 	function cfg.set(bool)
 		flags[cfg.flag] = bool
@@ -3736,7 +3505,9 @@ function library:toggle(properties)
 		cfg.set(cfg.enabled)
 	end)
 
-	cfg.previous_holder = left_components
+	cfg.set(cfg.default)
+
+	cfg.previous_holder = object
 	cfg.bottom_holder = bottom_components
 	cfg.right_holder = right_components
 	cfg.element_frame = object
@@ -3755,9 +3526,8 @@ function library:slider(properties)
 
 		min = properties.min or properties.minimum or 0,
 		max = properties.max or properties.maximum or 100,
-		intervals = properties.interval or properties.decimal or properties.decimals or properties.changers or 1,
+		intervals = properties.interval or properties.decimal or 1,
 		default = properties.default or 10,
-		min_text = properties.min_text or properties.min_string or nil,
 
 		dragging = false,
 		value = properties.default or 10,
@@ -3851,33 +3621,21 @@ function library:slider(properties)
 	library:apply_theme(fill, "accent", "BackgroundColor3")
 	library:apply_theme(fill, "accent", "BorderColor3")
 
-	local VALUE_TEXT = library:create("TextBox", {
+	local VALUE_TEXT = library:create("TextLabel", {
 		Parent = fill_inline,
 		Name = "",
 		RichText = true,
 		TextColor3 = Color3.fromRGB(170, 170, 170),
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
 		TextStrokeTransparency = 0.5,
-		Size = UDim2.new(0, 80, 0, 11),
+		Size = UDim2.new(0, 1, 0, 11),
 		BackgroundTransparency = 1,
 		Position = UDim2.new(1, 0, 0, 1),
 		BorderSizePixel = 0,
 		FontFace = library.font,
 		TextSize = 12,
-		ClearTextOnFocus = false,
-		TextXAlignment = Enum.TextXAlignment.Left,
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
-
-	VALUE_TEXT.FocusLost:Connect(function(enterPressed)
-		local raw = VALUE_TEXT.Text
-		local num = tonumber(raw:match("[%d%.%-]+"))
-		if num then
-			cfg.set(num)
-		else
-			cfg.set(cfg.value)
-		end
-	end)
 
 	local glow = library:create("ImageLabel", {
 		Parent = fill_inline,
@@ -3959,11 +3717,7 @@ function library:slider(properties)
 			Size = target_size
 		}):Play()
 
-		if cfg.min_text and cfg.value == cfg.min then
-			VALUE_TEXT.Text = cfg.min_text
-		else
-			VALUE_TEXT.Text = tostring(cfg.value) .. cfg.suffix
-		end
+		VALUE_TEXT.Text = tostring(cfg.value) .. cfg.suffix
 		flags[cfg.flag] = cfg.value
 
 		cfg.callback(flags[cfg.flag])
@@ -3998,7 +3752,6 @@ function library:slider(properties)
 	end)
 
 	cfg.set(cfg.default)
-	cfg.element_frame = object or slider_holder
 
 	config_flags[cfg.flag] = cfg.set
 
@@ -4309,7 +4062,6 @@ function library:dropdown(properties)
 	cfg:refresh_options(cfg.items)
 
 	cfg.set(cfg.default)
-	cfg.element_frame = object or dropdown_inline
 
 	library.config_flags[cfg.flag] = cfg.set
 
@@ -5066,36 +4818,23 @@ function library:colorpicker(properties)
 
 	library.config_flags[cfg.flag] = cfg.set
 
-	cfg.previous_holder = self.previous_holder
-	cfg.bottom_holder = self.bottom_holder
-	cfg.right_holder = self.right_holder
-
 	return setmetatable(cfg, library)
 end
 
 function library:keybind(properties)
-	local toggled = false
-	local parent_name = self.name or nil
 	local cfg = {
 		flag = properties.flag or tostring(2 ^ math.random(1, 30) * 3),
-		keybind_name = properties.keybind_name or parent_name or nil,
+		keybind_name = properties.keybind_name or nil,
+		callback = properties.callback or function() end,
 		open = false,
 		binding = nil,
 		name = properties.name or nil,
 		key = properties.default or properties.key or nil,
 		mode = properties.mode or "toggle",
-		active = properties.active or false,
-		display = properties.displayName or properties.display or properties.name or parent_name or nil,
+		active = properties.default or false,
+		display = properties.displayName or properties.display or properties.name or nil,
 		hold_instances = {},
 	}
-
-	local original_callback = properties.callback or function() end
-	cfg.callback = function(val)
-		if self.set then
-			self.set(val)
-		end
-		original_callback(val)
-	end
 
 	flags[cfg.flag] = {}
 
@@ -5399,7 +5138,8 @@ function library:keybind(properties)
 		end
 	end
 
-	local selected
+	local selected = (cfg.mode == "hold" and hold) or (cfg.mode == "always" and always) or press
+	selected.BackgroundTransparency = 0
 
 	hold.MouseButton1Click:Connect(function()
 		if selected then
@@ -5535,10 +5275,6 @@ function library:keybind(properties)
 
 	library.config_flags[cfg.flag] = cfg.set
 
-	cfg.previous_holder = self.previous_holder
-	cfg.bottom_holder = self.bottom_holder
-	cfg.right_holder = self.right_holder
-
 	return setmetatable(cfg, library)
 end
 
@@ -5575,8 +5311,6 @@ function library:button(properties)
 	button.MouseButton1Click:Connect(function()
 		cfg.callback()
 	end)
-
-	cfg.element_frame = button_inline
 
 	return setmetatable(cfg, library)
 end
@@ -5636,8 +5370,6 @@ function library:textbox(properties)
 	if cfg.default then
 		cfg.set(cfg.default)
 	end
-
-	cfg.element_frame = textbox_inline
 
 	library.config_flags[cfg.flag] = cfg.set
 
