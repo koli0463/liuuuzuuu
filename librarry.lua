@@ -2920,10 +2920,10 @@ function library:tab(properties)
 		glow.Visible = true
 		TAB_BUTTON.TextColor3 = themes.preset.text
 		
-		-- Smooth micro-slide tab switching animation
-		TAB.Position = UDim2.new(0, 0, 0, 6)
+		-- V2Universal style tab switching animation (Sine Out 0.12s)
+		TAB.Position = UDim2.new(0, 0, 0, 5)
 		TAB.Visible = true
-		tween_service:Create(TAB, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+		tween_service:Create(TAB, TweenInfo.new(0.12, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {
 			Position = UDim2.new(0, 0, 0, 0)
 		}):Play()
 
