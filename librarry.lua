@@ -56,12 +56,10 @@ getgenv().library = {
 	keybind_path,
 	panel_open = false,
 
-	directory = "NVL",
+	directory = "inactivity",
 	folders = {
 		"/fonts",
 		"/configs",
-		"/assets",
-		"/sounds",
 	},
 	font,
 }
@@ -168,26 +166,15 @@ local keys = {
 
 library.__index = library
 
-if makefolder then
-	pcall(function()
-		if not isfolder(library.directory) then
-			makefolder(library.directory)
-		end
-		for _, path in next, library.folders do
-			if not isfolder(library.directory .. path) then
-				makefolder(library.directory .. path)
-			end
-		end
-	end)
+for _, path in next, library.folders do
+	makefolder(library.directory .. path)
 end
 
 if not isfile(library.directory .. "/fonts/main.ttf") then
-	pcall(function()
-		writefile(
-			library.directory .. "/fonts/main.ttf",
-			game:HttpGet("https://github.com/i77lhm/storage/raw/refs/heads/main/fonts/fs-tahoma-8px.ttf")
-		)
-	end)
+	writefile(
+		library.directory .. "/fonts/main.ttf",
+		game:HttpGet("https://github.com/i77lhm/storage/raw/refs/heads/main/fonts/fs-tahoma-8px.ttf")
+	)
 end
 
 local tahoma = {
@@ -197,22 +184,16 @@ local tahoma = {
 			name = "Regular",
 			weight = 400,
 			style = "normal",
-			assetId = getcustomasset and getcustomasset(library.directory .. "/fonts/main.ttf") or "",
+			assetId = getcustomasset(library.directory .. "/fonts/main.ttf"),
 		},
 	},
 }
 
 if not isfile(library.directory .. "/fonts/main_encoded.ttf") then
-	pcall(function()
-		writefile(library.directory .. "/fonts/main_encoded.ttf", http_service:JSONEncode(tahoma))
-	end)
+	writefile(library.directory .. "/fonts/main_encoded.ttf", http_service:JSONEncode(tahoma))
 end
 
-if getcustomasset then
-	pcall(function()
-		library.font = Font.new(getcustomasset(library.directory .. "/fonts/main_encoded.ttf"), Enum.FontWeight.Regular)
-	end)
-end
+library.font = Font.new(getcustomasset(library.directory .. "/fonts/main_encoded.ttf"), Enum.FontWeight.Regular)
 --
 
 -- functions
@@ -257,138 +238,6 @@ function library:connection(signal, callback)
 	table.insert(library.connections, connection)
 
 	return connection
-end
-
-function library:config_list_update(select_name)
-	if not library.config_holder then
-		return
-	end
-
-	local list = {}
-
-	if isfolder and isfolder(library.directory .. "/configs") then
-		pcall(function()
-			for idx, file in next, listfiles(library.directory .. "/configs") do
-				local name = string.split(file, "/configs/")[2] or string.split(file, "\\configs\\")[2] or file
-				name = string.split(name, ".cfg")[1]
-				if name and name ~= "" then
-					table.insert(list, name)
-				end
-			end
-		end)
-	end
-
-	if library.config_holder.refresh_options then
-		library.config_holder:refresh_options(list)
-	elseif library.config_holder.refresh then
-		library.config_holder:refresh(list)
-	end
-
-	if select_name and table.find(list, select_name) then
-		if library.config_holder.set then
-			library.config_holder:set(select_name)
-		else
-			flags["config_name_list"] = select_name
-		end
-	end
-end
-
-function library:get_config()
-	local Config = {}
-
-	for flag_name, v in pairs(flags) do
-		if typeof(v) == "Color3" then
-			Config[flag_name] = { math.floor(v.R * 255 + 0.5), math.floor(v.G * 255 + 0.5), math.floor(v.B * 255 + 0.5) }
-		elseif type(v) == "table" and v.Color and typeof(v.Color) == "Color3" then
-			local c = v.Color
-			Config[flag_name] = {
-				Color = { math.floor(c.R * 255 + 0.5), math.floor(c.G * 255 + 0.5), math.floor(c.B * 255 + 0.5) },
-				Transparency = v.Transparency or 0
-			}
-		elseif type(v) == "table" and v.key then
-			Config[flag_name] = { active = v.active, mode = v.mode, key = tostring(v.key) }
-		else
-			Config[flag_name] = v
-		end
-	end
-
-	return http_service:JSONEncode(Config)
-end
-
-function library:save_config(name)
-	if not name or name == "" then return end
-	local dir = library.directory .. "/configs/"
-	if isfolder and not isfolder(dir) then
-		pcall(makefolder, dir)
-	end
-
-	if writefile then
-		writefile(dir .. name .. ".cfg", library:get_config())
-		library:config_list_update(name)
-	end
-end
-
-function library:update_config(name)
-	if not name or name == "" then return end
-	local dir = library.directory .. "/configs/"
-	if isfolder and not isfolder(dir) then
-		pcall(makefolder, dir)
-	end
-
-	if writefile then
-		writefile(dir .. name .. ".cfg", library:get_config())
-		library:config_list_update(name)
-	end
-end
-
-function library:load_config(name_or_json)
-	if not name_or_json or name_or_json == "" then return end
-
-	local content = name_or_json
-	local dir = library.directory .. "/configs/"
-	local path = dir .. name_or_json .. ".cfg"
-
-	if isfile and isfile(path) then
-		content = readfile(path)
-	end
-
-	local success, config = pcall(function()
-		return http_service:JSONDecode(content)
-	end)
-
-	if not success or type(config) ~= "table" then
-		return
-	end
-
-	for flag_name, info in pairs(config) do
-		flags[flag_name] = info
-
-		local function_set = library.config_flags[flag_name]
-		if function_set then
-			pcall(function()
-				if type(info) == "table" and info.Color and type(info.Color) == "table" then
-					local c_tab = info.Color
-					local col = Color3.fromRGB(c_tab[1], c_tab[2], c_tab[3])
-					function_set(col, info.Transparency or 0)
-				elseif type(info) == "table" and #info == 3 and type(info[1]) == "number" then
-					function_set(Color3.fromRGB(info[1], info[2], info[3]), 0)
-				elseif type(info) == "table" and info.active ~= nil then
-					function_set(info)
-				else
-					function_set(info)
-				end
-			end)
-		end
-	end
-end
-
-function library:delete_config(name)
-	if not name or name == "" then return end
-	local path = library.directory .. "/configs/" .. name .. ".cfg"
-	if isfile and isfile(path) and delfile then
-		delfile(path)
-		library:config_list_update()
-	end
 end
 
 function library:make_resizable(frame)
@@ -585,21 +434,21 @@ function library:config_list_update()
 	end
 
 	local list = {}
+	local dir = library.directory .. "/configs"
 
-	if isfolder and isfolder(library.directory .. "/configs") then
+	if isfolder and isfolder(dir) and listfiles then
 		pcall(function()
-			for idx, file in next, listfiles(library.directory .. "/configs") do
-				local name = string.split(file, "/configs/")[2] or string.split(file, "\\configs\\")[2] or file
-				name = string.split(name, ".cfg")[1]
-				table.insert(list, name)
+			for _, file in next, listfiles(dir) do
+				local name = string.match(file, "([^/\\]+)%.cfg$")
+				if name then
+					list[#list + 1] = name
+				end
 			end
 		end)
 	end
 
 	if library.config_holder.refresh_options then
 		library.config_holder:refresh_options(list)
-	elseif library.config_holder.refresh then
-		library.config_holder:refresh(list)
 	end
 end
 
@@ -609,14 +458,14 @@ function library:get_config()
 	for flag_name, v in pairs(flags) do
 		if typeof(v) == "Color3" then
 			Config[flag_name] = { math.floor(v.R * 255 + 0.5), math.floor(v.G * 255 + 0.5), math.floor(v.B * 255 + 0.5) }
-		elseif type(v) == "table" and v.Color and typeof(v.Color) == "Color3" then
-			local c = v.Color
-			Config[flag_name] = {
-				Color = { math.floor(c.R * 255 + 0.5), math.floor(c.G * 255 + 0.5), math.floor(c.B * 255 + 0.5) },
-				Transparency = v.Transparency or 0
-			}
 		elseif type(v) == "table" and v.key then
 			Config[flag_name] = { active = v.active, mode = v.mode, key = tostring(v.key) }
+		elseif type(v) == "table" and v["Color"] and typeof(v["Color"]) == "Color3" then
+			local c = v["Color"]
+			Config[flag_name] = {
+				Color = { math.floor(c.R * 255 + 0.5), math.floor(c.G * 255 + 0.5), math.floor(c.B * 255 + 0.5) },
+				Transparency = v["Transparency"] or 0
+			}
 		else
 			Config[flag_name] = v
 		end
@@ -628,32 +477,44 @@ end
 function library:save_config(name)
 	if not name or name == "" then return end
 	local dir = library.directory .. "/configs/"
+	if isfolder and not isfolder(library.directory) then
+		pcall(makefolder, library.directory)
+	end
 	if isfolder and not isfolder(dir) then
 		pcall(makefolder, dir)
 	end
-
 	if writefile then
-		writefile(dir .. name .. ".cfg", library:get_config())
+		pcall(writefile, dir .. name .. ".cfg", library:get_config())
 		library:config_list_update()
+		library:notification({ text = "Config '" .. name .. "' saved!" })
 	end
 end
 
-function library:load_config(name_or_json)
-	if not name_or_json or name_or_json == "" then return end
+function library:update_config(name)
+	if not name or name == "" then return end
+	library:save_config(name)
+end
 
-	local content = name_or_json
+function library:load_config(name)
+	if not name or name == "" then return end
+
 	local dir = library.directory .. "/configs/"
-	local path = dir .. name_or_json .. ".cfg"
+	local path = dir .. name .. ".cfg"
 
-	if isfile and isfile(path) then
-		content = readfile(path)
+	if not isfile or not isfile(path) or not readfile then
+		library:notification({ text = "Config '" .. name .. "' not found!" })
+		return
 	end
 
-	local success, config = pcall(function()
+	local ok_read, content = pcall(readfile, path)
+	if not ok_read or not content then return end
+
+	local ok_decode, config = pcall(function()
 		return http_service:JSONDecode(content)
 	end)
 
-	if not success or type(config) ~= "table" then
+	if not ok_decode or type(config) ~= "table" then
+		library:notification({ text = "Failed to parse config!" })
 		return
 	end
 
@@ -665,8 +526,7 @@ function library:load_config(name_or_json)
 			pcall(function()
 				if type(info) == "table" and info.Color and type(info.Color) == "table" then
 					local c_tab = info.Color
-					local col = Color3.fromRGB(c_tab[1], c_tab[2], c_tab[3])
-					function_set(col, info.Transparency or 0)
+					function_set(Color3.fromRGB(c_tab[1], c_tab[2], c_tab[3]), info.Transparency or 0)
 				elseif type(info) == "table" and #info == 3 and type(info[1]) == "number" then
 					function_set(Color3.fromRGB(info[1], info[2], info[3]), 0)
 				elseif type(info) == "table" and info.active ~= nil then
@@ -677,14 +537,17 @@ function library:load_config(name_or_json)
 			end)
 		end
 	end
+
+	library:notification({ text = "Config '" .. name .. "' loaded!" })
 end
 
 function library:delete_config(name)
 	if not name or name == "" then return end
 	local path = library.directory .. "/configs/" .. name .. ".cfg"
 	if isfile and isfile(path) and delfile then
-		delfile(path)
+		pcall(delfile, path)
 		library:config_list_update()
+		library:notification({ text = "Config '" .. name .. "' deleted!" })
 	end
 end
 
@@ -880,16 +743,10 @@ function library:window(properties)
 
 	library:apply_theme(glow, "accent", "ImageColor3")
 
-	cfg.watermark_label = name
-	cfg.watermark_gradient = TEXT_ANIMATION_GRADIENT
-	cfg.watermark_holder = __holder
-	cfg.animated_text = animated_text
-
 	task.spawn(function()
 		while true do
-			if __holder.Visible and not flags["watermark_anim_enabled"] then
+			if __holder.Visible then
 				for i = 1, #animated_text do
-					if flags["watermark_anim_enabled"] then break end
 					task.wait(0.12)
 					name.Text = animated_text[i]
 				end
@@ -1005,13 +862,6 @@ function library:window(properties)
 		ZIndex = 2,
 		TextSize = 12,
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-	})
-
-	cfg.title_label = name
-	cfg.title_gradient = library:create("UIGradient", {
-		Parent = name,
-		Name = "",
-		Enabled = false,
 	})
 
 	local glow = library:create("ImageLabel", {
@@ -3893,22 +3743,16 @@ function library:slider(properties)
 		TextColor3 = Color3.fromRGB(170, 170, 170),
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
 		TextStrokeTransparency = 0.5,
-		Size = UDim2.new(0, 0, 0, 11),
-		AutomaticSize = Enum.AutomaticSize.X,
-		AnchorPoint = Vector2.new(1, 0),
-		Position = UDim2.new(1, -2, 0, 1),
+		Size = UDim2.new(0, 80, 0, 11),
 		BackgroundTransparency = 1,
+		Position = UDim2.new(1, 0, 0, 1),
 		BorderSizePixel = 0,
 		FontFace = library.font,
 		TextSize = 12,
 		ClearTextOnFocus = false,
-		TextXAlignment = Enum.TextXAlignment.Right,
+		TextXAlignment = Enum.TextXAlignment.Left,
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
-
-	VALUE_TEXT.Focused:Connect(function()
-		VALUE_TEXT.Text = ""
-	end)
 
 	VALUE_TEXT.FocusLost:Connect(function(enterPressed)
 		local raw = VALUE_TEXT.Text
@@ -5426,10 +5270,7 @@ function library:keybind(properties)
 		end
 	end
 
-	local selected = (cfg.mode == "hold" and hold) or (cfg.mode == "always" and always) or press
-	if selected then
-		selected.BackgroundTransparency = 0
-	end
+	local selected
 
 	hold.MouseButton1Click:Connect(function()
 		if selected then
