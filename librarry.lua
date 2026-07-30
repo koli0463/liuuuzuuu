@@ -2041,6 +2041,119 @@ function library:window(properties)
 		player_buttons[selected_player.Name].priority.TextColor3 = rgb(255, 44, 44)
 	end)
 
+	-- View Player Button
+	local view_button_inline = library:create("Frame", {
+		Parent = Frame,
+		Name = "",
+		Position = UDim2.new(0, -15, 0, 2),
+		BorderColor3 = Color3.fromRGB(19, 19, 19),
+		Size = UDim2.new(1, -26, 0, 16),
+		BorderSizePixel = 0,
+		BackgroundColor3 = Color3.fromRGB(8, 8, 8),
+	})
+
+	local view_button = library:create("TextButton", {
+		Parent = view_button_inline,
+		Name = "",
+		FontFace = library.font,
+		TextColor3 = Color3.fromRGB(170, 170, 170),
+		BorderColor3 = Color3.fromRGB(56, 56, 56),
+		Text = "View Player",
+		TextStrokeTransparency = 0.5,
+		Position = UDim2.new(0, 2, 0, 2),
+		Size = UDim2.new(1, -4, 1, -4),
+		TextSize = 12,
+		BackgroundColor3 = Color3.fromRGB(38, 38, 38),
+	})
+
+	local viewing_player = nil
+	view_button.MouseButton1Click:Connect(function()
+		if not selected_player then return end
+		if viewing_player == selected_player then
+			viewing_player = nil
+			if lp.Character and lp.Character:FindFirstChildOfClass("Humanoid") then
+				camera.CameraSubject = lp.Character:FindFirstChildOfClass("Humanoid")
+			end
+			view_button.Text = "View Player"
+			view_button.TextColor3 = Color3.fromRGB(170, 170, 170)
+		else
+			if selected_player.Character and selected_player.Character:FindFirstChildOfClass("Humanoid") then
+				viewing_player = selected_player
+				camera.CameraSubject = selected_player.Character:FindFirstChildOfClass("Humanoid")
+				view_button.Text = "Unview"
+				view_button.TextColor3 = Color3.fromRGB(0, 255, 150)
+			end
+		end
+	end)
+
+	-- Teleport Button (New Method + Security)
+	local tp_button_inline = library:create("Frame", {
+		Parent = Frame,
+		Name = "",
+		Position = UDim2.new(0, -15, 0, 2),
+		BorderColor3 = Color3.fromRGB(19, 19, 19),
+		Size = UDim2.new(1, -26, 0, 16),
+		BorderSizePixel = 0,
+		BackgroundColor3 = Color3.fromRGB(8, 8, 8),
+	})
+
+	local tp_button = library:create("TextButton", {
+		Parent = tp_button_inline,
+		Name = "",
+		FontFace = library.font,
+		TextColor3 = Color3.fromRGB(170, 170, 170),
+		BorderColor3 = Color3.fromRGB(56, 56, 56),
+		Text = "Teleport",
+		TextStrokeTransparency = 0.5,
+		Position = UDim2.new(0, 2, 0, 2),
+		Size = UDim2.new(1, -4, 1, -4),
+		TextSize = 12,
+		BackgroundColor3 = Color3.fromRGB(38, 38, 38),
+	})
+
+	tp_button.MouseButton1Click:Connect(function()
+		-- Security Checks
+		if not selected_player or selected_player == lp then
+			library:notification({ text = "Security: Invalid player selected!" })
+			return
+		end
+
+		local my_char = lp.Character
+		local target_char = selected_player.Character
+		if not my_char or not target_char then
+			library:notification({ text = "Security: Character missing!" })
+			return
+		end
+
+		local my_hrp = my_char:FindFirstChild("HumanoidRootPart")
+		local target_hrp = target_char:FindFirstChild("HumanoidRootPart")
+		local target_hum = target_char:FindFirstChildOfClass("Humanoid")
+
+		if not my_hrp or not target_hrp then
+			library:notification({ text = "Security: HumanoidRootPart missing!" })
+			return
+		end
+
+		if target_hum and target_hum.Health <= 0 then
+			library:notification({ text = "Security: Target is dead!" })
+			return
+		end
+
+		-- New Anti-Cheat Safe Teleport Method
+		pcall(function()
+			-- Step 1: Nullify velocity
+			my_hrp.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+			my_hrp.AssemblyAngularVelocity = Vector3.new(0, 0, 0)
+
+			-- Step 2: Teleport 3 studs behind target
+			local dest_cf = target_hrp.CFrame * CFrame.new(0, 0, 3)
+			my_hrp.CFrame = dest_cf
+			my_hrp.AssemblyLinearVelocity = Vector3.new(0, 0, 0)
+
+			library:notification({ text = "Safe Teleported to " .. selected_player.Name })
+		end)
+	end)
+
 	local UIListLayout = library:create("UIListLayout", {
 		Parent = Frame,
 		Name = "",
