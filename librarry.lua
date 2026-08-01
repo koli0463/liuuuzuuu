@@ -2208,6 +2208,22 @@ function library:window(properties)
 	library:apply_theme(glow, "accent", "ImageColor3")
 
 	local function update_selection(player, button)
+		if selected_player == player and player ~= nil then
+			selected_player = nil
+			selected_button = nil
+
+			for _, p_data in pairs(player_buttons) do
+				if p_data and p_data.instance then
+					p_data.instance.BackgroundTransparency = 1
+				end
+			end
+
+			priority_label.Text = "Priority: None"
+			name_label.Text = "Name: None"
+			display_name_label.Text = "Display: None"
+			return
+		end
+
 		selected_player = player
 		selected_button = button
 
@@ -3888,7 +3904,8 @@ function library:slider(properties)
 		TextColor3 = Color3.fromRGB(170, 170, 170),
 		BorderColor3 = Color3.fromRGB(0, 0, 0),
 		TextStrokeTransparency = 0.5,
-		Size = UDim2.new(0, 80, 0, 11),
+		AutomaticSize = Enum.AutomaticSize.X,
+		Size = UDim2.new(0, 0, 0, 11),
 		BackgroundTransparency = 1,
 		Position = UDim2.new(1, 0, 0, 1),
 		BorderSizePixel = 0,
@@ -3898,6 +3915,11 @@ function library:slider(properties)
 		TextXAlignment = Enum.TextXAlignment.Left,
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
+
+	VALUE_TEXT.Focused:Connect(function()
+		VALUE_TEXT.SelectionStart = 1
+		VALUE_TEXT.CursorPosition = #VALUE_TEXT.Text + 1
+	end)
 
 	VALUE_TEXT.FocusLost:Connect(function(enterPressed)
 		local raw = VALUE_TEXT.Text
