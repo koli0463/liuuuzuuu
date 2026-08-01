@@ -2207,14 +2207,46 @@ function library:window(properties)
 
 	library:apply_theme(glow, "accent", "ImageColor3")
 
+	local function update_selection(player, button)
+		selected_player = player
+		selected_button = button
+
+		for _, p_data in pairs(player_buttons) do
+			if p_data and p_data.instance then
+				p_data.instance.BackgroundTransparency = 1
+			end
+		end
+
+		if button then
+			button.BackgroundTransparency = 0.85
+		end
+
+		if player then
+			priority_label.Text = "Priority: " .. library.get_priority(player)
+			name_label.Text = "Name: " .. player.Name
+			display_name_label.Text = "Display: " .. (player.DisplayName or player.Name)
+		else
+			priority_label.Text = "Priority: None"
+			name_label.Text = "Name: None"
+			display_name_label.Text = "Display: None"
+		end
+	end
+
 	local function create_player(player)
+		if not player or not player.Name then return end
+
+		if player_buttons[player.Name] and player_buttons[player.Name].instance then
+			pcall(function() player_buttons[player.Name].instance:Destroy() end)
+		end
+
 		local TextButton = library:create("TextButton", {
 			Parent = __ScrollingFrame,
-			Name = "",
+			Name = player.Name,
 			FontFace = library.font,
 			TextColor3 = Color3.fromRGB(180, 180, 180),
 			BorderColor3 = Color3.fromRGB(0, 0, 0),
 			Text = "",
+			AutoButtonColor = false,
 			BackgroundTransparency = 1,
 			Size = UDim2.new(1, 0, 0, 0),
 			BorderSizePixel = 0,
@@ -2226,9 +2258,9 @@ function library:window(properties)
 		player_buttons[player.Name] = {}
 		player_buttons[player.Name].instance = TextButton
 
-		local TextLabel = library:create("TextLabel", {
+		local name_label_item = library:create("TextLabel", {
 			Parent = TextButton,
-			Name = "",
+			Name = "NameLabel",
 			FontFace = library.font,
 			TextColor3 = Color3.fromRGB(180, 180, 180),
 			BorderColor3 = Color3.fromRGB(0, 0, 0),
@@ -2243,13 +2275,13 @@ function library:window(properties)
 		})
 
 		library:create("UIStroke", {
-			Parent = TextLabel,
+			Parent = name_label_item,
 			Name = "",
 		})
 
-		local TextLabel = library:create("TextLabel", {
+		local team_label_item = library:create("TextLabel", {
 			Parent = TextButton,
-			Name = "",
+			Name = "TeamLabel",
 			FontFace = library.font,
 			TextColor3 = Color3.fromRGB(180, 180, 180),
 			BorderColor3 = Color3.fromRGB(0, 0, 0),
@@ -2263,12 +2295,12 @@ function library:window(properties)
 		})
 
 		library:create("UIStroke", {
-			Parent = TextLabel,
+			Parent = team_label_item,
 			Name = "",
 		})
 
-		local Frame = library:create("Frame", {
-			Parent = TextLabel,
+		library:create("Frame", {
+			Parent = team_label_item,
 			Name = "",
 			Position = UDim2.new(0, -10, 0, 0),
 			BorderColor3 = Color3.fromRGB(0, 0, 0),
@@ -2277,9 +2309,9 @@ function library:window(properties)
 			BackgroundColor3 = Color3.fromRGB(32, 32, 38),
 		})
 
-		local TextLabel = library:create("TextLabel", {
+		local prio_label_item = library:create("TextLabel", {
 			Parent = TextButton,
-			Name = "",
+			Name = "PriorityLabel",
 			FontFace = library.font,
 			TextColor3 = Color3.fromRGB(180, 180, 180),
 			BorderColor3 = Color3.fromRGB(0, 0, 0),
@@ -2292,15 +2324,15 @@ function library:window(properties)
 			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 		})
 
-		player_buttons[player.Name].priority = TextLabel
+		player_buttons[player.Name].priority = prio_label_item
 
 		library:create("UIStroke", {
-			Parent = TextLabel,
+			Parent = prio_label_item,
 			Name = "",
 		})
 
-		local Frame = library:create("Frame", {
-			Parent = TextLabel,
+		library:create("Frame", {
+			Parent = prio_label_item,
 			Name = "",
 			Position = UDim2.new(0, -10, 0, 0),
 			BorderColor3 = Color3.fromRGB(0, 0, 0),
@@ -2309,7 +2341,7 @@ function library:window(properties)
 			BackgroundColor3 = Color3.fromRGB(32, 32, 38),
 		})
 
-		local UIListLayout = library:create("UIListLayout", {
+		library:create("UIListLayout", {
 			Parent = TextButton,
 			Name = "",
 			FillDirection = Enum.FillDirection.Horizontal,
@@ -2318,14 +2350,14 @@ function library:window(properties)
 			VerticalFlex = Enum.UIFlexAlignment.Fill,
 		})
 
-		local UIPadding = library:create("UIPadding", {
+		library:create("UIPadding", {
 			Parent = TextButton,
 			Name = "",
 			PaddingRight = UDim.new(0, 2),
 			PaddingLeft = UDim.new(0, 2),
 		})
 
-		local line = library:create("Frame", {
+		library:create("Frame", {
 			Parent = tabs,
 			Name = "",
 			BorderColor3 = Color3.fromRGB(0, 0, 0),
@@ -2335,19 +2367,7 @@ function library:window(properties)
 		})
 
 		TextButton.MouseButton1Click:Connect(function()
-			for _, btn_data in pairs(player_buttons) do
-				if btn_data and btn_data.instance then
-					btn_data.instance.BackgroundTransparency = 1
-				end
-			end
-
-			selected_button = TextButton
-			selected_player = player
-			TextButton.BackgroundTransparency = 0.85
-
-			priority_label.Text = "Priority: " .. library.get_priority(player)
-			name_label.Text = "Name: " .. player.Name
-			display_name_label.Text = "Display: " .. player.DisplayName
+			update_selection(player, TextButton)
 		end)
 	end
 
@@ -2360,13 +2380,12 @@ function library:window(properties)
 	end)
 
 	library:connection(players.PlayerRemoving, function(player)
-		if player_buttons[player.Name] then
+		if player and player_buttons[player.Name] then
 			if selected_player == player then
-				selected_player = nil
-				selected_button = nil
+				update_selection(nil, nil)
 			end
 			if player_buttons[player.Name].instance then
-				player_buttons[player.Name].instance:Destroy()
+				pcall(function() player_buttons[player.Name].instance:Destroy() end)
 			end
 			player_buttons[player.Name] = nil
 		end
