@@ -2335,8 +2335,10 @@ function library:window(properties)
 		})
 
 		TextButton.MouseButton1Click:Connect(function()
-			if selected_button then
-				selected_button.BackgroundTransparency = 1
+			for _, btn_data in pairs(player_buttons) do
+				if btn_data and btn_data.instance then
+					btn_data.instance.BackgroundTransparency = 1
+				end
 			end
 
 			selected_button = TextButton
@@ -2358,7 +2360,16 @@ function library:window(properties)
 	end)
 
 	library:connection(players.PlayerRemoving, function(player)
-		player_buttons[player.Name].instance:Destroy()
+		if player_buttons[player.Name] then
+			if selected_player == player then
+				selected_player = nil
+				selected_button = nil
+			end
+			if player_buttons[player.Name].instance then
+				player_buttons[player.Name].instance:Destroy()
+			end
+			player_buttons[player.Name] = nil
+		end
 	end)
 	--
 
