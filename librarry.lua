@@ -1942,24 +1942,27 @@ function library:window(properties)
 		Name = "",
 	})
 
-	local Frame = library:create("Frame", {
+	local Frame = library:create("ScrollingFrame", {
 		Parent = contrast,
 		Name = "",
 		AnchorPoint = Vector2.new(1, 0),
 		BackgroundTransparency = 1,
-		Position = UDim2.new(1, -10, 0, 0),
-		BorderColor3 = Color3.fromRGB(0, 0, 0),
-		Size = UDim2.new(1, -200, 1, 0),
+		Position = UDim2.new(1, -5, 0, 4),
+		Size = UDim2.new(0, 140, 1, -8),
 		BorderSizePixel = 0,
+		ScrollBarThickness = 2,
+		ScrollBarImageColor3 = themes.preset.accent,
+		AutomaticCanvasSize = Enum.AutomaticSize.Y,
+		CanvasSize = UDim2.new(0, 0, 0, 0),
 		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
 	})
 
 	local button_inline = library:create("Frame", {
 		Parent = Frame,
 		Name = "",
-		Position = UDim2.new(0, -15, 0, 2),
+		Position = UDim2.new(0, 0, 0, 0),
 		BorderColor3 = Color3.fromRGB(19, 19, 19),
-		Size = UDim2.new(1, -26, 0, 16),
+		Size = UDim2.new(1, -6, 0, 14),
 		BorderSizePixel = 0,
 		BackgroundColor3 = Color3.fromRGB(8, 8, 8),
 	})
@@ -1972,9 +1975,9 @@ function library:window(properties)
 		BorderColor3 = Color3.fromRGB(56, 56, 56),
 		Text = "Neutral",
 		TextStrokeTransparency = 0.5,
-		Position = UDim2.new(0, 2, 0, 2),
-		Size = UDim2.new(1, -4, 1, -4),
-		TextSize = 12,
+		Position = UDim2.new(0, 2, 0, 1),
+		Size = UDim2.new(1, -4, 1, -2),
+		TextSize = 11,
 		BackgroundColor3 = Color3.fromRGB(38, 38, 38),
 	})
 
@@ -1986,9 +1989,9 @@ function library:window(properties)
 	local button_inline = library:create("Frame", {
 		Parent = Frame,
 		Name = "",
-		Position = UDim2.new(0, -15, 0, 2),
+		Position = UDim2.new(0, 0, 0, 0),
 		BorderColor3 = Color3.fromRGB(19, 19, 19),
-		Size = UDim2.new(1, -26, 0, 16),
+		Size = UDim2.new(1, -6, 0, 14),
 		BorderSizePixel = 0,
 		BackgroundColor3 = Color3.fromRGB(8, 8, 8),
 	})
@@ -2001,9 +2004,9 @@ function library:window(properties)
 		BorderColor3 = Color3.fromRGB(56, 56, 56),
 		Text = "Friendly",
 		TextStrokeTransparency = 0.5,
-		Position = UDim2.new(0, 2, 0, 2),
-		Size = UDim2.new(1, -4, 1, -4),
-		TextSize = 12,
+		Position = UDim2.new(0, 2, 0, 1),
+		Size = UDim2.new(1, -4, 1, -2),
+		TextSize = 11,
 		BackgroundColor3 = Color3.fromRGB(38, 38, 38),
 	})
 
@@ -2015,9 +2018,9 @@ function library:window(properties)
 	local button_inline = library:create("Frame", {
 		Parent = Frame,
 		Name = "",
-		Position = UDim2.new(0, -15, 0, 2),
+		Position = UDim2.new(0, 0, 0, 0),
 		BorderColor3 = Color3.fromRGB(19, 19, 19),
-		Size = UDim2.new(1, -26, 0, 16),
+		Size = UDim2.new(1, -6, 0, 14),
 		BorderSizePixel = 0,
 		BackgroundColor3 = Color3.fromRGB(8, 8, 8),
 	})
@@ -2030,9 +2033,9 @@ function library:window(properties)
 		BorderColor3 = Color3.fromRGB(56, 56, 56),
 		Text = "Enemy",
 		TextStrokeTransparency = 0.5,
-		Position = UDim2.new(0, 2, 0, 2),
-		Size = UDim2.new(1, -4, 1, -4),
-		TextSize = 12,
+		Position = UDim2.new(0, 2, 0, 1),
+		Size = UDim2.new(1, -4, 1, -2),
+		TextSize = 11,
 		BackgroundColor3 = Color3.fromRGB(38, 38, 38),
 	})
 
@@ -2045,9 +2048,9 @@ function library:window(properties)
 	local view_button_inline = library:create("Frame", {
 		Parent = Frame,
 		Name = "",
-		Position = UDim2.new(0, -15, 0, 2),
+		Position = UDim2.new(0, 0, 0, 0),
 		BorderColor3 = Color3.fromRGB(19, 19, 19),
-		Size = UDim2.new(1, -26, 0, 16),
+		Size = UDim2.new(1, -6, 0, 14),
 		BorderSizePixel = 0,
 		BackgroundColor3 = Color3.fromRGB(8, 8, 8),
 	})
@@ -2060,9 +2063,9 @@ function library:window(properties)
 		BorderColor3 = Color3.fromRGB(56, 56, 56),
 		Text = "View Player",
 		TextStrokeTransparency = 0.5,
-		Position = UDim2.new(0, 2, 0, 2),
-		Size = UDim2.new(1, -4, 1, -4),
-		TextSize = 12,
+		Position = UDim2.new(0, 2, 0, 1),
+		Size = UDim2.new(1, -4, 1, -2),
+		TextSize = 11,
 		BackgroundColor3 = Color3.fromRGB(38, 38, 38),
 	})
 
@@ -2089,9 +2092,9 @@ function library:window(properties)
 	local tp_button_inline = library:create("Frame", {
 		Parent = Frame,
 		Name = "",
-		Position = UDim2.new(0, -15, 0, 2),
+		Position = UDim2.new(0, 0, 0, 0),
 		BorderColor3 = Color3.fromRGB(19, 19, 19),
-		Size = UDim2.new(1, -26, 0, 16),
+		Size = UDim2.new(1, -6, 0, 14),
 		BorderSizePixel = 0,
 		BackgroundColor3 = Color3.fromRGB(8, 8, 8),
 	})
@@ -2104,9 +2107,9 @@ function library:window(properties)
 		BorderColor3 = Color3.fromRGB(56, 56, 56),
 		Text = "Teleport",
 		TextStrokeTransparency = 0.5,
-		Position = UDim2.new(0, 2, 0, 2),
-		Size = UDim2.new(1, -4, 1, -4),
-		TextSize = 12,
+		Position = UDim2.new(0, 2, 0, 1),
+		Size = UDim2.new(1, -4, 1, -2),
+		TextSize = 11,
 		BackgroundColor3 = Color3.fromRGB(38, 38, 38),
 	})
 
@@ -2156,11 +2159,11 @@ function library:window(properties)
 	local UIListLayout = library:create("UIListLayout", {
 		Parent = Frame,
 		Name = "",
-		VerticalAlignment = Enum.VerticalAlignment.Center,
+		VerticalAlignment = Enum.VerticalAlignment.Top,
 		SortOrder = Enum.SortOrder.LayoutOrder,
 		HorizontalAlignment = Enum.HorizontalAlignment.Center,
 		HorizontalFlex = Enum.UIFlexAlignment.Fill,
-		Padding = UDim.new(0, 4),
+		Padding = UDim.new(0, 2),
 	})
 
 	local accent_line = library:create("Frame", {
