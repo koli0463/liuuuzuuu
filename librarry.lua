@@ -293,70 +293,14 @@ function library:make_smooth_draggable(frame, handle)
 	local dragStart
 	local startPos
 
-	local original_transparencies = {}
-
-	local function set_transparency(trans)
-		original_transparencies = {}
-		local function apply(descendant)
-			if descendant:IsA("Frame") or descendant:IsA("TextLabel") or descendant:IsA("TextBox") or descendant:IsA("TextButton") then
-				original_transparencies[descendant] = {
-					bg = descendant.BackgroundTransparency,
-					text = (descendant:IsA("TextLabel") or descendant:IsA("TextBox") or descendant:IsA("TextButton")) and descendant.TextTransparency or nil,
-					stroke = descendant:FindFirstChildOfClass("UIStroke") and descendant:FindFirstChildOfClass("UIStroke").Transparency or nil
-				}
-				descendant.BackgroundTransparency = math.max(descendant.BackgroundTransparency, trans)
-				if descendant:IsA("TextLabel") or descendant:IsA("TextBox") or descendant:IsA("TextButton") then
-					descendant.TextTransparency = math.max(descendant.TextTransparency, trans)
-				end
-				local stroke = descendant:FindFirstChildOfClass("UIStroke")
-				if stroke then
-					stroke.Transparency = math.max(stroke.Transparency, trans)
-				end
-			elseif descendant:IsA("ImageLabel") or descendant:IsA("ImageButton") then
-				original_transparencies[descendant] = {
-					bg = descendant.BackgroundTransparency,
-					img = descendant.ImageTransparency
-				}
-				descendant.BackgroundTransparency = math.max(descendant.BackgroundTransparency, trans)
-				descendant.ImageTransparency = math.max(descendant.ImageTransparency, trans)
-			end
-		end
-
-		apply(frame)
-		for _, descendant in ipairs(frame:GetDescendants()) do
-			apply(descendant)
-		end
-	end
-
-	local function restore_transparency()
-		for descendant, orig in pairs(original_transparencies) do
-			if descendant.Parent then
-				descendant.BackgroundTransparency = orig.bg
-				if orig.text and (descendant:IsA("TextLabel") or descendant:IsA("TextBox") or descendant:IsA("TextButton")) then
-					descendant.TextTransparency = orig.text
-				end
-				if orig.img and (descendant:IsA("ImageLabel") or descendant:IsA("ImageButton")) then
-					descendant.ImageTransparency = orig.img
-				end
-				local stroke = descendant:FindFirstChildOfClass("UIStroke")
-				if stroke and orig.stroke then
-					stroke.Transparency = orig.stroke
-				end
-			end
-		end
-	end
-
 	local function update(input)
 		local delta = input.Position - dragStart
-		local targetPos = dim2(
+		frame.Position = dim2(
 			startPos.X.Scale,
 			startPos.X.Offset + delta.X,
 			startPos.Y.Scale,
 			startPos.Y.Offset + delta.Y
 		)
-		tween_service:Create(frame, TweenInfo.new(0.08, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-			Position = targetPos
-		}):Play()
 	end
 
 	handle.InputBegan:Connect(function(input)
@@ -364,20 +308,18 @@ function library:make_smooth_draggable(frame, handle)
 			dragging = true
 			dragStart = input.Position
 			startPos = frame.Position
-			set_transparency(0.4)
-
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-					restore_transparency()
-				end
-			end)
 		end
 	end)
 
 	handle.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			dragInput = input
+		end
+	end)
+
+	uis.InputEnded:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = false
 		end
 	end)
 
@@ -598,6 +540,39 @@ library.gui = library:create("ScreenGui", {
 	DisplayOrder = 2,
 	ZIndexBehavior = 1,
 })
+
+-- Centralized input manager (Replaces 70+ individual InputChanged listeners)
+library.active_slider = nil
+library.active_colorpicker_drag = nil
+library.animated_colorpickers = {}
+
+uis.InputChanged:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseMovement then
+		if library.active_slider then
+			local slider_cfg = library.active_slider
+			local slider = slider_cfg.slider_instance
+			if slider then
+				local size_x = (input.Position.X - slider.AbsolutePosition.X) / slider.AbsoluteSize.X
+				local value = ((slider_cfg.max - slider_cfg.min) * size_x) + slider_cfg.min
+				slider_cfg.set(value)
+			end
+		elseif library.active_colorpicker_drag then
+			library.active_colorpicker_drag(input)
+		end
+	end
+end)
+
+uis.InputEnded:Connect(function(input)
+	if input.UserInputType == Enum.UserInputType.MouseButton1 then
+		if library.active_slider then
+			library.active_slider.dragging = false
+			library.active_slider = nil
+		end
+		if library.active_colorpicker_drag then
+			library.active_colorpicker_drag = nil
+		end
+	end
+end)
 
 -- library functions
 function library:window(properties)
@@ -906,14 +881,21 @@ function library:window(properties)
 
 	task.spawn(function()
 		while true do
-			if flags["color_picker_anim_speed"] then
-				library.sin = math.abs(math.sin(tick() * flags["color_picker_anim_speed"]))
+			local anim_speed = flags["color_picker_anim_speed"] or 1
+			library.sin = math.abs(math.sin(tick() * anim_speed))
 
+			if __holder and __holder.Visible and TEXT_ANIMATION_GRADIENT then
 				TEXT_ANIMATION_GRADIENT.Color = ColorSequence.new({
 					ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
 					ColorSequenceKeypoint.new(math.abs(math.sin(tick())), themes.preset.accent),
 					ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255)),
 				})
+			end
+
+			if next(library.animated_colorpickers) ~= nil then
+				for _, anim_fn in pairs(library.animated_colorpickers) do
+					anim_fn()
+				end
 			end
 			task.wait()
 		end
@@ -2373,26 +2355,17 @@ function library:window(properties)
 			PaddingLeft = UDim.new(0, 2),
 		})
 
-		library:create("Frame", {
-			Parent = tabs,
-			Name = "",
-			BorderColor3 = Color3.fromRGB(0, 0, 0),
-			Size = UDim2.new(1, 0, 0, 1),
-			BorderSizePixel = 0,
-			BackgroundColor3 = Color3.fromRGB(32, 32, 38),
-		})
-
 		TextButton.MouseButton1Click:Connect(function()
 			update_selection(player, TextButton)
 		end)
 	end
 
 	for _, player in next, players:GetPlayers() do
-		create_player(player)
+		task.spawn(create_player, player)
 	end
 
 	library:connection(players.PlayerAdded, function(player)
-		create_player(player)
+		task.spawn(create_player, player)
 	end)
 
 	library:connection(players.PlayerRemoving, function(player)
@@ -4015,22 +3988,15 @@ function library:slider(properties)
 		cfg.callback(flags[cfg.flag])
 	end
 
-	library:connection(uis.InputChanged, function(input)
-		if cfg.dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
-			local size_x = (input.Position.X - slider.AbsolutePosition.X) / slider.AbsoluteSize.X
-			local value = ((cfg.max - cfg.min) * size_x) + cfg.min
-			cfg.set(value)
-		end
-	end)
-
-	library:connection(uis.InputEnded, function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			cfg.dragging = false
-		end
-	end)
+	cfg.slider_instance = slider
 
 	slider_inline.MouseButton1Down:Connect(function()
 		cfg.dragging = true
+		library.active_slider = cfg
+		local mouse_pos = uis:GetMouseLocation()
+		local size_x = (mouse_pos.X - slider.AbsolutePosition.X) / slider.AbsoluteSize.X
+		local value = ((cfg.max - cfg.min) * size_x) + cfg.min
+		cfg.set(value)
 	end)
 
 	add.MouseButton1Down:Connect(function()
@@ -5013,21 +4979,46 @@ function library:colorpicker(properties)
 		cfg.set(nil, nil)
 	end
 
+	local function on_color_drag(input)
+		if dragging_sat or dragging_hue or dragging_alpha then
+			cfg.update_color()
+		end
+	end
+
 	alpha_inline.MouseButton1Down:Connect(function()
 		dragging_alpha = true
+		library.active_colorpicker_drag = on_color_drag
+		cfg.update_color()
 	end)
 
 	hue_inline.MouseButton1Down:Connect(function()
 		dragging_hue = true
+		library.active_colorpicker_drag = on_color_drag
+		cfg.update_color()
 	end)
 
 	sat_inline.MouseButton1Down:Connect(function()
 		dragging_sat = true
+		library.active_colorpicker_drag = on_color_drag
+		cfg.update_color()
 	end)
 
 	cfg.saved_color = hsv(h, s, v)
 	local selected = normal
 	flags[cfg.flag]["animation"] = "normal"
+
+	local function update_anim()
+		if selected ~= "normal" then
+			cfg.set(
+				hsv(
+					selected == "rainbow" and library.sin or h,
+					selected == "rainbow" and 1 or s,
+					selected == "fade" and library.sin or v
+				),
+				selected == "fade_alpha" and library.sin
+			)
+		end
+	end
 
 	rainbow.MouseButton1Down:Connect(function()
 		selected.BackgroundTransparency = 1
@@ -5036,6 +5027,7 @@ function library:colorpicker(properties)
 
 		flags[cfg.flag]["animation"] = "rainbow"
 		cfg.saved_color = hsv(s, s, v)
+		library.animated_colorpickers[cfg] = update_anim
 	end)
 
 	fade_alpha.MouseButton1Down:Connect(function()
@@ -5045,6 +5037,7 @@ function library:colorpicker(properties)
 
 		flags[cfg.flag]["animation"] = "fade_alpha"
 		cfg.saved_color = hsv(s, s, v)
+		library.animated_colorpickers[cfg] = update_anim
 	end)
 
 	fade.MouseButton1Down:Connect(function()
@@ -5054,6 +5047,7 @@ function library:colorpicker(properties)
 
 		flags[cfg.flag]["animation"] = "fade"
 		cfg.saved_color = hsv(s, s, v)
+		library.animated_colorpickers[cfg] = update_anim
 	end)
 
 	normal.MouseButton1Down:Connect(function()
@@ -5062,24 +5056,8 @@ function library:colorpicker(properties)
 		normal.BackgroundTransparency = 0
 
 		flags[cfg.flag]["animation"] = "normal"
+		library.animated_colorpickers[cfg] = nil
 		cfg.set(cfg.saved_color)
-	end)
-
-	uis.InputEnded:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 then
-			dragging_sat = false
-			dragging_hue = false
-			dragging_alpha = false
-		end
-	end)
-
-	uis.InputChanged:Connect(function(input)
-		if
-			(dragging_sat or dragging_hue or dragging_alpha)
-			and input.UserInputType == Enum.UserInputType.MouseMovement
-		then
-			cfg.update_color()
-		end
 	end)
 
 	cfg.set(cfg.color, cfg.alpha)
@@ -5087,22 +5065,6 @@ function library:colorpicker(properties)
 	self.previous_holder = parent
 
 	library.config_flags[cfg.flag] = cfg.set
-
-	task.spawn(function()
-		while true do
-			if selected ~= "normal" then
-				cfg.set(
-					hsv(
-						selected == "rainbow" and library.sin or h,
-						selected == "rainbow" and 1 or s,
-						selected == "fade" and library.sin or v
-					),
-					selected == "fade_alpha" and library.sin
-				)
-			end
-			task.wait()
-		end
-	end)
 
 	cfg.previous_holder = self.previous_holder
 	cfg.bottom_holder = self.bottom_holder
