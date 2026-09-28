@@ -1,0 +1,145 @@
+{
+  "userId": "2039485721",
+  "presetName": "2039485721_UDYX_Dark_Trench_Male",
+  "timestamp": "2026-09-28T16:58:14.154Z",
+  "avatarData": {
+    "scales": {
+      "height": 1,
+      "width": 1,
+      "head": 1,
+      "depth": 1,
+      "proportion": 0,
+      "bodyType": 0
+    },
+    "playerAvatarType": "R15",
+    "bodyColors": {
+      "headColorId": 125,
+      "torsoColorId": 125,
+      "rightArmColorId": 125,
+      "leftArmColorId": 125,
+      "rightLegColorId": 125,
+      "leftLegColorId": 125
+    },
+    "assets": [
+      {
+        "id": 86499666,
+        "name": "Woman Torso",
+        "assetType": {
+          "id": 27,
+          "name": "Torso"
+        },
+        "currentVersionId": 11411585575
+      },
+      {
+        "id": 86499698,
+        "name": "Woman Right Arm",
+        "assetType": {
+          "id": 28,
+          "name": "RightArm"
+        },
+        "currentVersionId": 11411587080
+      },
+      {
+        "id": 86499716,
+        "name": "Woman Left Arm",
+        "assetType": {
+          "id": 29,
+          "name": "LeftArm"
+        },
+        "currentVersionId": 14131544401
+      },
+      {
+        "id": 86499753,
+        "name": "Woman Left Leg",
+        "assetType": {
+          "id": 30,
+          "name": "LeftLeg"
+        },
+        "currentVersionId": 11411590293
+      },
+      {
+        "id": 86499793,
+        "name": "Woman Right Leg",
+        "assetType": {
+          "id": 31,
+          "name": "RightLeg"
+        },
+        "currentVersionId": 11411591752
+      },
+      {
+        "id": 382537569,
+        "name": "Black Jeans",
+        "assetType": {
+          "id": 12,
+          "name": "Pants"
+        },
+        "currentVersionId": 675848749
+      },
+      {
+        "id": 1103003368,
+        "name": "Orange Beanie with Black Hair",
+        "assetType": {
+          "id": 41,
+          "name": "HairAccessory"
+        },
+        "currentVersionId": 1531261049
+      },
+      {
+        "id": 4047884046,
+        "name": "Guitar Tee with Black Jacket",
+        "assetType": {
+          "id": 11,
+          "name": "Shirt"
+        },
+        "currentVersionId": 4820670598
+      },
+      {
+        "id": 11163789916,
+        "name": "The Winning Smile - Head",
+        "assetType": {
+          "id": 79,
+          "name": "DynamicHead"
+        },
+        "currentVersionId": 20951612855408,
+        "meta": {
+          "headShape": "WomanHead",
+          "version": 0
+        },
+        "supportsHeadShapes": true
+      },
+      {
+        "id": 11163856931,
+        "name": "The Winning Smile - MoodAnimation",
+        "assetType": {
+          "id": 78,
+          "name": "MoodAnimation"
+        },
+        "currentVersionId": 198512423624
+      }
+    ],
+    "defaultShirtApplied": false,
+    "defaultPantsApplied": false,
+    "emotes": [
+      {
+        "assetId": 3576686446,
+        "assetName": "Hello",
+        "position": 1
+      },
+      {
+        "assetId": 3360686498,
+        "assetName": "Stadium",
+        "position": 2
+      },
+      {
+        "assetId": 3576823880,
+        "assetName": "Point2",
+        "position": 3
+      },
+      {
+        "assetId": 3576968026,
+        "assetName": "Shrug",
+        "position": 4
+      }
+    ]
+  }
+}
