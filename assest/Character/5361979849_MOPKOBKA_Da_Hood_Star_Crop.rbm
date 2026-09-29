@@ -1,200 +1,200 @@
-{
-  "userId": "5361979849",
-  "presetName": "5361979849_MOPKOBKA_Da_Hood_Star_Crop",
-  "timestamp": "2026-09-28T16:58:14.621Z",
-  "avatarData": {
-    "scales": {
-      "height": 0.93,
-      "width": 0.8,
-      "head": 0.95,
-      "depth": 0.9,
-      "proportion": 0.15,
-      "bodyType": 0
-    },
-    "playerAvatarType": "R15",
-    "bodyColors": {
-      "headColorId": 1,
-      "torsoColorId": 1,
-      "rightArmColorId": 1,
-      "leftArmColorId": 1,
-      "rightLegColorId": 1,
-      "leftLegColorId": 1
-    },
-    "assets": [
-      {
-        "id": 86499666,
-        "name": "Woman Torso",
-        "assetType": {
-          "id": 27,
-          "name": "Torso"
-        },
-        "currentVersionId": 11411585575
-      },
-      {
-        "id": 86499698,
-        "name": "Woman Right Arm",
-        "assetType": {
-          "id": 28,
-          "name": "RightArm"
-        },
-        "currentVersionId": 11411587080
-      },
-      {
-        "id": 86499716,
-        "name": "Woman Left Arm",
-        "assetType": {
-          "id": 29,
-          "name": "LeftArm"
-        },
-        "currentVersionId": 14131544401
-      },
-      {
-        "id": 86500064,
-        "name": "Man Left Leg",
-        "assetType": {
-          "id": 30,
-          "name": "LeftLeg"
-        },
-        "currentVersionId": 11837975410
-      },
-      {
-        "id": 86500078,
-        "name": "Man Right Leg",
-        "assetType": {
-          "id": 31,
-          "name": "RightLeg"
-        },
-        "currentVersionId": 11837976476
-      },
-      {
-        "id": 2510238627,
-        "name": "Rthro Run",
-        "assetType": {
-          "id": 53,
-          "name": "RunAnimation"
-        },
-        "currentVersionId": 13806699940
-      },
-      {
-        "id": 11600331426,
-        "name": "Realistic - Walk",
-        "assetType": {
-          "id": 55,
-          "name": "WalkAnimation"
-        },
-        "currentVersionId": 14765519588
-      },
-      {
-        "id": 11885254509,
-        "name": "y2k cutecore adorable kawaii sanrio dolly cute 🎀",
-        "assetType": {
-          "id": 12,
-          "name": "Pants"
-        },
-        "currentVersionId": 15185336774
-      },
-      {
-        "id": 12945228337,
-        "name": "Lindsey - Head",
-        "assetType": {
-          "id": 79,
-          "name": "DynamicHead"
-        },
-        "currentVersionId": 2411398236135,
-        "supportsHeadShapes": true
-      },
-      {
-        "id": 12954144780,
-        "name": "Classic F - Mood",
-        "assetType": {
-          "id": 78,
-          "name": "MoodAnimation"
-        },
-        "currentVersionId": 24870059037017
-      },
-      {
-        "id": 71059169034143,
-        "name": "Long Light Blonde Curly Side Ponytail W Bangs",
-        "assetType": {
-          "id": 41,
-          "name": "HairAccessory"
-        },
-        "currentVersionId": 37001979202,
-        "meta": {
-          "order": 13,
-          "puffiness": 1,
-          "version": 1
-        }
-      },
-      {
-        "id": 103198957648025,
-        "name": "wings and heart aura (pink)",
-        "assetType": {
-          "id": 44,
-          "name": "ShoulderAccessory"
-        },
-        "currentVersionId": 9856778145397
-      },
-      {
-        "id": 113836391524843,
-        "name": "♡ cute confused chibi mask",
-        "assetType": {
-          "id": 42,
-          "name": "FaceAccessory"
-        },
-        "currentVersionId": 35382921662,
-        "meta": {
-          "position": {
-            "X": -0.02,
-            "Y": 0.16,
-            "Z": -0.02
-          },
-          "rotation": {
-            "X": 0,
-            "Y": 0,
-            "Z": 0
-          },
-          "scale": {
-            "X": 1,
-            "Y": 1,
-            "Z": 1
-          },
-          "version": 1
-        }
-      },
-      {
-        "id": 124306264241954,
-        "name": "coquette cute baby doll pink y2k lace ribbon top",
-        "assetType": {
-          "id": 11,
-          "name": "Shirt"
-        },
-        "currentVersionId": 32521791065
-      }
-    ],
-    "defaultShirtApplied": false,
-    "defaultPantsApplied": false,
-    "emotes": [
-      {
-        "assetId": 3576686446,
-        "assetName": "Hello",
-        "position": 1
-      },
-      {
-        "assetId": 3360686498,
-        "assetName": "Stadium",
-        "position": 2
-      },
-      {
-        "assetId": 3576823880,
-        "assetName": "Point2",
-        "position": 3
-      },
-      {
-        "assetId": 3576968026,
-        "assetName": "Shrug",
-        "position": 4
-      }
-    ]
-  }
+﻿{
+    "userId":  "5361979849",
+    "presetName":  "5361979849_MOPKOBKA_Da_Hood_Star_Crop",
+    "timestamp":  "2026-09-29T11:47:22.183Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.93,
+                                      "width":  0.8,
+                                      "head":  0.95,
+                                      "depth":  0.90,
+                                      "proportion":  0.15,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1,
+                                          "torsoColorId":  1,
+                                          "rightArmColorId":  1,
+                                          "leftArmColorId":  1,
+                                          "rightLegColorId":  1,
+                                          "leftLegColorId":  1
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  86500064,
+                                          "name":  "Man Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  11837975410
+                                      },
+                                      {
+                                          "id":  86500078,
+                                          "name":  "Man Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  11837976476
+                                      },
+                                      {
+                                          "id":  2510238627,
+                                          "name":  "Rthro Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  13806699940
+                                      },
+                                      {
+                                          "id":  11600331426,
+                                          "name":  "Realistic - Walk",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  14765519588
+                                      },
+                                      {
+                                          "id":  11885254509,
+                                          "name":  "y2k cutecore adorable kawaii sanrio dolly cute 🎀",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  15185336774
+                                      },
+                                      {
+                                          "id":  12945228337,
+                                          "name":  "Lindsey - Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  2411398236135,
+                                          "supportsHeadShapes":  true
+                                      },
+                                      {
+                                          "id":  12954144780,
+                                          "name":  "Classic F - Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  24870059037017
+                                      },
+                                      {
+                                          "id":  71059169034143,
+                                          "name":  "Long Light Blonde Curly Side Ponytail W Bangs",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  37001979202,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  103198957648025,
+                                          "name":  "wings and heart aura (pink)",
+                                          "assetType":  {
+                                                            "id":  44,
+                                                            "name":  "ShoulderAccessory"
+                                                        },
+                                          "currentVersionId":  9856778145397
+                                      },
+                                      {
+                                          "id":  113836391524843,
+                                          "name":  "♡ cute confused chibi mask",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  35382921662,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  -0.02,
+                                                                        "Y":  0.16,
+                                                                        "Z":  -0.02
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.0,
+                                                                     "Y":  1.0,
+                                                                     "Z":  1.0
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  124306264241954,
+                                          "name":  "coquette cute baby doll pink y2k lace ribbon top",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  32521791065
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  3576686446,
+                                          "assetName":  "Hello",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  3360686498,
+                                          "assetName":  "Stadium",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  3576823880,
+                                          "assetName":  "Point2",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  3576968026,
+                                          "assetName":  "Shrug",
+                                          "position":  4
+                                      }
+                                  ]
+                   }
 }

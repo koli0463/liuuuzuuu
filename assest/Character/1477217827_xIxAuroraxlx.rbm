@@ -1,0 +1,326 @@
+﻿{
+    "userId":  "1477217827",
+    "presetName":  "1477217827_xIxAuroraxlx",
+    "timestamp":  "2026-09-29T11:47:28.578Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.86,
+                                      "head":  1.0,
+                                      "depth":  0.93,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1025,
+                                          "torsoColorId":  1025,
+                                          "rightArmColorId":  1025,
+                                          "leftArmColorId":  1025,
+                                          "rightLegColorId":  1025,
+                                          "leftLegColorId":  1025
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  1191135761,
+                                          "name":  "Red Void Star",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  1631584659,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  -0.1,
+                                                                        "Y":  0.16,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  14.4
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  0.8,
+                                                                     "Y":  0.8,
+                                                                     "Z":  0.8
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  15540703516,
+                                          "name":  "3.0 Clover Bracelet - White Pearl Silver",
+                                          "assetType":  {
+                                                            "id":  67,
+                                                            "name":  "JacketAccessory"
+                                                        },
+                                          "currentVersionId":  20351801909,
+                                          "meta":  {
+                                                       "order":  1,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  17081325399,
+                                          "name":  "Confetti Leaf Crown",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  23952422608,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  0.8,
+                                                                     "Y":  0.8,
+                                                                     "Z":  0.8
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  17446787330,
+                                          "name":  "eyelashes",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  23177858462,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  -0.12,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.0,
+                                                                     "Y":  1.0,
+                                                                     "Z":  1.0
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  73073438542366,
+                                          "name":  "Cute - Idle Animation",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  23330266025831
+                                      },
+                                      {
+                                          "id":  74500938515101,
+                                          "name":  "Cute - Fall Animation",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  32138657436951
+                                      },
+                                      {
+                                          "id":  77135579774682,
+                                          "name":  "Remielle Dan - Zenless Zone Zero - Swim Animation",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  50014407080103
+                                      },
+                                      {
+                                          "id":  90277175857099,
+                                          "name":  "It-Girl Essential Model Anim Bun… - Walk Animation",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  46186063231140
+                                      },
+                                      {
+                                          "id":  96665593030785,
+                                          "name":  "(GLOWING) cute bright red glowy an… - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  59519096917889
+                                      },
+                                      {
+                                          "id":  107777528582374,
+                                          "name":  "🤍 pretty in plaid frilly dollette dress white",
+                                          "assetType":  {
+                                                            "id":  45,
+                                                            "name":  "FrontAccessory"
+                                                        },
+                                          "currentVersionId":  33097155304
+                                      },
+                                      {
+                                          "id":  111476936032056,
+                                          "name":  "It-Girl Essential Model Anim Bund… - Run Animation",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  13514599474896
+                                      },
+                                      {
+                                          "id":  117099007692404,
+                                          "name":  "Grunge Wolfcut Layered Hair",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  28243712346,
+                                          "meta":  {
+                                                       "order":  3,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  126765807132662,
+                                          "name":  "Cute - Jump Animation",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  24269692960260
+                                      },
+                                      {
+                                          "id":  127445497717417,
+                                          "name":  "Cute Leg Bow Red R ♥",
+                                          "assetType":  {
+                                                            "id":  66,
+                                                            "name":  "PantsAccessory"
+                                                        },
+                                          "currentVersionId":  45266178485834,
+                                          "meta":  {
+                                                       "order":  0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  128662906259078,
+                                          "name":  "Blush ♥",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  29736378295
+                                      },
+                                      {
+                                          "id":  129595215811160,
+                                          "name":  "It-Girl Essential Model Anim Bu… - Climb Animation",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  34482643074776
+                                      },
+                                      {
+                                          "id":  132021813111875,
+                                          "name":  "Holdable Karambit - Firebrand Crimson Red",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  29361233082
+                                      }
+                                  ],
+                       "defaultShirtApplied":  true,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  111045344666302,
+                                          "assetName":  "The Bass Trend",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  118013670622432,
+                                          "assetName":  "Needy WestPole Hero",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  78224683906191,
+                                          "assetName":  "Cute Feet Kicking",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  83999794592948,
+                                          "assetName":  "☆strike a pose idle profile",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  113903938327206,
+                                          "assetName":  "Drawing Heart ❤️",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  88501514630088,
+                                          "assetName":  "Scene Pose",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  81773345255689,
+                                          "assetName":  "Baddies Pic",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  110464191972242,
+                                          "assetName":  "Baddies Pic",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}

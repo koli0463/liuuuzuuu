@@ -1,0 +1,318 @@
+﻿{
+    "userId":  "10523593859",
+    "presetName":  "10523593859_miru552525",
+    "timestamp":  "2026-09-29T11:47:23.910Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.7,
+                                      "head":  0.98,
+                                      "depth":  0.85,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  12319712634,
+                                          "name":  "cinnamoroll cute soft y2k sanrio necklace chain",
+                                          "assetType":  {
+                                                            "id":  2,
+                                                            "name":  "TShirt"
+                                                        },
+                                          "currentVersionId":  15789500767
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  15348443679,
+                                          "name":  "Neck (Chibi Doll Girl)",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  20075539759
+                                      },
+                                      {
+                                          "id":  15506650416,
+                                          "name":  "Bunny Ears",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  20302522074
+                                      },
+                                      {
+                                          "id":  16738469346,
+                                          "name":  "Bunny Tail",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  22113916909
+                                      },
+                                      {
+                                          "id":  17618421308,
+                                          "name":  "☆ Blue Jellyfish Ruffle Bikini ☆",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  23456388841
+                                      },
+                                      {
+                                          "id":  77900712079957,
+                                          "name":  "(Animated) Cute Elf Heart Eyes - Cabeça dinâmica",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  29509501258073,
+                                          "meta":  {
+                                                       "staticFacialAnimation":  true,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  78306465669965,
+                                          "name":  "Bow cute",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  28894794371
+                                      },
+                                      {
+                                          "id":  79402164224368,
+                                          "name":  "pastel blue ruffle egl cuffs",
+                                          "assetType":  {
+                                                            "id":  65,
+                                                            "name":  "ShirtAccessory"
+                                                        },
+                                          "currentVersionId":  32168288328,
+                                          "meta":  {
+                                                       "order":  10,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  83937116921114,
+                                          "name":  "Popular - Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  27053350954
+                                      },
+                                      {
+                                          "id":  86580941913243,
+                                          "name":  "White Fluffy Long Spikey Wolf Cut Hair",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  26361896711,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  94521569618008,
+                                          "name":  "Woman Doll v2 - Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  35729105813
+                                      },
+                                      {
+                                          "id":  101283013151949,
+                                          "name":  "Kawaii pastel blue confetti decora face filter",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  31619700914
+                                      },
+                                      {
+                                          "id":  101839542383818,
+                                          "name":  "Popular - Idle",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  27053361658
+                                      },
+                                      {
+                                          "id":  112846298130522,
+                                          "name":  "Cute Winter Earmufs w Bows In Blue",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  27771914371
+                                      },
+                                      {
+                                          "id":  122092798602592,
+                                          "name":  "🤍 dollette plaid lace blue dress",
+                                          "assetType":  {
+                                                            "id":  45,
+                                                            "name":  "FrontAccessory"
+                                                        },
+                                          "currentVersionId":  30097475065
+                                      },
+                                      {
+                                          "id":  127824034248385,
+                                          "name":  "blush ",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  53148243091144
+                                      },
+                                      {
+                                          "id":  128475661806875,
+                                          "name":  "Popular - Swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  27053363701
+                                      },
+                                      {
+                                          "id":  130373407996664,
+                                          "name":  "Popular - Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  27053354640
+                                      },
+                                      {
+                                          "id":  133304526526319,
+                                          "name":  "Popular - Walk",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  27053365551
+                                      },
+                                      {
+                                          "id":  135810009801094,
+                                          "name":  "Popular - Climb",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  27053348301
+                                      },
+                                      {
+                                          "id":  136276875045281,
+                                          "name":  "Popular - Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  27053357007
+                                      },
+                                      {
+                                          "id":  138214327515475,
+                                          "name":  "Woman Doll v2 - Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  35729105774
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  139076155588413,
+                                          "assetName":  "cute sitting with legs out",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  92213847369194,
+                                          "assetName":  "❤️Cute Bouncy Needy Shake Dance",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  130522443607270,
+                                          "assetName":  "Cute Bouncy Hip Shake Dance",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  93415044607897,
+                                          "assetName":  "Shy Hip Bounce",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  74477507917814,
+                                          "assetName":  "Low Cortisol",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  85665834724929,
+                                          "assetName":  "intrusive awkward wave",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  112396548575695,
+                                          "assetName":  "Agnes Tachyon\u0027s Low Cortisol Dance (In Tempo) V1",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  129306314449009,
+                                          "assetName":  "Cry For Me [TREND] - Ironmouse",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}

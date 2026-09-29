@@ -1,0 +1,306 @@
+﻿{
+    "userId":  "8758488607",
+    "presetName":  "8758488607_btvl1233",
+    "timestamp":  "2026-09-29T11:47:24.774Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.92,
+                                      "width":  0.7,
+                                      "head":  0.95,
+                                      "depth":  0.85,
+                                      "proportion":  0.5,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  12728195237,
+                                          "name":  "White Pink Fluffy Bunny Ears (Original!)",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  16371849640
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  76458201003307,
+                                          "name":  "🌼3.0 Beautiful cottage-style pink plaid dress",
+                                          "assetType":  {
+                                                            "id":  45,
+                                                            "name":  "FrontAccessory"
+                                                        },
+                                          "currentVersionId":  31978997918
+                                      },
+                                      {
+                                          "id":  77455242814172,
+                                          "name":  "Cute Bouncy - Climb Animation",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  8732095400183
+                                      },
+                                      {
+                                          "id":  81980688988481,
+                                          "name":  "Cute Bouncy - Run Animation",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  61282621177384
+                                      },
+                                      {
+                                          "id":  90593668270604,
+                                          "name":  "cute drooling chibi - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  26617235495512
+                                      },
+                                      {
+                                          "id":  91092156169768,
+                                          "name":  "♡ : kawaii pink ribbon wrist cuffs",
+                                          "assetType":  {
+                                                            "id":  65,
+                                                            "name":  "ShirtAccessory"
+                                                        },
+                                          "currentVersionId":  32905359559,
+                                          "meta":  {
+                                                       "order":  2,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  91206221270256,
+                                          "name":  "Cute Bouncy - Fall Animation",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  32291825223581
+                                      },
+                                      {
+                                          "id":  95600559237676,
+                                          "name":  "valentine\u0027s day aura",
+                                          "assetType":  {
+                                                            "id":  44,
+                                                            "name":  "ShoulderAccessory"
+                                                        },
+                                          "currentVersionId":  28120862438
+                                      },
+                                      {
+                                          "id":  95742437875722,
+                                          "name":  "Pink Ombre Cute Anime Girl Hair",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  32548980159,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  99433589601581,
+                                          "name":  "Light Pink Paws - Right Shoe Accessory",
+                                          "assetType":  {
+                                                            "id":  71,
+                                                            "name":  "RightShoeAccessory"
+                                                        },
+                                          "currentVersionId":  50114658367923,
+                                          "meta":  {
+                                                       "order":  0,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  104760657169333,
+                                          "name":  "ଘ(੭ˊᵕˋ)੭ yarn kitty tail in white .. zZz !!",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  37589532659
+                                      },
+                                      {
+                                          "id":  105352644851803,
+                                          "name":  "Angel Wings",
+                                          "assetType":  {
+                                                            "id":  46,
+                                                            "name":  "BackAccessory"
+                                                        },
+                                          "currentVersionId":  25636482944067
+                                      },
+                                      {
+                                          "id":  105398643971664,
+                                          "name":  "Cute Bouncy - Walk Animation",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  10114296896271
+                                      },
+                                      {
+                                          "id":  112758171987743,
+                                          "name":  "Cute Bouncy - Idle Animation",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  62097780855663
+                                      },
+                                      {
+                                          "id":  116052871274191,
+                                          "name":  "Glasses",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  3143263688548
+                                      },
+                                      {
+                                          "id":  118199354392322,
+                                          "name":  "blush ♡",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  34006158455
+                                      },
+                                      {
+                                          "id":  118500398796969,
+                                          "name":  "Light Pink Paws - Left Shoe Accessory",
+                                          "assetType":  {
+                                                            "id":  70,
+                                                            "name":  "LeftShoeAccessory"
+                                                        },
+                                          "currentVersionId":  11430552889774,
+                                          "meta":  {
+                                                       "order":  1,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  121322491543545,
+                                          "name":  "cute pink ",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  29326697301
+                                      },
+                                      {
+                                          "id":  136190978898056,
+                                          "name":  "♡ Kawaii White Winter Shawl",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  25640822656
+                                      },
+                                      {
+                                          "id":  137674505873151,
+                                          "name":  "Cute Bouncy - Swim Animation",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  18561961148210
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  112758073578333,
+                                          "assetName":  "Bubbly Sit",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  3576686446,
+                                          "assetName":  "Hello",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  72947568152049,
+                                          "assetName":  "Cute Sit",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  95325218641213,
+                                          "assetName":  "Psycho Teddy ",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  70919402339484,
+                                          "assetName":  "Scuba Nick Wilde",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  76361248833307,
+                                          "assetName":  "Godly Aura fly pose idle",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  136895816311970,
+                                          "assetName":  "Cute Angry Idle 😡 [Dynamic Head]",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  104746315279105,
+                                          "assetName":  "Upside Down Leg Trap",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}

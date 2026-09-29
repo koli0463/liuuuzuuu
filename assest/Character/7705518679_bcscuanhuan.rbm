@@ -1,0 +1,268 @@
+﻿{
+    "userId":  "7705518679",
+    "presetName":  "7705518679_bcscuanhuan",
+    "timestamp":  "2026-09-29T11:47:25.329Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.91,
+                                      "width":  0.76,
+                                      "head":  0.95,
+                                      "depth":  0.88,
+                                      "proportion":  0.72,
+                                      "bodyType":  0.2
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  15300138009,
+                                          "name":  "☁️ Kawaii Bunny Blue Overalls",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  20007058562
+                                      },
+                                      {
+                                          "id":  15465102244,
+                                          "name":  "Hourglass white\u0026blue Angel Wing",
+                                          "assetType":  {
+                                                            "id":  46,
+                                                            "name":  "BackAccessory"
+                                                        },
+                                          "currentVersionId":  20242507951,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.14,
+                                                                     "Y":  1.14,
+                                                                     "Z":  1.14
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  16744204409,
+                                          "name":  "Bold Climb",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  22122174730
+                                      },
+                                      {
+                                          "id":  16744207822,
+                                          "name":  "Bold Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  22122179861
+                                      },
+                                      {
+                                          "id":  16744209868,
+                                          "name":  "Bold Idle",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  22122182839
+                                      },
+                                      {
+                                          "id":  16744212581,
+                                          "name":  "Bold Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  22122187091
+                                      },
+                                      {
+                                          "id":  16744214662,
+                                          "name":  "Bold Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  22122190512
+                                      },
+                                      {
+                                          "id":  16744217055,
+                                          "name":  "Bold Swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  22122194053
+                                      },
+                                      {
+                                          "id":  16744219182,
+                                          "name":  "Bold Walk",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  22122197237
+                                      },
+                                      {
+                                          "id":  93026819082827,
+                                          "name":  "Icey Blue and White Angel Halo",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  28020904975
+                                      },
+                                      {
+                                          "id":  99431762998902,
+                                          "name":  "Light Blue Anime Half-Up Hair",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  26109682152,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  103150699373275,
+                                          "name":  "Mini Plush - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  4707392000843
+                                      },
+                                      {
+                                          "id":  106064027871379,
+                                          "name":  "Soft Light Blue Anime Droopy Eyes - White",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  32304139309,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.02,
+                                                                     "Y":  1.02,
+                                                                     "Z":  1.02
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  135946279933398,
+                                          "name":  "Flying Cinnamoroll Pal(blue cloud)",
+                                          "assetType":  {
+                                                            "id":  44,
+                                                            "name":  "ShoulderAccessory"
+                                                        },
+                                          "currentVersionId":  25562047553
+                                      }
+                                  ],
+                       "defaultShirtApplied":  true,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  3576686446,
+                                          "assetName":  "Hello",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  3360686498,
+                                          "assetName":  "Stadium",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  3576823880,
+                                          "assetName":  "Point2",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  3576968026,
+                                          "assetName":  "Shrug",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  129575609080331,
+                                          "assetName":  "Cute Sit\t",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  76361248833307,
+                                          "assetName":  "Godly Aura fly pose idle",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  81204065393762,
+                                          "assetName":  "♡ cute shy withdrawn sit",
+                                          "position":  7
+                                      }
+                                  ]
+                   }
+}

@@ -1,0 +1,246 @@
+﻿{
+    "userId":  "500490901",
+    "presetName":  "500490901_RubySometimes",
+    "timestamp":  "2026-09-29T11:47:29.201Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.7,
+                                      "head":  0.95,
+                                      "depth":  0.85,
+                                      "proportion":  0.5,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  125,
+                                          "torsoColorId":  125,
+                                          "rightArmColorId":  125,
+                                          "leftArmColorId":  125,
+                                          "rightLegColorId":  125,
+                                          "leftLegColorId":  125
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  86499753,
+                                          "name":  "Woman Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  11411590293
+                                      },
+                                      {
+                                          "id":  139607718,
+                                          "name":  "Korblox Deathspeaker Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  14119157372
+                                      },
+                                      {
+                                          "id":  583635712,
+                                          "name":  "CW Ultimate: Ruby Rapture",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  927213881
+                                      },
+                                      {
+                                          "id":  619511648,
+                                          "name":  "Stylish Idle",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  13806699963
+                                      },
+                                      {
+                                          "id":  619512450,
+                                          "name":  "Stylish Swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  13806699975
+                                      },
+                                      {
+                                          "id":  619541458,
+                                          "name":  "Levitation Climb",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  13806699748
+                                      },
+                                      {
+                                          "id":  837011171,
+                                          "name":  "Cartoony Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  21158777202
+                                      },
+                                      {
+                                          "id":  1113740510,
+                                          "name":  "Vampire Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  13959546304
+                                      },
+                                      {
+                                          "id":  1113741192,
+                                          "name":  "Vampire Walk",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  13959565403
+                                      },
+                                      {
+                                          "id":  1113742092,
+                                          "name":  "Vampire Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  13959550412
+                                      },
+                                      {
+                                          "id":  11573370910,
+                                          "name":  "Anime - Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  17941687908
+                                      },
+                                      {
+                                          "id":  15093053680,
+                                          "name":  "Headless Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  20280670549
+                                      },
+                                      {
+                                          "id":  71713364447558,
+                                          "name":  "Bloom spring hood - pink (left)",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  30613358772
+                                      },
+                                      {
+                                          "id":  100778500636207,
+                                          "name":  "♡ windy wispy split pink green shoujo anime hair",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  29966699767,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  117427154061327,
+                                          "name":  "[💎] Blooming Petals [3.0] - Pink",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  27458223714
+                                      },
+                                      {
+                                          "id":  117559263227616,
+                                          "name":  "♡ mm2 easter bloom flora set cute spring dress",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  32524899667
+                                      }
+                                  ],
+                       "defaultShirtApplied":  true,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  5915776835,
+                                          "assetName":  "High Wave",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  4849499887,
+                                          "assetName":  "Happy",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  3576686446,
+                                          "assetName":  "Hello",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  3696764866,
+                                          "assetName":  "Cha-Cha",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  3576717965,
+                                          "assetName":  "Shy",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  3696759798,
+                                          "assetName":  "Superhero Reveal",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  7466046574,
+                                          "assetName":  "Quiet Waves",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  3716636630,
+                                          "assetName":  "Monkey",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}

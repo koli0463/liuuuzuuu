@@ -1,0 +1,246 @@
+﻿{
+    "userId":  "3874600804",
+    "presetName":  "3874600804_Tookisaki_Kurumi2007",
+    "timestamp":  "2026-09-29T11:47:25.052Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  1.03,
+                                      "width":  0.7,
+                                      "head":  0.99,
+                                      "depth":  0.85,
+                                      "proportion":  1.0,
+                                      "bodyType":  1.0
+                                  },
+                       "playerAvatarType":  "R6",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  113328094,
+                                          "name":  "Lightblox Jar",
+                                          "assetType":  {
+                                                            "id":  19,
+                                                            "name":  "Gear"
+                                                        },
+                                          "currentVersionId":  271692325
+                                      },
+                                      {
+                                          "id":  2807146071,
+                                          "name":  "Malivinius - Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  10763002762
+                                      },
+                                      {
+                                          "id":  4962607618,
+                                          "name":  "Dark Royal Crown",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  5913555060
+                                      },
+                                      {
+                                          "id":  13674055935,
+                                          "name":  "goth evade emo y2k black boy vamp ",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  17715575646
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  15214479618,
+                                          "name":  "Black Messy Hair",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  19886016234
+                                      },
+                                      {
+                                          "id":  15716540044,
+                                          "name":  "CROSS EARRINGS",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  20612063923
+                                      },
+                                      {
+                                          "id":  18538158932,
+                                          "name":  "adidas Sports - Swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  24574136831
+                                      },
+                                      {
+                                          "id":  18538164337,
+                                          "name":  "adidas Sports - Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  24574145528
+                                      },
+                                      {
+                                          "id":  79228897952860,
+                                          "name":  "Messy Spiky Anime Boys Emo Hair/Y2K (black) v18",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  32460716969,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  81517313956199,
+                                          "name":  "Tiny Void Head - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  33077931978483
+                                      },
+                                      {
+                                          "id":  91321960147976,
+                                          "name":  "black pant",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  32795303063
+                                      },
+                                      {
+                                          "id":  106810508343012,
+                                          "name":  "adidas Community Animation Pack",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  31800716741
+                                      },
+                                      {
+                                          "id":  111328258730652,
+                                          "name":  "Extreme Spiked Headphones",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  36913528740,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  0.8,
+                                                                     "Y":  0.8,
+                                                                     "Z":  0.8
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  123695349157584,
+                                          "name":  "adidas Community Animation Pack",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  31800680731
+                                      },
+                                      {
+                                          "id":  124765145869332,
+                                          "name":  "adidas Community Animation Pack",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  31800777477
+                                      },
+                                      {
+                                          "id":  126354114956642,
+                                          "name":  "adidas Community Animation Pack",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  31800705714
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  87963462118126,
+                                          "assetName":  "Cute Bouncy Hip Shake Dance",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  7202900159,
+                                          "assetName":  "Wake Up Call - KSI",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  101573394483995,
+                                          "assetName":  "Effortless Aura Pose",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  124432816892447,
+                                          "assetName":  "Meow Meow 💘",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  106454952665088,
+                                          "assetName":  "Floating Goddess (Matching Floating Adonis) 🖤!",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  72753598082403,
+                                          "assetName":  "⸸꒱ cute knee sit idle pose",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  111426928948833,
+                                          "assetName":  "Floating on clouds",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  108221503648290,
+                                          "assetName":  "Scene Roblox Profile Pose",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}

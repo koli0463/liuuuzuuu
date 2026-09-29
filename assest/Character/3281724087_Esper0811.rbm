@@ -1,0 +1,241 @@
+﻿{
+    "userId":  "3281724087",
+    "presetName":  "3281724087_Esper0811",
+    "timestamp":  "2026-09-29T11:47:27.977Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.92,
+                                      "width":  0.7,
+                                      "head":  0.95,
+                                      "depth":  0.85,
+                                      "proportion":  0.5,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  754635032,
+                                          "name":  "Mage Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  13806699806
+                                      },
+                                      {
+                                          "id":  754636298,
+                                          "name":  "Mage Walk",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  13806699828
+                                      },
+                                      {
+                                          "id":  754636589,
+                                          "name":  "Mage Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  13806699812
+                                      },
+                                      {
+                                          "id":  754637084,
+                                          "name":  "Mage Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  21158786272
+                                      },
+                                      {
+                                          "id":  754637456,
+                                          "name":  "Mage Idle",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  13943508738
+                                      },
+                                      {
+                                          "id":  754638471,
+                                          "name":  "Mage Swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  13806699826
+                                      },
+                                      {
+                                          "id":  754639239,
+                                          "name":  "Mage Climb",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  13806699793
+                                      },
+                                      {
+                                          "id":  10550751413,
+                                          "name":  "COCOMELON 🥥 🍉",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  13210475564
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  18876224761,
+                                          "name":  "holdable kawaii cutesy bunny plushie",
+                                          "assetType":  {
+                                                            "id":  65,
+                                                            "name":  "ShirtAccessory"
+                                                        },
+                                          "currentVersionId":  25103391175,
+                                          "meta":  {
+                                                       "order":  10,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  79536422048878,
+                                          "name":  "Woman Blocky Doll - Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  34286450405
+                                      },
+                                      {
+                                          "id":  79633643165182,
+                                          "name":  "♡୨ৎ cute pink heart struck miffy bunny w bow",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  35283427835139
+                                      },
+                                      {
+                                          "id":  86011910816560,
+                                          "name":  "Woman Blocky Doll - Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  34286450120
+                                      },
+                                      {
+                                          "id":  91479247090619,
+                                          "name":  "Woman Blocky Doll - Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  34286450292
+                                      },
+                                      {
+                                          "id":  102092914777402,
+                                          "name":  "Woman Blocky Doll - Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  34286450439
+                                      },
+                                      {
+                                          "id":  124139930702692,
+                                          "name":  "super happy face eyelashes fangs - Cabeza dinámica",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  55725453935425
+                                      },
+                                      {
+                                          "id":  127756161469740,
+                                          "name":  "🤍 pink ribbon + cute heart clip",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  30709953977
+                                      },
+                                      {
+                                          "id":  133391142349126,
+                                          "name":  "Woman Blocky Doll - Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  34286451709
+                                      },
+                                      {
+                                          "id":  135048766935760,
+                                          "name":  "Cute Long Hime Cut Hair (White)",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  17843867642642,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      }
+                                  ],
+                       "defaultShirtApplied":  true,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  138266689765563,
+                                          "assetName":  "I got that feeling",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  72947568152049,
+                                          "assetName":  "Cute Sit",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  95325218641213,
+                                          "assetName":  "Psycho Teddy ",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  110170230382247,
+                                          "assetName":  "/headless /koblox .... kind of",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  70919402339484,
+                                          "assetName":  "Scuba Nick Wilde",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  140635953527818,
+                                          "assetName":  "little fight with punches",
+                                          "position":  6
+                                      }
+                                  ]
+                   }
+}

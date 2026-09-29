@@ -1,0 +1,333 @@
+﻿{
+    "userId":  "1552270686",
+    "presetName":  "1552270686_NyaNeedsYou",
+    "timestamp":  "2026-09-29T11:47:26.460Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.91,
+                                      "width":  0.85,
+                                      "head":  1.0,
+                                      "depth":  0.92,
+                                      "proportion":  0.5,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  150381051,
+                                          "name":  "Spring Fairy",
+                                          "assetType":  {
+                                                            "id":  44,
+                                                            "name":  "ShoulderAccessory"
+                                                        },
+                                          "currentVersionId":  28261354187,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.25,
+                                                                        "Y":  -0.25,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.0,
+                                                                     "Y":  1.0,
+                                                                     "Z":  1.0
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  14952181170,
+                                          "name":  "White \u0026 Black Cropped Striped Knitted Sweater",
+                                          "assetType":  {
+                                                            "id":  67,
+                                                            "name":  "JacketAccessory"
+                                                        },
+                                          "currentVersionId":  19521982628,
+                                          "meta":  {
+                                                       "order":  12,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  15653723118,
+                                          "name":  "Chibi Doll Girl Neck3",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  20518335527
+                                      },
+                                      {
+                                          "id":  18475615867,
+                                          "name":  "♡ baddie lashes",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  24480310031,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  -0.08,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.0,
+                                                                     "Y":  1.0,
+                                                                     "Z":  1.0
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  18538153691,
+                                          "name":  "adidas Sports - Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  24574128584
+                                      },
+                                      {
+                                          "id":  18538158932,
+                                          "name":  "adidas Sports - Swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  24574136831
+                                      },
+                                      {
+                                          "id":  18942990676,
+                                          "name":  "♡ : black paw hair clip",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  25210388480
+                                      },
+                                      {
+                                          "id":  74177284537047,
+                                          "name":  "Wavy Anime Ponytail Boy Hair (Black)",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  29904871245,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  78668034869322,
+                                          "name":  "Cute Kawaii - Fall Animation",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  23678766083544
+                                      },
+                                      {
+                                          "id":  92265803341463,
+                                          "name":  "Kemono Furry [Colorable] - Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  26777529060
+                                      },
+                                      {
+                                          "id":  101882274396597,
+                                          "name":  "♡: Medias cute de gatito con blush",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  33275330311
+                                      },
+                                      {
+                                          "id":  105971633771130,
+                                          "name":  "Kemono Furry [Colorable] - Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  26777529232
+                                      },
+                                      {
+                                          "id":  106978852081669,
+                                          "name":  "Black Beach Top",
+                                          "assetType":  {
+                                                            "id":  65,
+                                                            "name":  "ShirtAccessory"
+                                                        },
+                                          "currentVersionId":  26067518110,
+                                          "meta":  {
+                                                       "order":  10,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  108733291201617,
+                                          "name":  "smug dolly lashes cute moe face - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  37740174682
+                                      },
+                                      {
+                                          "id":  118303475394830,
+                                          "name":  "Roblox diva 2.0 Light - Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  31721819973
+                                      },
+                                      {
+                                          "id":  123695349157584,
+                                          "name":  "adidas Community Animation Pack",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  31800680731
+                                      },
+                                      {
+                                          "id":  126354114956642,
+                                          "name":  "adidas Community Animation Pack",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  31800705714
+                                      },
+                                      {
+                                          "id":  127241951574732,
+                                          "name":  "Roblox diva 2.0 Light - Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  31721819899
+                                      },
+                                      {
+                                          "id":  133724789200583,
+                                          "name":  "Cute Black Bikini ♥",
+                                          "assetType":  {
+                                                            "id":  69,
+                                                            "name":  "ShortsAccessory"
+                                                        },
+                                          "currentVersionId":  29530593772,
+                                          "meta":  {
+                                                       "order":  7,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  134717005197652,
+                                          "name":  "Model Doll Mannequin [Colorable] - Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  30189425631
+                                      },
+                                      {
+                                          "id":  134893286312907,
+                                          "name":  "Cute Kawaii - Walk Animation",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  22511706468487
+                                      },
+                                      {
+                                          "id":  136276875045281,
+                                          "name":  "Popular - Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  27053357007
+                                      }
+                                  ],
+                       "defaultShirtApplied":  true,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  104142334418357,
+                                          "assetName":  "[BEST] It\u0027s Gangnam Style!",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  95325218641213,
+                                          "assetName":  "Psycho Teddy ",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  132384701706046,
+                                          "assetName":  "💀MM2 Fake Dead",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  78272860047654,
+                                          "assetName":  "Hold Onto",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  108644020480886,
+                                          "assetName":  "One-legged Snare Trap",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  87963462118126,
+                                          "assetName":  "Cute Bouncy Hip Shake Dance",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  129004230974884,
+                                          "assetName":  "Cute Needy Jiggly Shake Dance",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  100278770251984,
+                                          "assetName":  "Cute Kawaii Emo Y2K Girl Deep Low Bend Pose ( 4 )",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}

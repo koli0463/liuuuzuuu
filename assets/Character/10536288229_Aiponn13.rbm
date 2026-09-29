@@ -1,0 +1,341 @@
+﻿{
+    "userId":  "10536288229",
+    "presetName":  "10536288229_Aiponn13",
+    "timestamp":  "2026-09-29T11:47:27.423Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  1.0,
+                                      "width":  0.95,
+                                      "head":  0.95,
+                                      "depth":  0.98,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  1018552770,
+                                          "name":  "Bubbly Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  13806699640
+                                      },
+                                      {
+                                          "id":  1018553897,
+                                          "name":  "Bubbly Idle",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  13855234004
+                                      },
+                                      {
+                                          "id":  1018554245,
+                                          "name":  "Bubbly Swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  13806699645
+                                      },
+                                      {
+                                          "id":  1018554668,
+                                          "name":  "Bubbly Climb",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  13806699626
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  16086841833,
+                                          "name":  "blushy knees",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  21151106877
+                                      },
+                                      {
+                                          "id":  18565658617,
+                                          "name":  "Black Bunny Rabbit Tail",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  24617275344
+                                      },
+                                      {
+                                          "id":  76771439328614,
+                                          "name":  "Doll Platform Shoes - Right Shoe Accessory",
+                                          "assetType":  {
+                                                            "id":  71,
+                                                            "name":  "RightShoeAccessory"
+                                                        },
+                                          "currentVersionId":  30186571723,
+                                          "meta":  {
+                                                       "order":  1,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  84246407938129,
+                                          "name":  "Closed Eyes - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  34497542847664
+                                      },
+                                      {
+                                          "id":  85137998700020,
+                                          "name":  "Elegant Short Pigtails in Black",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  30836899049,
+                                          "meta":  {
+                                                       "order":  5,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  86952016572779,
+                                          "name":  "Glasses",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  37472875100,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  -0.13,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.0,
+                                                                     "Y":  1.0,
+                                                                     "Z":  1.0
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  89892588488089,
+                                          "name":  "Black Oversized Cropped Off Shoulder Hoodie",
+                                          "assetType":  {
+                                                            "id":  67,
+                                                            "name":  "JacketAccessory"
+                                                        },
+                                          "currentVersionId":  28630189116,
+                                          "meta":  {
+                                                       "order":  4,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  90018373285533,
+                                          "name":  "Doll Platform Shoes - Left Shoe Accessory",
+                                          "assetType":  {
+                                                            "id":  70,
+                                                            "name":  "LeftShoeAccessory"
+                                                        },
+                                          "currentVersionId":  30186571654,
+                                          "meta":  {
+                                                       "order":  0,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  90600642507141,
+                                          "name":  "Model Cat - White - Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  28088839318
+                                      },
+                                      {
+                                          "id":  92030603938757,
+                                          "name":  "Y2K Fairy Grunge Igari Ponytail (Black)",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  33763489593,
+                                          "meta":  {
+                                                       "order":  6,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  92512430867347,
+                                          "name":  "Valentine Knit Heart Tube Top Cutout in Black",
+                                          "assetType":  {
+                                                            "id":  65,
+                                                            "name":  "ShirtAccessory"
+                                                        },
+                                          "currentVersionId":  29106714240,
+                                          "meta":  {
+                                                       "order":  3,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  98010516952459,
+                                          "name":  "Blush",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  35645804558
+                                      },
+                                      {
+                                          "id":  112639760513612,
+                                          "name":  "🐰 Bunny Ears 🐰",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  27122336376
+                                      },
+                                      {
+                                          "id":  114206707267907,
+                                          "name":  "Model Cat - White - Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  28088839270
+                                      },
+                                      {
+                                          "id":  116640907802005,
+                                          "name":  "Model Cat - White - Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  28088839236
+                                      },
+                                      {
+                                          "id":  118327935735436,
+                                          "name":  "gothic ruffle choker w gem + necklace 3.0 white",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  35164499538,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  -0.05,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.0,
+                                                                     "Y":  1.0,
+                                                                     "Z":  1.0
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  130373407996664,
+                                          "name":  "Popular - Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  27053354640
+                                      },
+                                      {
+                                          "id":  133304526526319,
+                                          "name":  "Popular - Walk",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  27053365551
+                                      },
+                                      {
+                                          "id":  133724789200583,
+                                          "name":  "Cute Black Bikini ♥",
+                                          "assetType":  {
+                                                            "id":  69,
+                                                            "name":  "ShortsAccessory"
+                                                        },
+                                          "currentVersionId":  29530593772,
+                                          "meta":  {
+                                                       "order":  2,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  136276875045281,
+                                          "name":  "Popular - Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  27053357007
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  137274379679595,
+                                          "assetName":  "♡ Cute Cat Paw Sitting Idle Pose",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  83917238288783,
+                                          "assetName":  "cute dancy dance",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  3576686446,
+                                          "assetName":  "Hello",
+                                          "position":  3
+                                      }
+                                  ]
+                   }
+}

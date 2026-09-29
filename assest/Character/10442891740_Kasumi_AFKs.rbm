@@ -1,0 +1,287 @@
+﻿{
+    "userId":  "10442891740",
+    "presetName":  "10442891740_Kasumi_AFKs",
+    "timestamp":  "2026-09-29T11:47:23.312Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.7,
+                                      "head":  0.95,
+                                      "depth":  0.85,
+                                      "proportion":  1.0,
+                                      "bodyType":  0.25
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  1018552770,
+                                          "name":  "Bubbly Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  13806699640
+                                      },
+                                      {
+                                          "id":  1018553240,
+                                          "name":  "Bubbly Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  21158102573
+                                      },
+                                      {
+                                          "id":  8248195885,
+                                          "name":  "🍰 Pastel blue heart kawaii cardigan",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  10200248773
+                                      },
+                                      {
+                                          "id":  13292934901,
+                                          "name":  "Full Bangs with Butterfly Hairpin(Sky Blue)",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  17171312995
+                                      },
+                                      {
+                                          "id":  13998107412,
+                                          "name":  "Blue Kawaii Cat Earmuffs ",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  18184073071
+                                      },
+                                      {
+                                          "id":  14098900300,
+                                          "name":  "♡ tropical summer necklace",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  18328226341
+                                      },
+                                      {
+                                          "id":  14315978454,
+                                          "name":  "Low Glasses",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  18635282021
+                                      },
+                                      {
+                                          "id":  14488197116,
+                                          "name":  "Faceless - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  18875259015
+                                      },
+                                      {
+                                          "id":  14545712584,
+                                          "name":  "♡ blue arm warmers",
+                                          "assetType":  {
+                                                            "id":  67,
+                                                            "name":  "JacketAccessory"
+                                                        },
+                                          "currentVersionId":  18955003652,
+                                          "meta":  {
+                                                       "order":  0,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  14704228778,
+                                          "name":  "white shorts w knee blush",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  19175668918
+                                      },
+                                      {
+                                          "id":  14842204595,
+                                          "name":  "Blocky Girl (V3) - Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  19369259409
+                                      },
+                                      {
+                                          "id":  14842204640,
+                                          "name":  "Blocky Girl (V3) - Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  19369259467
+                                      },
+                                      {
+                                          "id":  15081781815,
+                                          "name":  "Chibi Doll Mini Skirt ♡ Blue / Pleated",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  19700653645
+                                      },
+                                      {
+                                          "id":  16724001949,
+                                          "name":  "Kawaii Happy Nyan Face - Blue",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  22087469768
+                                      },
+                                      {
+                                          "id":  16744204409,
+                                          "name":  "Bold Climb",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  22122174730
+                                      },
+                                      {
+                                          "id":  16744219182,
+                                          "name":  "Bold Walk",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  22122197237
+                                      },
+                                      {
+                                          "id":  18194360579,
+                                          "name":  "Sky Blue Mermaid Waves w/ Bangs",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  24042743819,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  18538150608,
+                                          "name":  "adidas Sports - Idle",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  24574383955
+                                      },
+                                      {
+                                          "id":  128475661806875,
+                                          "name":  "Popular - Swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  27053363701
+                                      },
+                                      {
+                                          "id":  136276875045281,
+                                          "name":  "Popular - Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  27053357007
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  85665834724929,
+                                          "assetName":  "intrusive awkward wave",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  70919402339484,
+                                          "assetName":  "Scuba Nick Wilde",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  125243870523332,
+                                          "assetName":  "۶ৎ doll cutely sitting pose",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  97058120469317,
+                                          "assetName":  "Lie Down",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  134314320475769,
+                                          "assetName":  "Star sleeping face down ⭐💤",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  104628550103800,
+                                          "assetName":  "Child\u0027s Tantrum",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  4940597758,
+                                          "assetName":  "Cower",
+                                          "position":  8
+                                      },
+                                      {
+                                          "assetId":  3576717965,
+                                          "assetName":  "Shy",
+                                          "position":  2
+                                      }
+                                  ]
+                   }
+}

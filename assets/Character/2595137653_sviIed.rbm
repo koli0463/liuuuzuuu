@@ -1,0 +1,227 @@
+﻿{
+    "userId":  "2595137653",
+    "presetName":  "2595137653_sviIed",
+    "timestamp":  "2026-09-29T11:47:28.857Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.8,
+                                      "head":  1.0,
+                                      "depth":  0.90,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1025,
+                                          "torsoColorId":  1025,
+                                          "rightArmColorId":  1025,
+                                          "leftArmColorId":  1025,
+                                          "rightLegColorId":  1025,
+                                          "leftLegColorId":  1025
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  1029025,
+                                          "name":  "The Classic ROBLOX Fedora",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  8443736010
+                                      },
+                                      {
+                                          "id":  1125510,
+                                          "name":  "The Void Star",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  883359880
+                                      },
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  439945661,
+                                          "name":  "Silver King of the Night",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  909429810
+                                      },
+                                      {
+                                          "id":  2510238627,
+                                          "name":  "Rthro Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  13806699940
+                                      },
+                                      {
+                                          "id":  11573370910,
+                                          "name":  "Anime - Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  17941687908
+                                      },
+                                      {
+                                          "id":  15093053680,
+                                          "name":  "Headless Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  20280670549
+                                      },
+                                      {
+                                          "id":  17597145020,
+                                          "name":  "cyber blood hk y2k dahood swag punk emo sanrio",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  23423579972
+                                      },
+                                      {
+                                          "id":  70664337553437,
+                                          "name":  "studded gothic emo choker in black",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  51638177647870
+                                      },
+                                      {
+                                          "id":  100658260642141,
+                                          "name":  "cute gloomy bear sticky note in black",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  41270476836041
+                                      },
+                                      {
+                                          "id":  101477403513463,
+                                          "name":  "studded gothic emo bikini top in black",
+                                          "assetType":  {
+                                                            "id":  45,
+                                                            "name":  "FrontAccessory"
+                                                        },
+                                          "currentVersionId":  49241466296437
+                                      },
+                                      {
+                                          "id":  111762560476620,
+                                          "name":  "cute straight latina half up half down in black ♡",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  69290771053167,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  117825516420618,
+                                          "name":  "Newside Bangs Combo in Orignal Black",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  31273481396
+                                      },
+                                      {
+                                          "id":  123289164352206,
+                                          "name":  "꒰・black cutesy bow sparkle aura ♡",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  35057104855
+                                      },
+                                      {
+                                          "id":  134273443434281,
+                                          "name":  "studded gothic emo bikini skirt in black",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  3570323212207
+                                      }
+                                  ],
+                       "defaultShirtApplied":  true,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  81443515204014,
+                                          "assetName":  "What Is Love? - TWICE",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  111054822479770,
+                                          "assetName":  "timid doll idle profile pose",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  93992976051758,
+                                          "assetName":  "Adorable Heart Hands Profile Pose",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  5104377791,
+                                          "assetName":  "Hero Landing",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  106075697832065,
+                                          "assetName":  "Adorbs Cute Girly Profile Pose",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  80984120283465,
+                                          "assetName":  "Bust A Move",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  85913265750993,
+                                          "assetName":  "🔥I came to GROOVE🔥[A peanut butter house] 4\u002710",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  113818946774721,
+                                          "assetName":  "Arona Dance Meme",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}

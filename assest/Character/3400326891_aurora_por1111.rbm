@@ -1,0 +1,337 @@
+﻿{
+    "userId":  "3400326891",
+    "presetName":  "3400326891_aurora_por1111",
+    "timestamp":  "2026-09-29T11:47:26.734Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.85,
+                                      "head":  1.0,
+                                      "depth":  0.92,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  11360863184,
+                                          "name":  "Knitted Arm Warmers Very White",
+                                          "assetType":  {
+                                                            "id":  67,
+                                                            "name":  "JacketAccessory"
+                                                        },
+                                          "currentVersionId":  14387657743,
+                                          "meta":  {
+                                                       "order":  12,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  16925635403,
+                                          "name":  "victorian doll ꒰♱꒱ white ♡",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  22397986151
+                                      },
+                                      {
+                                          "id":  17340044837,
+                                          "name":  "adidas White Pleated Skirt",
+                                          "assetType":  {
+                                                            "id":  66,
+                                                            "name":  "PantsAccessory"
+                                                        },
+                                          "currentVersionId":  23010847369,
+                                          "meta":  {
+                                                       "order":  6,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  17760391387,
+                                          "name":  "White Dress",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  23676383032
+                                      },
+                                      {
+                                          "id":  17764311021,
+                                          "name":  "White Anime Loose Wavy Hair",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  23682131166,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  73488864835464,
+                                          "name":  "Doll 3.0 - Walk Animation",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  28863292710723
+                                      },
+                                      {
+                                          "id":  74440629589038,
+                                          "name":  "🦄 kawaii pastel starry pink eyes - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  20052366937669
+                                      },
+                                      {
+                                          "id":  77028393779712,
+                                          "name":  "Cute White/Pink Baby Kitty Tail",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  29997977360
+                                      },
+                                      {
+                                          "id":  86104031977265,
+                                          "name":  "Doll 3.0 - Climb Animation",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  57941264789860
+                                      },
+                                      {
+                                          "id":  90126309265051,
+                                          "name":  "Doll 3.0 - Run Animation",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  7536098550425
+                                      },
+                                      {
+                                          "id":  94999990549392,
+                                          "name":  "Anime Stylish Messy Girl Bangs (White)",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  37821280677,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  -0.05,
+                                                                        "Z":  0.04
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.0,
+                                                                     "Y":  1.0,
+                                                                     "Z":  1.0
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  99977942446739,
+                                          "name":  "Doll 3.0 - Fall Animation",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  60106344582833
+                                      },
+                                      {
+                                          "id":  103328121341912,
+                                          "name":  "Crown Angel Wings White",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  31477483965695
+                                      },
+                                      {
+                                          "id":  108197702186154,
+                                          "name":  "White Gothic Lace Blindfold w/ Charm",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  42171143488529,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  -0.08,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.07,
+                                                                     "Y":  1.07,
+                                                                     "Z":  1.07
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  109401010312897,
+                                          "name":  "Doll 3.0 - Idle Animation",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  7087198605966
+                                      },
+                                      {
+                                          "id":  109767793840625,
+                                          "name":  "white ruffle egl cuffs",
+                                          "assetType":  {
+                                                            "id":  65,
+                                                            "name":  "ShirtAccessory"
+                                                        },
+                                          "currentVersionId":  31438344565,
+                                          "meta":  {
+                                                       "order":  10,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  115745153758680,
+                                          "name":  "Blush Fashion Doll - Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  25773541388
+                                      },
+                                      {
+                                          "id":  118036998124357,
+                                          "name":  "Doll 3.0 - Jump Animation",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  28538997190332
+                                      },
+                                      {
+                                          "id":  118303475394830,
+                                          "name":  "Roblox diva 2.0 Light - Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  31721819973
+                                      },
+                                      {
+                                          "id":  127241951574732,
+                                          "name":  "Roblox diva 2.0 Light - Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  31721819899
+                                      },
+                                      {
+                                          "id":  133772806040245,
+                                          "name":  "Doll 3.0 - Swim Animation",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  14825431065639
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  122545939134570,
+                                          "assetName":  "Crossed Arm Hip Sway",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  126529053628312,
+                                          "assetName":  "Spice Jersey Bounce",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  17746270218,
+                                          "assetName":  "Sturdy Dance - Ice Spice",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  16553249658,
+                                          "assetName":  "Mae Stephens - Piano Hands",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  98603994713783,
+                                          "assetName":  "Rat Dance",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  122829513155529,
+                                          "assetName":  "Hype Boy - NewJeans",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  14353423348,
+                                          "assetName":  "Baby Queen - Bouncy Twirl",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}

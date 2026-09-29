@@ -1,0 +1,146 @@
+﻿{
+    "userId":  "151597600",
+    "presetName":  "151597600_kiyetso",
+    "timestamp":  "2026-09-29T11:47:21.230Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  1.0,
+                                      "width":  0.7,
+                                      "head":  0.95,
+                                      "depth":  0.85,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  51346471,
+                                          "name":  "Twin Kodachi",
+                                          "assetType":  {
+                                                            "id":  19,
+                                                            "name":  "Gear"
+                                                        },
+                                          "currentVersionId":  1196535922
+                                      },
+                                      {
+                                          "id":  1016143686,
+                                          "name":  "White Sparkle Time Fedora",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  1431310039
+                                      },
+                                      {
+                                          "id":  11573370910,
+                                          "name":  "Anime - Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  17941687908
+                                      },
+                                      {
+                                          "id":  11979364434,
+                                          "name":  "Cute Rabbit Hat with long ears",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  15315834767
+                                      },
+                                      {
+                                          "id":  12285606043,
+                                          "name":  "all black pants",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  15742124883
+                                      },
+                                      {
+                                          "id":  15093053680,
+                                          "name":  "Headless Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  20280670549
+                                      },
+                                      {
+                                          "id":  90950053938184,
+                                          "name":  "み",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  65052056158512
+                                      },
+                                      {
+                                          "id":  115965990214268,
+                                          "name":  "emo black messy anime hair",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  30962152511,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "version":  1
+                                                   }
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  85092320680319,
+                                          "assetName":  "Nonchalant Sit",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  109138238868288,
+                                          "assetName":  "xaviersobased",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  78758922757947,
+                                          "assetName":  "[MIRA] Kicking Feet Sit",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  130655908439646,
+                                          "assetName":  "Beat Da Koto Nai",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  104131847054135,
+                                          "assetName":  "Jamal Brazil Groove",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  94014354724971,
+                                          "assetName":  "Soft Headpats",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  125328720114284,
+                                          "assetName":  "Nervy Dance",
+                                          "position":  8
+                                      },
+                                      {
+                                          "assetId":  122052794867917,
+                                          "assetName":  "Reese Roll Setalcix",
+                                          "position":  5
+                                      }
+                                  ]
+                   }
+}

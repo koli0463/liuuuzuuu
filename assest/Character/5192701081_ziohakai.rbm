@@ -1,0 +1,269 @@
+﻿{
+    "userId":  "5192701081",
+    "presetName":  "5192701081_ziohakai",
+    "timestamp":  "2026-09-29T11:47:26.174Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.7,
+                                      "head":  1.0,
+                                      "depth":  0.85,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  619509955,
+                                          "name":  "Stylish Climb",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  13806699959
+                                      },
+                                      {
+                                          "id":  619511417,
+                                          "name":  "Stylish Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  13806699971
+                                      },
+                                      {
+                                          "id":  619511648,
+                                          "name":  "Stylish Idle",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  13806699963
+                                      },
+                                      {
+                                          "id":  619511974,
+                                          "name":  "Stylish Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  13806699972
+                                      },
+                                      {
+                                          "id":  619512153,
+                                          "name":  "Stylish Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  13806699969
+                                      },
+                                      {
+                                          "id":  619512450,
+                                          "name":  "Stylish Swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  13806699975
+                                      },
+                                      {
+                                          "id":  619512767,
+                                          "name":  "Stylish Walk",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  13806699983
+                                      },
+                                      {
+                                          "id":  10871965173,
+                                          "name":  "Ruffle Puffy Long Arm Sleeves White",
+                                          "assetType":  {
+                                                            "id":  67,
+                                                            "name":  "JacketAccessory"
+                                                        },
+                                          "currentVersionId":  13657496947,
+                                          "meta":  {
+                                                       "order":  2,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  14627209808,
+                                          "name":  "White Christmas Y2k Aesthetic Shorts 90% OFF",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  19067395094
+                                      },
+                                      {
+                                          "id":  18313526640,
+                                          "name":  "White bow",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  24231958834
+                                      },
+                                      {
+                                          "id":  18878360046,
+                                          "name":  "White Ruffled Crop Top",
+                                          "assetType":  {
+                                                            "id":  65,
+                                                            "name":  "ShirtAccessory"
+                                                        },
+                                          "currentVersionId":  25106861399,
+                                          "meta":  {
+                                                       "order":  1,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  70426629957671,
+                                          "name":  "Simple Butterfly Drippy Necklace",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  29331719098
+                                      },
+                                      {
+                                          "id":  77302733250920,
+                                          "name":  "White Anime Cat Hair",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  29891966904,
+                                          "meta":  {
+                                                       "order":  3,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  79477522770221,
+                                          "name":  "White Sweater",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  25915621365
+                                      },
+                                      {
+                                          "id":  81794382184790,
+                                          "name":  "Messy Long Punk Anime Bangs (White)",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  29949249342
+                                      },
+                                      {
+                                          "id":  98321888453897,
+                                          "name":  "💜 Vintage Ribbon Ruffle Skirt_White",
+                                          "assetType":  {
+                                                            "id":  72,
+                                                            "name":  "DressSkirtAccessory"
+                                                        },
+                                          "currentVersionId":  11842969488234,
+                                          "meta":  {
+                                                       "order":  0,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  113102861718340,
+                                          "name":  "Cute White Maid Kitty Tail",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  27229030997
+                                      },
+                                      {
+                                          "id":  123478680906069,
+                                          "name":  "Chibi Sparkling Doll Face – White",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  37066919473
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  80963950541052,
+                                          "assetName":  "hip sway",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  129575609080331,
+                                          "assetName":  "Cute Sit\t",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  132152702263080,
+                                          "assetName":  "Fairy sit floating anime girl pose",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  83475540437708,
+                                          "assetName":  "Floating Sit",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  120512834137418,
+                                          "assetName":  "sit",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  3360686498,
+                                          "assetName":  "Stadium",
+                                          "position":  6
+                                      }
+                                  ]
+                   }
+}

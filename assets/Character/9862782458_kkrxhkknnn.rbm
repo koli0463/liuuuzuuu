@@ -1,0 +1,281 @@
+﻿{
+    "userId":  "9862782458",
+    "presetName":  "9862782458_kkrxhkknnn",
+    "timestamp":  "2026-09-29T11:47:25.884Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.7,
+                                      "head":  1.0,
+                                      "depth":  0.85,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  13156797522,
+                                          "name":  "Cute Head Ribbon(Black)",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  16978207750
+                                      },
+                                      {
+                                          "id":  13687504979,
+                                          "name":  "🐾black and white shark - full fursuit [-]",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  17735214910
+                                      },
+                                      {
+                                          "id":  13687509746,
+                                          "name":  "🐾black and white shark - full fursuit [+]",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  17735221329
+                                      },
+                                      {
+                                          "id":  18805856143,
+                                          "name":  "belly piercing stomach shading",
+                                          "assetType":  {
+                                                            "id":  2,
+                                                            "name":  "TShirt"
+                                                        },
+                                          "currentVersionId":  24991361763
+                                      },
+                                      {
+                                          "id":  74972889775216,
+                                          "name":  "kawaii chibi smug foxy eyes face - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  63395366597506
+                                      },
+                                      {
+                                          "id":  77406416765105,
+                                          "name":  "Modern Woman 2 - Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  27016900876
+                                      },
+                                      {
+                                          "id":  85211239912050,
+                                          "name":  "cutesy chibi animation pack - Jump Animation",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  47218429743812
+                                      },
+                                      {
+                                          "id":  96587569156234,
+                                          "name":  "Modern Woman 2 - Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  27016900842
+                                      },
+                                      {
+                                          "id":  102699682109894,
+                                          "name":  "Black Shark Tail",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  31049785060
+                                      },
+                                      {
+                                          "id":  103179664605636,
+                                          "name":  "cutesy chibi animation pack - Idle Animation",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  27605365162473
+                                      },
+                                      {
+                                          "id":  103849563001453,
+                                          "name":  "cutesy chibi animation pack - Walk Animation",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  58348571800269
+                                      },
+                                      {
+                                          "id":  110743159760232,
+                                          "name":  "cutesy chibi animation pack - Fall Animation",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  69345100078070
+                                      },
+                                      {
+                                          "id":  115636732740363,
+                                          "name":  "ノ꒰Cutesy Hair Black w Kitty Clip ears♡",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  30599393143,
+                                          "meta":  {
+                                                       "order":  4,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  121372042956337,
+                                          "name":  "cutesy chibi animation pack - Swim Animation",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  70064346544424
+                                      },
+                                      {
+                                          "id":  123316458229208,
+                                          "name":  "Cute Light Blush",
+                                          "assetType":  {
+                                                            "id":  88,
+                                                            "name":  "FaceMakeup"
+                                                        },
+                                          "currentVersionId":  56905419420355,
+                                          "meta":  {
+                                                       "order":  0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  124955896724980,
+                                          "name":  "gothic ruffle choker w gem + necklace 3.0 black",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  35164493382
+                                      },
+                                      {
+                                          "id":  131424927075291,
+                                          "name":  "Black Glasses",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  29979366337
+                                      },
+                                      {
+                                          "id":  136485344017634,
+                                          "name":  "cutesy chibi animation pack - Run Animation",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  43714445304639
+                                      },
+                                      {
+                                          "id":  137519086744741,
+                                          "name":  "Ears Shark Black - White [ Shiny ]",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  112158292794
+                                      },
+                                      {
+                                          "id":  140486275218961,
+                                          "name":  "cutesy chibi animation pack - Climb Animation",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  40780174670775
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  73743026563647,
+                                          "assetName":  "Cute Excited Sit🦋",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  3576823880,
+                                          "assetName":  "Point2",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  3360686498,
+                                          "assetName":  "Stadium",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  3576686446,
+                                          "assetName":  "Hello",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  5915779043,
+                                          "assetName":  "Applaud",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  3360689775,
+                                          "assetName":  "Salute",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  3576968026,
+                                          "assetName":  "Shrug",
+                                          "position":  7
+                                      }
+                                  ]
+                   }
+}

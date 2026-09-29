@@ -1,0 +1,173 @@
+﻿{
+    "userId":  "314830316",
+    "presetName":  "314830316_Flaxios",
+    "timestamp":  "2026-09-29T11:47:21.612Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.7,
+                                      "head":  0.95,
+                                      "depth":  0.85,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  18,
+                                          "torsoColorId":  18,
+                                          "rightArmColorId":  18,
+                                          "leftArmColorId":  18,
+                                          "rightLegColorId":  18,
+                                          "leftLegColorId":  18
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  139607718,
+                                          "name":  "Korblox Deathspeaker Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  14119157372
+                                      },
+                                      {
+                                          "id":  493476042,
+                                          "name":  "Sky Blue Sparkle Time Fedora",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  909430041
+                                      },
+                                      {
+                                          "id":  658830056,
+                                          "name":  "Ninja Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  13806699839
+                                      },
+                                      {
+                                          "id":  7259147441,
+                                          "name":  "White Messy Hairstyle",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  9023416109,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  8102871004,
+                                          "name":  "☆",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  10027068663
+                                      },
+                                      {
+                                          "id":  8974546676,
+                                          "name":  "sky blue khoi yin yang sweater",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  11091432499
+                                      },
+                                      {
+                                          "id":  11573370910,
+                                          "name":  "Anime - Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  17941687908
+                                      },
+                                      {
+                                          "id":  15093053680,
+                                          "name":  "Headless Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  20280670549
+                                      },
+                                      {
+                                          "id":  16744207822,
+                                          "name":  "Bold Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  22122179861
+                                      },
+                                      {
+                                          "id":  16744212581,
+                                          "name":  "Bold Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  22122187091
+                                      },
+                                      {
+                                          "id":  126354114956642,
+                                          "name":  "adidas Community Animation Pack",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  31800705714
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  7202898984,
+                                          "assetName":  "Show Dem Wrists - KSI",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  6797919579,
+                                          "assetName":  "Hips Poppin\u0027 - Zara Larsson",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  7942972744,
+                                          "assetName":  "Lasso Turn - Tai Verdes",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  6797938823,
+                                          "assetName":  "Take Me Under - Zara Larsson",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  7466046574,
+                                          "assetName":  "Quiet Waves",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  7405123844,
+                                          "assetName":  "Dancin\u0027 Shoes - Twenty One Pilots",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  5104377791,
+                                          "assetName":  "Hero Landing",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  85092320680319,
+                                          "assetName":  "Nonchalant Sit",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}

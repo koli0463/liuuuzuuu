@@ -1,0 +1,296 @@
+﻿{
+    "userId":  "5584502586",
+    "presetName":  "5584502586_zyhzsacaas",
+    "timestamp":  "2026-09-29T11:47:24.184Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  1.0,
+                                      "width":  1.0,
+                                      "head":  1.0,
+                                      "depth":  1.00,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  86499753,
+                                          "name":  "Woman Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  11411590293
+                                      },
+                                      {
+                                          "id":  86499793,
+                                          "name":  "Woman Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  11411591752
+                                      },
+                                      {
+                                          "id":  4584969837,
+                                          "name":  "Oversized White Neko Hood",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  5412754520
+                                      },
+                                      {
+                                          "id":  6216526940,
+                                          "name":  "Loose White Anime Side Buns",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  7527052311,
+                                          "meta":  {
+                                                       "order":  11,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  6730139207,
+                                          "name":  "gyaru blue mezzo plaid 🍧🍡🍰",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  8255834887
+                                      },
+                                      {
+                                          "id":  7485988593,
+                                          "name":  "White Mega Fluffy Tail",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  9307719121
+                                      },
+                                      {
+                                          "id":  10789933479,
+                                          "name":  "White Oversized Warmers",
+                                          "assetType":  {
+                                                            "id":  67,
+                                                            "name":  "JacketAccessory"
+                                                        },
+                                          "currentVersionId":  13534791286,
+                                          "meta":  {
+                                                       "order":  0,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  10790010186,
+                                          "name":  "Blush Sticker II",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  13534920551
+                                      },
+                                      {
+                                          "id":  11683740671,
+                                          "name":  "Cute Sleepy Eyebags",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  14893848557
+                                      },
+                                      {
+                                          "id":  11882911210,
+                                          "name":  "cinnamonroll cutie blue sanrio school cottagecore",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  15181825012
+                                      },
+                                      {
+                                          "id":  12014310349,
+                                          "name":  "Low Thin Round Glasses Black",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  15364349827
+                                      },
+                                      {
+                                          "id":  12726674231,
+                                          "name":  "Blush",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  16369517784
+                                      },
+                                      {
+                                          "id":  13704356410,
+                                          "name":  "Wing",
+                                          "assetType":  {
+                                                            "id":  44,
+                                                            "name":  "ShoulderAccessory"
+                                                        },
+                                          "currentVersionId":  17759821405
+                                      },
+                                      {
+                                          "id":  17106982150,
+                                          "name":  "Anime Girl Hairstyle(White)",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  22665252677,
+                                          "meta":  {
+                                                       "order":  11,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  18538133604,
+                                          "name":  "adidas Sports - Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  24574096480
+                                      },
+                                      {
+                                          "id":  18538146480,
+                                          "name":  "adidas Sports - Walk",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  24574116906
+                                      },
+                                      {
+                                          "id":  18538150608,
+                                          "name":  "adidas Sports - Idle",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  24574383955
+                                      },
+                                      {
+                                          "id":  18538153691,
+                                          "name":  "adidas Sports - Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  24574128584
+                                      },
+                                      {
+                                          "id":  18538158932,
+                                          "name":  "adidas Sports - Swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  24574136831
+                                      },
+                                      {
+                                          "id":  18538164337,
+                                          "name":  "adidas Sports - Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  24574145528
+                                      },
+                                      {
+                                          "id":  18538170170,
+                                          "name":  "adidas Sports - Climb",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  24574154843
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  13344121112,
+                                          "assetName":  "TWICE What Is Love",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  12874468267,
+                                          "assetName":  "TWICE The Feels",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  16553249658,
+                                          "assetName":  "Mae Stephens - Piano Hands",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  4646306583,
+                                          "assetName":  "Curtsy",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  14353425085,
+                                          "assetName":  "Baby Queen - Strut",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  3576823880,
+                                          "assetName":  "Point2",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  3576686446,
+                                          "assetName":  "Hello",
+                                          "position":  7
+                                      }
+                                  ]
+                   }
+}

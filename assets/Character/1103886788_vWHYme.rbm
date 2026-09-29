@@ -1,7 +1,7 @@
 ﻿{
-    "userId":  "7330533246",
-    "presetName":  "7330533246_Bellaaa_Preppy_Barbie",
-    "timestamp":  "2026-09-29T11:47:22.465Z",
+    "userId":  "1103886788",
+    "presetName":  "1103886788_vWHYme",
+    "timestamp":  "2026-09-29T11:47:29.579Z",
     "avatarData":  {
                        "scales":  {
                                       "height":  0.9,
@@ -49,49 +49,40 @@
                                           "currentVersionId":  14131544401
                                       },
                                       {
-                                          "id":  5319900634,
-                                          "name":  "Oldschool Run",
-                                          "assetType":  {
-                                                            "id":  53,
-                                                            "name":  "RunAnimation"
-                                                        },
-                                          "currentVersionId":  13806699868
-                                      },
-                                      {
-                                          "id":  5319909330,
-                                          "name":  "Oldschool Walk",
+                                          "id":  973767371,
+                                          "name":  "Toy Walk ",
                                           "assetType":  {
                                                             "id":  55,
                                                             "name":  "WalkAnimation"
                                                         },
-                                          "currentVersionId":  13806699883
+                                          "currentVersionId":  13806700030
                                       },
                                       {
-                                          "id":  5319914476,
-                                          "name":  "Oldschool Fall",
+                                          "id":  973768058,
+                                          "name":  "Toy Fall",
                                           "assetType":  {
                                                             "id":  50,
                                                             "name":  "FallAnimation"
                                                         },
-                                          "currentVersionId":  13806699873
+                                          "currentVersionId":  13806700018
                                       },
                                       {
-                                          "id":  5319917561,
-                                          "name":  "Oldschool Jump",
+                                          "id":  973770652,
+                                          "name":  "Toy Jump",
                                           "assetType":  {
                                                             "id":  52,
                                                             "name":  "JumpAnimation"
                                                         },
-                                          "currentVersionId":  13806699876
+                                          "currentVersionId":  21158773466
                                       },
                                       {
-                                          "id":  5319922112,
-                                          "name":  "Oldschool Idle",
+                                          "id":  973771666,
+                                          "name":  "Toy Idle",
                                           "assetType":  {
                                                             "id":  51,
                                                             "name":  "IdleAnimation"
                                                         },
-                                          "currentVersionId":  13806699865
+                                          "currentVersionId":  13806700012
                                       },
                                       {
                                           "id":  5319927054,
@@ -112,13 +103,22 @@
                                           "currentVersionId":  13806699859
                                       },
                                       {
-                                          "id":  8482802767,
-                                          "name":  "kawaii Pink soft white vamp goth y2k school skirt",
+                                          "id":  6278362825,
+                                          "name":  "pastel blue!",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  7608469256
+                                      },
+                                      {
+                                          "id":  13979153101,
+                                          "name":  "[B] Baby Blue Skirt w Oversized  Pastel Star Socks",
                                           "assetType":  {
                                                             "id":  12,
                                                             "name":  "Pants"
                                                         },
-                                          "currentVersionId":  10481390251
+                                          "currentVersionId":  18157033951
                                       },
                                       {
                                           "id":  14618207727,
@@ -130,40 +130,31 @@
                                           "currentVersionId":  19059427142
                                       },
                                       {
-                                          "id":  15727311265,
-                                          "name":  "♡ kawaii star headphones pink",
+                                          "id":  14851274666,
+                                          "name":  "Blue Lace Choker 3.0",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  19381794589
+                                      },
+                                      {
+                                          "id":  16107564886,
+                                          "name":  "Sleep Expression",
                                           "assetType":  {
                                                             "id":  8,
                                                             "name":  "Hat"
                                                         },
-                                          "currentVersionId":  20627672220
+                                          "currentVersionId":  21179893923
                                       },
                                       {
-                                          "id":  16178817854,
-                                          "name":  "Pastel Pink School Anime Girl uniform",
-                                          "assetType":  {
-                                                            "id":  11,
-                                                            "name":  "Shirt"
-                                                        },
-                                          "currentVersionId":  21280046765
-                                      },
-                                      {
-                                          "id":  16217798468,
-                                          "name":  "Waist Lace Pink Ribbon",
-                                          "assetType":  {
-                                                            "id":  47,
-                                                            "name":  "WaistAccessory"
-                                                        },
-                                          "currentVersionId":  21335778916
-                                      },
-                                      {
-                                          "id":  17568584148,
-                                          "name":  "Pink Loose Wavy Hair w/ Bangs",
+                                          "id":  72908545712444,
+                                          "name":  "Blue\u0026White Lush Straight Hair w/ Headphones",
                                           "assetType":  {
                                                             "id":  41,
                                                             "name":  "HairAccessory"
                                                         },
-                                          "currentVersionId":  23378945496,
+                                          "currentVersionId":  61773879303666,
                                           "meta":  {
                                                        "order":  13,
                                                        "puffiness":  1.0,
@@ -171,51 +162,58 @@
                                                    }
                                       },
                                       {
-                                          "id":  18310585008,
-                                          "name":  "Pink Anime Bob w/ Side Ponytail",
+                                          "id":  79087523351682,
+                                          "name":  "Cutesy Pink Sailor Paw Bow Hat ♡",
                                           "assetType":  {
-                                                            "id":  41,
-                                                            "name":  "HairAccessory"
+                                                            "id":  8,
+                                                            "name":  "Hat"
                                                         },
-                                          "currentVersionId":  24227320495,
-                                          "meta":  {
-                                                       "order":  13,
-                                                       "puffiness":  1.0,
-                                                       "version":  1
-                                                   }
+                                          "currentVersionId":  31934400335
                                       },
                                       {
-                                          "id":  73403736068786,
-                                          "name":  "pink lovestruck happy chibi moe fa… - Dynamic Head",
+                                          "id":  79633643165182,
+                                          "name":  "♡୨ৎ cute pink heart struck miffy bunny w bow",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  35283427835139
+                                      },
+                                      {
+                                          "id":  107895705891639,
+                                          "name":  "Billie Eilish run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  18777170194217
+                                      },
+                                      {
+                                          "id":  109063222161693,
+                                          "name":  "celebrity bling",
+                                          "assetType":  {
+                                                            "id":  44,
+                                                            "name":  "ShoulderAccessory"
+                                                        },
+                                          "currentVersionId":  37765972095
+                                      },
+                                      {
+                                          "id":  131728122801754,
+                                          "name":  "(animated) kawaii sweet doll cutie… - Dynamic Head",
                                           "assetType":  {
                                                             "id":  79,
                                                             "name":  "DynamicHead"
                                                         },
-                                          "currentVersionId":  24280009476727
+                                          "currentVersionId":  19499725437519
                                       }
                                   ],
                        "defaultShirtApplied":  false,
                        "defaultPantsApplied":  false,
                        "emotes":  [
                                       {
-                                          "assetId":  3576686446,
-                                          "assetName":  "Hello",
+                                          "assetId":  130027779038512,
+                                          "assetName":  "Cyrene Fairy Swing Intro Idle | Honkai HSR",
                                           "position":  1
-                                      },
-                                      {
-                                          "assetId":  3360686498,
-                                          "assetName":  "Stadium",
-                                          "position":  2
-                                      },
-                                      {
-                                          "assetId":  3576823880,
-                                          "assetName":  "Point2",
-                                          "position":  3
-                                      },
-                                      {
-                                          "assetId":  3576968026,
-                                          "assetName":  "Shrug",
-                                          "position":  4
                                       }
                                   ]
                    }

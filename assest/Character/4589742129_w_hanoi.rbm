@@ -1,0 +1,228 @@
+﻿{
+    "userId":  "4589742129",
+    "presetName":  "4589742129_w_hanoi",
+    "timestamp":  "2026-09-29T11:47:30.157Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.7,
+                                      "head":  1.0,
+                                      "depth":  0.85,
+                                      "proportion":  0.5,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  208,
+                                          "torsoColorId":  208,
+                                          "rightArmColorId":  208,
+                                          "leftArmColorId":  208,
+                                          "rightLegColorId":  208,
+                                          "leftLegColorId":  208
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  131592085,
+                                          "name":  "Headless Horseman\u0027s New Head",
+                                          "assetType":  {
+                                                            "id":  19,
+                                                            "name":  "Gear"
+                                                        },
+                                          "currentVersionId":  2260432173
+                                      },
+                                      {
+                                          "id":  139607718,
+                                          "name":  "Korblox Deathspeaker Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  14119157372
+                                      },
+                                      {
+                                          "id":  1018552770,
+                                          "name":  "Bubbly Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  13806699640
+                                      },
+                                      {
+                                          "id":  1018553240,
+                                          "name":  "Bubbly Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  21158102573
+                                      },
+                                      {
+                                          "id":  11573370910,
+                                          "name":  "Anime - Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  17941687908
+                                      },
+                                      {
+                                          "id":  14367097200,
+                                          "name":  "black mini skirt bypass string bow gyaru y2k doll ",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  18706787847
+                                      },
+                                      {
+                                          "id":  15093053680,
+                                          "name":  "Headless Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  20280670549
+                                      },
+                                      {
+                                          "id":  73636981266788,
+                                          "name":  "Kawaii Cute Girly Animation Pack - Walk Animation",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  41843837611707
+                                      },
+                                      {
+                                          "id":  101724952386134,
+                                          "name":  "Opal King of the Night",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  8129480763836
+                                      },
+                                      {
+                                          "id":  103268826265834,
+                                          "name":  "♡ : bow aura kawaii sparkle black",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  3061357820691
+                                      },
+                                      {
+                                          "id":  105365558470485,
+                                          "name":  "black miffy choker",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  30411689224159
+                                      },
+                                      {
+                                          "id":  116759396060670,
+                                          "name":  ". ‿ ♡ horror doll long pigtail hair light blond",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  39631251478040,
+                                          "meta":  {
+                                                       "order":  3,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  119323051800047,
+                                          "name":  "E-girl pack - Idle Animation",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  58001828490191
+                                      },
+                                      {
+                                          "id":  127742735356678,
+                                          "name":  "cute little black dress with bow",
+                                          "assetType":  {
+                                                            "id":  45,
+                                                            "name":  "FrontAccessory"
+                                                        },
+                                          "currentVersionId":  36915644709
+                                      }
+                                  ],
+                       "defaultShirtApplied":  true,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  139435106875573,
+                                          "assetName":  "L Lawliet",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  89792686783781,
+                                          "assetName":  "Cute Cat Purr [Blair Soul Eater] ",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  100597438247721,
+                                          "assetName":  "Sweet Hug Pose V1 [MATCHING] ",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  77947790294458,
+                                          "assetName":  "🐰bam bam bunny dance ",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  134222090358172,
+                                          "assetName":  "Money Hop Switch",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  95385842020103,
+                                          "assetName":  "Zero Two Dance V2",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  121732298201385,
+                                          "assetName":  "Baby You Buggin👣",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  104922087218459,
+                                          "assetName":  "[ OG ♡ ] bunny party dance",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}

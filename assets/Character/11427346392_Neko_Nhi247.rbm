@@ -1,0 +1,156 @@
+﻿{
+    "userId":  "11427346392",
+    "presetName":  "11427346392_Neko_Nhi247",
+    "timestamp":  "2026-09-29T11:47:24.473Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.85,
+                                      "head":  0.99,
+                                      "depth":  0.92,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  150381051,
+                                          "name":  "Spring Fairy",
+                                          "assetType":  {
+                                                            "id":  44,
+                                                            "name":  "ShoulderAccessory"
+                                                        },
+                                          "currentVersionId":  28261354187
+                                      },
+                                      {
+                                          "id":  17134735082,
+                                          "name":  "Cute Kawaii Black Pink Cat Kitty Plush Dress",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  22704403921
+                                      },
+                                      {
+                                          "id":  18789230826,
+                                          "name":  "Kawaii Fluffy Cat Ears + Piercings And Bows",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  24964815680
+                                      },
+                                      {
+                                          "id":  90179688637370,
+                                          "name":  "Cute Pink Maid Kitty Tail",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  27229936921
+                                      },
+                                      {
+                                          "id":  108114603406541,
+                                          "name":  "Fluffy Wild Anime Kitty Hair w/ Face (White)",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  46664059238703,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  120646269220332,
+                                          "name":  "Easter",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  29202946330
+                                      }
+                                  ],
+                       "defaultShirtApplied":  true,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  122803615354190,
+                                          "assetName":  "kawaii whimsy airplane profile pose ʚ♡ɞ",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  74941409284905,
+                                          "assetName":  "feelin myself sway",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  72947568152049,
+                                          "assetName":  "Cute Sit",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  76861561315344,
+                                          "assetName":  "❤️ Piggyback Ride your Bestie ❤️",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  96252923654843,
+                                          "assetName":  "♡ cute halloween magical witch idle pose",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  118853736905967,
+                                          "assetName":  "Wall Aura Farm Pose",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  121067193470437,
+                                          "assetName":  "🇧🇷Professora Six Seven (🇧🇷TT Dance Brasileño)",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  95325218641213,
+                                          "assetName":  "Psycho Teddy ",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}

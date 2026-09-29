@@ -1,0 +1,270 @@
+﻿{
+    "userId":  "4047332951",
+    "presetName":  "4047332951_QuarifiedAE33",
+    "timestamp":  "2026-09-29T11:47:23.624Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.98,
+                                      "width":  0.7,
+                                      "head":  0.95,
+                                      "depth":  0.85,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  619511648,
+                                          "name":  "Stylish Idle",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  13806699963
+                                      },
+                                      {
+                                          "id":  973767371,
+                                          "name":  "Toy Walk ",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  13806700030
+                                      },
+                                      {
+                                          "id":  2510230574,
+                                          "name":  "Rthro Climb",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  13806699923
+                                      },
+                                      {
+                                          "id":  5319900634,
+                                          "name":  "Oldschool Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  13806699868
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  14842204595,
+                                          "name":  "Blocky Girl (V3) - Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  19369259409
+                                      },
+                                      {
+                                          "id":  14842204640,
+                                          "name":  "Blocky Girl (V3) - Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  19369259467
+                                      },
+                                      {
+                                          "id":  15345212293,
+                                          "name":  "Kawaii Ruffle Mini Skirt White",
+                                          "assetType":  {
+                                                            "id":  66,
+                                                            "name":  "PantsAccessory"
+                                                        },
+                                          "currentVersionId":  20071108952,
+                                          "meta":  {
+                                                       "order":  0,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  15632819149,
+                                          "name":  "♡ : (low) light pink jelly glasses with bow  ",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  20487327205
+                                      },
+                                      {
+                                          "id":  16600562011,
+                                          "name":  "Paris Off Shoulder Oversized Sweater Cropped",
+                                          "assetType":  {
+                                                            "id":  68,
+                                                            "name":  "SweaterAccessory"
+                                                        },
+                                          "currentVersionId":  21899952220,
+                                          "meta":  {
+                                                       "order":  1,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  83937116921114,
+                                          "name":  "Popular - Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  27053350954
+                                      },
+                                      {
+                                          "id":  86009852953271,
+                                          "name":  "Pink Cute Anime Girl Hair",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  32547516276,
+                                          "meta":  {
+                                                       "order":  2,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  88855642685367,
+                                          "name":  "Blush Fashion Doll - Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  25692032795
+                                      },
+                                      {
+                                          "id":  89326751023140,
+                                          "name":  "blush",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  25373070559
+                                      },
+                                      {
+                                          "id":  110722848724331,
+                                          "name":  "(Animated) Cute Glow Love Heart Ey… - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  42546422302299
+                                      },
+                                      {
+                                          "id":  114206707267907,
+                                          "name":  "Model Cat - White - Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  28088839270
+                                      },
+                                      {
+                                          "id":  122352278700278,
+                                          "name":  "Pink Layered Hair with Star Clip",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  10889222294313,
+                                          "meta":  {
+                                                       "order":  3,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  126890608991545,
+                                          "name":  "Blush Fashion Doll - Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  25692032304
+                                      },
+                                      {
+                                          "id":  128475661806875,
+                                          "name":  "Popular - Swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  27053363701
+                                      },
+                                      {
+                                          "id":  130373407996664,
+                                          "name":  "Popular - Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  27053354640
+                                      }
+                                  ],
+                       "defaultShirtApplied":  true,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  85665834724929,
+                                          "assetName":  "intrusive awkward wave",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  112396548575695,
+                                          "assetName":  "Agnes Tachyon\u0027s Low Cortisol Dance (In Tempo) V1",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  120642514156293,
+                                          "assetName":  "Secret Handshake Dance",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  80963950541052,
+                                          "assetName":  "hip sway",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  105972056585974,
+                                          "assetName":  "Silly Maxwell Cat Dance",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  101573394483995,
+                                          "assetName":  "Effortless Aura Pose",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  15392927897,
+                                          "assetName":  "gg / donda",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  122545939134570,
+                                          "assetName":  "Crossed Arm Hip Sway",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}

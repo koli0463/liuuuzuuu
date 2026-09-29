@@ -1,0 +1,301 @@
+﻿{
+    "userId":  "1046787815",
+    "presetName":  "1046787815_uninspiired",
+    "timestamp":  "2026-09-29T11:47:28.254Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.7,
+                                      "head":  0.95,
+                                      "depth":  0.85,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  146134358,
+                                          "name":  "Earl of the Federation",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  883366087,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  -0.06,
+                                                                        "Z":  -0.03
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  6.6,
+                                                                        "Y":  -3.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  0.88,
+                                                                     "Y":  0.88,
+                                                                     "Z":  0.88
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  9866287477,
+                                          "name":  "Spiritfly Aura - White",
+                                          "assetType":  {
+                                                            "id":  44,
+                                                            "name":  "ShoulderAccessory"
+                                                        },
+                                          "currentVersionId":  12302638148,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  0.87,
+                                                                     "Y":  0.87,
+                                                                     "Z":  0.87
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  11573370910,
+                                          "name":  "Anime - Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  17941687908
+                                      },
+                                      {
+                                          "id":  15093053680,
+                                          "name":  "Headless Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  20280670549
+                                      },
+                                      {
+                                          "id":  74456484274389,
+                                          "name":  "ଘ(^^) fairycore baby\u0027s breath 满天星",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  35629342661,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  0.96,
+                                                                     "Y":  0.96,
+                                                                     "Z":  0.96
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  74948603903648,
+                                          "name":  "Mini Plushie - Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  30048816047
+                                      },
+                                      {
+                                          "id":  77398277433153,
+                                          "name":  "Elysia Elf Fairy - Honkai Impact… - Fall Animation",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  58390165741653
+                                      },
+                                      {
+                                          "id":  82694372666875,
+                                          "name":  "White Lush Windy \u0026 Wispy Anime Hair",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  37747993940,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  90578151979987,
+                                          "name":  "Elysia Elf Fairy - Honkai Impac… - Climb Animation",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  66771865156441
+                                      },
+                                      {
+                                          "id":  94100231443455,
+                                          "name":  "Festive green corset",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  26395102846
+                                      },
+                                      {
+                                          "id":  96522811372657,
+                                          "name":  "Elysia Elf Fairy - Honkai Impact… - Idle Animation",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  70027401854081
+                                      },
+                                      {
+                                          "id":  100840538291335,
+                                          "name":  "Mini Plushie - Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  30048816077
+                                      },
+                                      {
+                                          "id":  101387518276175,
+                                          "name":  "Mini Plushie - Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  30048816028
+                                      },
+                                      {
+                                          "id":  101678129797722,
+                                          "name":  "Mini Plushie - Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  30048815985
+                                      },
+                                      {
+                                          "id":  107040972522394,
+                                          "name":  "Kawaii Bouncy Animation Pack - Run Animation",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  39671486527206
+                                      },
+                                      {
+                                          "id":  109628170020477,
+                                          "name":  "Elysia Elf Fairy - Honkai Impact… - Jump Animation",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  28600551951078
+                                      },
+                                      {
+                                          "id":  114267907635155,
+                                          "name":  "Mini Plushie - Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  30048815957
+                                      },
+                                      {
+                                          "id":  120312452429453,
+                                          "name":  "Kawaii Bouncy Animation Pack - Walk Animation",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  21639943455030
+                                      },
+                                      {
+                                          "id":  128529740351140,
+                                          "name":  "La Perla Enchantée in green",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  29451144152
+                                      },
+                                      {
+                                          "id":  137489869821176,
+                                          "name":  "Green Ethereal Butterfly Lantern",
+                                          "assetType":  {
+                                                            "id":  46,
+                                                            "name":  "BackAccessory"
+                                                        },
+                                          "currentVersionId":  34106307512,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.25,
+                                                                        "Y":  0.0,
+                                                                        "Z":  -0.25
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.11,
+                                                                     "Y":  1.11,
+                                                                     "Z":  1.11
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  137674505873151,
+                                          "name":  "Cute Bouncy - Swim Animation",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  18561961148210
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  124630459978423,
+                                          "assetName":  "Fairy Float Idle",
+                                          "position":  1
+                                      }
+                                  ]
+                   }
+}

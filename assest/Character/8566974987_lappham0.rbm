@@ -1,0 +1,300 @@
+﻿{
+    "userId":  "8566974987",
+    "presetName":  "8566974987_lappham0",
+    "timestamp":  "2026-09-29T11:47:25.604Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.78,
+                                      "head":  1.0,
+                                      "depth":  0.89,
+                                      "proportion":  1.0,
+                                      "bodyType":  0.04
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  150381051,
+                                          "name":  "Spring Fairy",
+                                          "assetType":  {
+                                                            "id":  44,
+                                                            "name":  "ShoulderAccessory"
+                                                        },
+                                          "currentVersionId":  28261354187
+                                      },
+                                      {
+                                          "id":  11600327265,
+                                          "name":  "Realistic - Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  14765512255
+                                      },
+                                      {
+                                          "id":  11600331426,
+                                          "name":  "Realistic - Walk",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  14765519588
+                                      },
+                                      {
+                                          "id":  14606466511,
+                                          "name":  "Cute Mini Pigtails with Bunny Hair Clip(Pink)",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  19038705960,
+                                          "meta":  {
+                                                       "order":  5,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  16820071464,
+                                          "name":  "Miami Off Shoulder Oversized Shirt Cropped",
+                                          "assetType":  {
+                                                            "id":  65,
+                                                            "name":  "ShirtAccessory"
+                                                        },
+                                          "currentVersionId":  22239082072,
+                                          "meta":  {
+                                                       "order":  3,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  18789230826,
+                                          "name":  "Kawaii Fluffy Cat Ears + Piercings And Bows",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  24964815680
+                                      },
+                                      {
+                                          "id":  72923860092955,
+                                          "name":  "Athletic Dolphin Shorts Pink Mini Sweat Gym Y2K",
+                                          "assetType":  {
+                                                            "id":  69,
+                                                            "name":  "ShortsAccessory"
+                                                        },
+                                          "currentVersionId":  31687568302,
+                                          "meta":  {
+                                                       "order":  2,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  73137983344853,
+                                          "name":  "adidas aura - idle",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  3459227144229
+                                      },
+                                      {
+                                          "id":  88273993498454,
+                                          "name":  "Luna Cutie Doll 2d - Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  30296303438
+                                      },
+                                      {
+                                          "id":  90179688637370,
+                                          "name":  "Cute Pink Maid Kitty Tail",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  27229936921
+                                      },
+                                      {
+                                          "id":  90703446983794,
+                                          "name":  "🍀Cute Winter Bunny Slippe… - Right Shoe Accessory",
+                                          "assetType":  {
+                                                            "id":  71,
+                                                            "name":  "RightShoeAccessory"
+                                                        },
+                                          "currentVersionId":  1870111989922,
+                                          "meta":  {
+                                                       "order":  1,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  99457463463495,
+                                          "name":  "adidas aura - fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  318740999836
+                                      },
+                                      {
+                                          "id":  100247266052115,
+                                          "name":  "Luna Cutie Doll 2d - Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  30296303467
+                                      },
+                                      {
+                                          "id":  100619899265606,
+                                          "name":  "Blush",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  37603326548
+                                      },
+                                      {
+                                          "id":  104448459625332,
+                                          "name":  "White Teddy Charm Satchel Bag",
+                                          "assetType":  {
+                                                            "id":  45,
+                                                            "name":  "FrontAccessory"
+                                                        },
+                                          "currentVersionId":  30679085375
+                                      },
+                                      {
+                                          "id":  107410074963017,
+                                          "name":  "Luna Cutie Doll 2d - Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  30296303422
+                                      },
+                                      {
+                                          "id":  113874750371797,
+                                          "name":  "🍀Cute Winter Bunny Slipper… - Left Shoe Accessory",
+                                          "assetType":  {
+                                                            "id":  70,
+                                                            "name":  "LeftShoeAccessory"
+                                                        },
+                                          "currentVersionId":  46123896204571,
+                                          "meta":  {
+                                                       "order":  0,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  119007025452432,
+                                          "name":  "adidas aura - swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  16797392526493
+                                      },
+                                      {
+                                          "id":  120646269220332,
+                                          "name":  "Easter",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  29202946330
+                                      },
+                                      {
+                                          "id":  122191855488744,
+                                          "name":  "Luna Cutie Doll 2d - Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  30296303481
+                                      },
+                                      {
+                                          "id":  125345556396314,
+                                          "name":  "Luna Cutie Doll 2d - Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  30296303468
+                                      },
+                                      {
+                                          "id":  129527230938281,
+                                          "name":  "adidas aura - jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  64447287812687
+                                      },
+                                      {
+                                          "id":  135822906723742,
+                                          "name":  "Anime Sakura Girl 🩷(Pink) - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  35916044461
+                                      },
+                                      {
+                                          "id":  140398319728398,
+                                          "name":  "adidas aura - climb",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  69298485499695
+                                      }
+                                  ],
+                       "defaultShirtApplied":  true,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  72947568152049,
+                                          "assetName":  "Cute Sit",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  106708015414624,
+                                          "assetName":  "Endless Aura Floating",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  76361248833307,
+                                          "assetName":  "Godly Aura fly pose idle",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  99719050691709,
+                                          "assetName":  "🔥Aura Farming Pose Sukuna🔥",
+                                          "position":  4
+                                      }
+                                  ]
+                   }
+}

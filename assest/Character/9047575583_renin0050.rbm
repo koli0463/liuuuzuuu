@@ -1,0 +1,282 @@
+﻿{
+    "userId":  "9047575583",
+    "presetName":  "9047575583_renin0050",
+    "timestamp":  "2026-09-29T11:47:27.015Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.7,
+                                      "head":  0.95,
+                                      "depth":  0.85,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  15348443679,
+                                          "name":  "Neck (Chibi Doll Girl)",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  20075539759
+                                      },
+                                      {
+                                          "id":  73479528371976,
+                                          "name":  "emo stitched dead pastel goth bat bunny hood",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  11955343817757,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.04,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.0,
+                                                                     "Y":  1.0,
+                                                                     "Z":  1.0
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  75396216925695,
+                                          "name":  "Cute Shy Pack - Climb Animation",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  2374900132495
+                                      },
+                                      {
+                                          "id":  75736751501442,
+                                          "name":  "Modern Woman 2 - Left Leg",
+                                          "assetType":  {
+                                                            "id":  30,
+                                                            "name":  "LeftLeg"
+                                                        },
+                                          "currentVersionId":  31565552533
+                                      },
+                                      {
+                                          "id":  92265803341463,
+                                          "name":  "Kemono Furry [Colorable] - Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  26777529060
+                                      },
+                                      {
+                                          "id":  97040081587840,
+                                          "name":  "Modern Woman 2 - Right Leg",
+                                          "assetType":  {
+                                                            "id":  31,
+                                                            "name":  "RightLeg"
+                                                        },
+                                          "currentVersionId":  31565552560
+                                      },
+                                      {
+                                          "id":  98637605375705,
+                                          "name":  "Cute Shy Pack - Idle Animation",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  31863207085195
+                                      },
+                                      {
+                                          "id":  104214733718299,
+                                          "name":  "Goth Doll Swirly Long Hair (White \u0026 Pink)",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  59157729587156,
+                                          "meta":  {
+                                                       "order":  1,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  105662064099352,
+                                          "name":  "Cute Shy Pack - Jump Animation",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  481934025765
+                                      },
+                                      {
+                                          "id":  105971633771130,
+                                          "name":  "Kemono Furry [Colorable] - Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  26777529232
+                                      },
+                                      {
+                                          "id":  110089424038814,
+                                          "name":  "Zombie and bones pastel purple socks",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  66500477021182
+                                      },
+                                      {
+                                          "id":  112168477254639,
+                                          "name":  "🐰 soft sweet bunny anime eyes bab… - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  34338238253997
+                                      },
+                                      {
+                                          "id":  113753688495484,
+                                          "name":  "Cute Shy Pack - Swim Animation",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  2845058648973
+                                      },
+                                      {
+                                          "id":  117985399279186,
+                                          "name":  "Zombie and bones pastel purple shirt",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  6726458963792
+                                      },
+                                      {
+                                          "id":  121626615485133,
+                                          "name":  "Cute Shy Pack - Fall Animation",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  66945912778443
+                                      },
+                                      {
+                                          "id":  125900492112507,
+                                          "name":  "emo pastel goth stitched sleeves",
+                                          "assetType":  {
+                                                            "id":  67,
+                                                            "name":  "JacketAccessory"
+                                                        },
+                                          "currentVersionId":  35601304068042,
+                                          "meta":  {
+                                                       "order":  0,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  126145942574326,
+                                          "name":  "Cute Shy Pack - Run Animation",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  58572269679667
+                                      },
+                                      {
+                                          "id":  127754112524189,
+                                          "name":  "Cute Shy Pack - Walk Animation",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  40899341269806
+                                      },
+                                      {
+                                          "id":  140186326901783,
+                                          "name":  "♡ : kawaii white bunny plushie holding onto u",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  37505215522
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  87963462118126,
+                                          "assetName":  "Cute Bouncy Hip Shake Dance",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  115203580644128,
+                                          "assetName":  "⚡ Raiden Punching Armstrong Loop",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  129411309930167,
+                                          "assetName":  "Catch Catch Setalcix",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  92504533520053,
+                                          "assetName":  "Hello Kitty Dance [OG] ",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  106708015414624,
+                                          "assetName":  "Endless Aura Floating",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  80963950541052,
+                                          "assetName":  "hip sway",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  95325218641213,
+                                          "assetName":  "Psycho Teddy ",
+                                          "position":  7
+                                      }
+                                  ]
+                   }
+}

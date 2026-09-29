@@ -1,0 +1,85 @@
+﻿{
+    "userId":  "8804753087",
+    "presetName":  "8804753087_denofthieves10",
+    "timestamp":  "2026-09-29T11:47:21.892Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.7,
+                                      "head":  0.95,
+                                      "depth":  0.85,
+                                      "proportion":  0.0,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  359,
+                                          "torsoColorId":  359,
+                                          "rightArmColorId":  359,
+                                          "leftArmColorId":  359,
+                                          "rightLegColorId":  359,
+                                          "leftLegColorId":  359
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  489196035,
+                                          "name":  "Bluesteel Bling $$ Necklace",
+                                          "assetType":  {
+                                                            "id":  43,
+                                                            "name":  "NeckAccessory"
+                                                        },
+                                          "currentVersionId":  909429984
+                                      },
+                                      {
+                                          "id":  11573370910,
+                                          "name":  "Anime - Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  17941687908
+                                      },
+                                      {
+                                          "id":  15093053680,
+                                          "name":  "Headless Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  20280670549
+                                      },
+                                      {
+                                          "id":  15168765523,
+                                          "name":  "black pants",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  19822207942
+                                      },
+                                      {
+                                          "id":  70619349583422,
+                                          "name":  "hope",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  32389532442
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  74608751145756,
+                                          "assetName":  "Russian Dance",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  138189741128673,
+                                          "assetName":  "Sturdy Blue Shirt",
+                                          "position":  3
+                                      }
+                                  ]
+                   }
+}

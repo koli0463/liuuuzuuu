@@ -1,222 +1,222 @@
-{
-  "userId": "7330533246",
-  "presetName": "7330533246_Bellaaa_Preppy_Barbie",
-  "timestamp": "2026-09-28T16:58:15.082Z",
-  "avatarData": {
-    "scales": {
-      "height": 0.9,
-      "width": 0.7,
-      "head": 0.95,
-      "depth": 0.85,
-      "proportion": 0.5,
-      "bodyType": 0
-    },
-    "playerAvatarType": "R15",
-    "bodyColors": {
-      "headColorId": 1001,
-      "torsoColorId": 1001,
-      "rightArmColorId": 1001,
-      "leftArmColorId": 1001,
-      "rightLegColorId": 1001,
-      "leftLegColorId": 1001
-    },
-    "assets": [
-      {
-        "id": 86499666,
-        "name": "Woman Torso",
-        "assetType": {
-          "id": 27,
-          "name": "Torso"
-        },
-        "currentVersionId": 11411585575
-      },
-      {
-        "id": 86499698,
-        "name": "Woman Right Arm",
-        "assetType": {
-          "id": 28,
-          "name": "RightArm"
-        },
-        "currentVersionId": 11411587080
-      },
-      {
-        "id": 86499716,
-        "name": "Woman Left Arm",
-        "assetType": {
-          "id": 29,
-          "name": "LeftArm"
-        },
-        "currentVersionId": 14131544401
-      },
-      {
-        "id": 5319900634,
-        "name": "Oldschool Run",
-        "assetType": {
-          "id": 53,
-          "name": "RunAnimation"
-        },
-        "currentVersionId": 13806699868
-      },
-      {
-        "id": 5319909330,
-        "name": "Oldschool Walk",
-        "assetType": {
-          "id": 55,
-          "name": "WalkAnimation"
-        },
-        "currentVersionId": 13806699883
-      },
-      {
-        "id": 5319914476,
-        "name": "Oldschool Fall",
-        "assetType": {
-          "id": 50,
-          "name": "FallAnimation"
-        },
-        "currentVersionId": 13806699873
-      },
-      {
-        "id": 5319917561,
-        "name": "Oldschool Jump",
-        "assetType": {
-          "id": 52,
-          "name": "JumpAnimation"
-        },
-        "currentVersionId": 13806699876
-      },
-      {
-        "id": 5319922112,
-        "name": "Oldschool Idle",
-        "assetType": {
-          "id": 51,
-          "name": "IdleAnimation"
-        },
-        "currentVersionId": 13806699865
-      },
-      {
-        "id": 5319927054,
-        "name": "Oldschool Swim",
-        "assetType": {
-          "id": 54,
-          "name": "SwimAnimation"
-        },
-        "currentVersionId": 13806699880
-      },
-      {
-        "id": 5319931619,
-        "name": "Oldschool Climb",
-        "assetType": {
-          "id": 48,
-          "name": "ClimbAnimation"
-        },
-        "currentVersionId": 13806699859
-      },
-      {
-        "id": 8482802767,
-        "name": "kawaii Pink soft white vamp goth y2k school skirt",
-        "assetType": {
-          "id": 12,
-          "name": "Pants"
-        },
-        "currentVersionId": 10481390251
-      },
-      {
-        "id": 14618207727,
-        "name": "Default Mood",
-        "assetType": {
-          "id": 78,
-          "name": "MoodAnimation"
-        },
-        "currentVersionId": 19059427142
-      },
-      {
-        "id": 15727311265,
-        "name": "♡ kawaii star headphones pink",
-        "assetType": {
-          "id": 8,
-          "name": "Hat"
-        },
-        "currentVersionId": 20627672220
-      },
-      {
-        "id": 16178817854,
-        "name": "Pastel Pink School Anime Girl uniform",
-        "assetType": {
-          "id": 11,
-          "name": "Shirt"
-        },
-        "currentVersionId": 21280046765
-      },
-      {
-        "id": 16217798468,
-        "name": "Waist Lace Pink Ribbon",
-        "assetType": {
-          "id": 47,
-          "name": "WaistAccessory"
-        },
-        "currentVersionId": 21335778916
-      },
-      {
-        "id": 17568584148,
-        "name": "Pink Loose Wavy Hair w/ Bangs",
-        "assetType": {
-          "id": 41,
-          "name": "HairAccessory"
-        },
-        "currentVersionId": 23378945496,
-        "meta": {
-          "order": 13,
-          "puffiness": 1,
-          "version": 1
-        }
-      },
-      {
-        "id": 18310585008,
-        "name": "Pink Anime Bob w/ Side Ponytail",
-        "assetType": {
-          "id": 41,
-          "name": "HairAccessory"
-        },
-        "currentVersionId": 24227320495,
-        "meta": {
-          "order": 13,
-          "puffiness": 1,
-          "version": 1
-        }
-      },
-      {
-        "id": 73403736068786,
-        "name": "pink lovestruck happy chibi moe fa… - Dynamic Head",
-        "assetType": {
-          "id": 79,
-          "name": "DynamicHead"
-        },
-        "currentVersionId": 24280009476727
-      }
-    ],
-    "defaultShirtApplied": false,
-    "defaultPantsApplied": false,
-    "emotes": [
-      {
-        "assetId": 3576686446,
-        "assetName": "Hello",
-        "position": 1
-      },
-      {
-        "assetId": 3360686498,
-        "assetName": "Stadium",
-        "position": 2
-      },
-      {
-        "assetId": 3576823880,
-        "assetName": "Point2",
-        "position": 3
-      },
-      {
-        "assetId": 3576968026,
-        "assetName": "Shrug",
-        "position": 4
-      }
-    ]
-  }
+﻿{
+    "userId":  "7330533246",
+    "presetName":  "7330533246_Bellaaa_Preppy_Barbie",
+    "timestamp":  "2026-09-29T11:47:22.465Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.7,
+                                      "head":  0.95,
+                                      "depth":  0.85,
+                                      "proportion":  0.5,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1001,
+                                          "torsoColorId":  1001,
+                                          "rightArmColorId":  1001,
+                                          "leftArmColorId":  1001,
+                                          "rightLegColorId":  1001,
+                                          "leftLegColorId":  1001
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  5319900634,
+                                          "name":  "Oldschool Run",
+                                          "assetType":  {
+                                                            "id":  53,
+                                                            "name":  "RunAnimation"
+                                                        },
+                                          "currentVersionId":  13806699868
+                                      },
+                                      {
+                                          "id":  5319909330,
+                                          "name":  "Oldschool Walk",
+                                          "assetType":  {
+                                                            "id":  55,
+                                                            "name":  "WalkAnimation"
+                                                        },
+                                          "currentVersionId":  13806699883
+                                      },
+                                      {
+                                          "id":  5319914476,
+                                          "name":  "Oldschool Fall",
+                                          "assetType":  {
+                                                            "id":  50,
+                                                            "name":  "FallAnimation"
+                                                        },
+                                          "currentVersionId":  13806699873
+                                      },
+                                      {
+                                          "id":  5319917561,
+                                          "name":  "Oldschool Jump",
+                                          "assetType":  {
+                                                            "id":  52,
+                                                            "name":  "JumpAnimation"
+                                                        },
+                                          "currentVersionId":  13806699876
+                                      },
+                                      {
+                                          "id":  5319922112,
+                                          "name":  "Oldschool Idle",
+                                          "assetType":  {
+                                                            "id":  51,
+                                                            "name":  "IdleAnimation"
+                                                        },
+                                          "currentVersionId":  13806699865
+                                      },
+                                      {
+                                          "id":  5319927054,
+                                          "name":  "Oldschool Swim",
+                                          "assetType":  {
+                                                            "id":  54,
+                                                            "name":  "SwimAnimation"
+                                                        },
+                                          "currentVersionId":  13806699880
+                                      },
+                                      {
+                                          "id":  5319931619,
+                                          "name":  "Oldschool Climb",
+                                          "assetType":  {
+                                                            "id":  48,
+                                                            "name":  "ClimbAnimation"
+                                                        },
+                                          "currentVersionId":  13806699859
+                                      },
+                                      {
+                                          "id":  8482802767,
+                                          "name":  "kawaii Pink soft white vamp goth y2k school skirt",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  10481390251
+                                      },
+                                      {
+                                          "id":  14618207727,
+                                          "name":  "Default Mood",
+                                          "assetType":  {
+                                                            "id":  78,
+                                                            "name":  "MoodAnimation"
+                                                        },
+                                          "currentVersionId":  19059427142
+                                      },
+                                      {
+                                          "id":  15727311265,
+                                          "name":  "♡ kawaii star headphones pink",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  20627672220
+                                      },
+                                      {
+                                          "id":  16178817854,
+                                          "name":  "Pastel Pink School Anime Girl uniform",
+                                          "assetType":  {
+                                                            "id":  11,
+                                                            "name":  "Shirt"
+                                                        },
+                                          "currentVersionId":  21280046765
+                                      },
+                                      {
+                                          "id":  16217798468,
+                                          "name":  "Waist Lace Pink Ribbon",
+                                          "assetType":  {
+                                                            "id":  47,
+                                                            "name":  "WaistAccessory"
+                                                        },
+                                          "currentVersionId":  21335778916
+                                      },
+                                      {
+                                          "id":  17568584148,
+                                          "name":  "Pink Loose Wavy Hair w/ Bangs",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  23378945496,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  18310585008,
+                                          "name":  "Pink Anime Bob w/ Side Ponytail",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  24227320495,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  73403736068786,
+                                          "name":  "pink lovestruck happy chibi moe fa… - Dynamic Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  24280009476727
+                                      }
+                                  ],
+                       "defaultShirtApplied":  false,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  3576686446,
+                                          "assetName":  "Hello",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  3360686498,
+                                          "assetName":  "Stadium",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  3576823880,
+                                          "assetName":  "Point2",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  3576968026,
+                                          "assetName":  "Shrug",
+                                          "position":  4
+                                      }
+                                  ]
+                   }
 }

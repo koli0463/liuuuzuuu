@@ -1,0 +1,214 @@
+﻿{
+    "userId":  "158550381",
+    "presetName":  "158550381_kvllyx",
+    "timestamp":  "2026-09-29T11:47:29.875Z",
+    "avatarData":  {
+                       "scales":  {
+                                      "height":  0.9,
+                                      "width":  0.7,
+                                      "head":  0.95,
+                                      "depth":  0.85,
+                                      "proportion":  0.5,
+                                      "bodyType":  0.0
+                                  },
+                       "playerAvatarType":  "R15",
+                       "bodyColors":  {
+                                          "headColorId":  1,
+                                          "torsoColorId":  1,
+                                          "rightArmColorId":  1,
+                                          "leftArmColorId":  1,
+                                          "rightLegColorId":  1,
+                                          "leftLegColorId":  1
+                                      },
+                       "assets":  [
+                                      {
+                                          "id":  74891470,
+                                          "name":  "Frozen Horns of the Frigid Planes",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  1015447251
+                                      },
+                                      {
+                                          "id":  86499666,
+                                          "name":  "Woman Torso",
+                                          "assetType":  {
+                                                            "id":  27,
+                                                            "name":  "Torso"
+                                                        },
+                                          "currentVersionId":  11411585575
+                                      },
+                                      {
+                                          "id":  86499698,
+                                          "name":  "Woman Right Arm",
+                                          "assetType":  {
+                                                            "id":  28,
+                                                            "name":  "RightArm"
+                                                        },
+                                          "currentVersionId":  11411587080
+                                      },
+                                      {
+                                          "id":  86499716,
+                                          "name":  "Woman Left Arm",
+                                          "assetType":  {
+                                                            "id":  29,
+                                                            "name":  "LeftArm"
+                                                        },
+                                          "currentVersionId":  14131544401
+                                      },
+                                      {
+                                          "id":  439945661,
+                                          "name":  "Silver King of the Night",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  909429810
+                                      },
+                                      {
+                                          "id":  15093053680,
+                                          "name":  "Headless Head",
+                                          "assetType":  {
+                                                            "id":  79,
+                                                            "name":  "DynamicHead"
+                                                        },
+                                          "currentVersionId":  20280670549,
+                                          "meta":  {
+                                                       "staticFacialAnimation":  true,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  18899213578,
+                                          "name":  "♡ : milk tea ashe kawaii dolly bangs",
+                                          "assetType":  {
+                                                            "id":  42,
+                                                            "name":  "FaceAccessory"
+                                                        },
+                                          "currentVersionId":  25140279956,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  -0.2
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.0,
+                                                                     "Y":  1.0,
+                                                                     "Z":  1.0
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  100131191240063,
+                                          "name":  ". ‿ ♡ pink sakura addon for stormbreak horns ",
+                                          "assetType":  {
+                                                            "id":  8,
+                                                            "name":  "Hat"
+                                                        },
+                                          "currentVersionId":  41171144418552,
+                                          "meta":  {
+                                                       "position":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  -0.02
+                                                                    },
+                                                       "rotation":  {
+                                                                        "X":  0.0,
+                                                                        "Y":  0.0,
+                                                                        "Z":  0.0
+                                                                    },
+                                                       "scale":  {
+                                                                     "X":  1.19,
+                                                                     "Y":  1.19,
+                                                                     "Z":  1.19
+                                                                 },
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  122331376769731,
+                                          "name":  "♡ ꒰  anime chii chobits white ruffle dress ꒱ ♡ ",
+                                          "assetType":  {
+                                                            "id":  45,
+                                                            "name":  "FrontAccessory"
+                                                        },
+                                          "currentVersionId":  13475309160771
+                                      },
+                                      {
+                                          "id":  123504386789892,
+                                          "name":  "♡ : milk tea ashe cute long dollie cut hair",
+                                          "assetType":  {
+                                                            "id":  41,
+                                                            "name":  "HairAccessory"
+                                                        },
+                                          "currentVersionId":  34529301589,
+                                          "meta":  {
+                                                       "order":  13,
+                                                       "puffiness":  1.0,
+                                                       "version":  1
+                                                   }
+                                      },
+                                      {
+                                          "id":  135350295323844,
+                                          "name":  ".. zZz lalalalaa ( *｀ω´)",
+                                          "assetType":  {
+                                                            "id":  12,
+                                                            "name":  "Pants"
+                                                        },
+                                          "currentVersionId":  33753027705
+                                      }
+                                  ],
+                       "defaultShirtApplied":  true,
+                       "defaultPantsApplied":  false,
+                       "emotes":  [
+                                      {
+                                          "assetId":  10214411646,
+                                          "assetName":  "Floor Rock Freeze - Tommy Hilfiger",
+                                          "position":  1
+                                      },
+                                      {
+                                          "assetId":  14353423348,
+                                          "assetName":  "Baby Queen - Bouncy Twirl",
+                                          "position":  2
+                                      },
+                                      {
+                                          "assetId":  104142334418357,
+                                          "assetName":  "[BEST] It\u0027s Gangnam Style!",
+                                          "position":  3
+                                      },
+                                      {
+                                          "assetId":  5917570207,
+                                          "assetName":  "Floss Dance",
+                                          "position":  4
+                                      },
+                                      {
+                                          "assetId":  12874468267,
+                                          "assetName":  "TWICE The Feels",
+                                          "position":  5
+                                      },
+                                      {
+                                          "assetId":  124522011862575,
+                                          "assetName":  "rollie ",
+                                          "position":  6
+                                      },
+                                      {
+                                          "assetId":  120642514156293,
+                                          "assetName":  "Secret Handshake Dance",
+                                          "position":  7
+                                      },
+                                      {
+                                          "assetId":  79312439851071,
+                                          "assetName":  "Chappell Roan HOT TO GO!",
+                                          "position":  8
+                                      }
+                                  ]
+                   }
+}
